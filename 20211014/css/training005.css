@@ -1,0 +1,53 @@
+#sec01 {display:flex;margin-bottom:100px;}
+#sec01 div {background:#ff0;padding:30px;}
+#sec02 {position:relative;padding:300px 0;}
+#sec02 div {position:absolute;top:0;left:0;background:rgba(255,0,0,1);padding:30px;}
+
+
+#sec02 div:nth-child(1) {top:20px;left:20px;z-index:9999}
+#sec02 div:nth-child(2) {top:40px;left:40px;z-index:999}
+#sec02 div:nth-child(3) {top:60px;left:60px;}
+#sec02 div:nth-child(4) {top:80px;left:80px;}
+#sec02 div:nth-child(5) {top:100px;left:100px;}
+#sec02 div:nth-child(6) {top:120px;left:120px;}
+#sec02 div:nth-child(7) {top:140px;left:140px;z-index:999}
+#sec02 div:nth-child(8) {top:160px;left:160px;}
+#sec02 div:nth-child(9) {top:180px;left:180px;}
+#sec02 div:nth-child(10) {position:fixed;top:200px;left:200px;z-index:-1;}
+
+
+
+#sec03 {padding:150px  0;background:#ddd;}
+#sec03 .container {display:flex;width:1200px;margin:0 auto;}
+#sec03 .container figure {flex:1;padding:0 15px;position:relative;}
+#sec03 .container figure img {width:100%;}
+#sec03 .container .case {position:relative;overflow:hidden;}
+#sec03 .container .case strong {position:absolute;top:100%;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);color:#fff;text-align:center;padding-top:150px;transition:0.5s;} 
+
+#sec03 .container .case:hover strong {top:0;}
+
+
+
+#sec04 {padding:150px  0;background:#fff;text-align:center;}
+#sec04 h2 {font-size:30px;font-weight:700;margin-bottom:10px;}
+#sec04 h2:after {content:"";display:block;width:40px;height:1px;background:#369;margin:10px auto;}
+#sec04 p {font-size:15px;font-weight:300;margin-bottom:40px;}
+#sec04 .container {display:flex;width:1200px;margin:0 auto;}
+#sec04 .container figure {flex:1;padding:0 15px;position:relative;}
+#sec04 .container figure img {width:100%;}
+#sec04 .container .case {position:relative;overflow:hidden;}
+#sec04 .container .case strong {position:absolute;top:100%;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);color:#fff;text-align:center;line-height:80px;transition:0.5s;} 
+
+#sec04 .container .case:hover strong {top:calc(100% - 80px);}
+#sec04 .container .case a {border:1px solid #fff;padding:2px 20px 5px;}
+#sec04 .container .case a:hover {background:#fff;color:#333;}
+
+
+
+
+
+
+
+
+
+ 
