@@ -1,11 +1,46 @@
 #wrap  {min-width:1900px;}
 
-#header {line-height:60px;}
+#top_banner {background:#fff;line-height:60px;}
+#top_banner .container {display:flex;width:1200px;margin:0 auto;padding:0 15px;}
+#top_banner .notice {margin-left:150px;font-size:14px;color:#5f5e5e}
 
-#header .container {display:flex;justify-content: space-between;width:1200px;margin:0 auto;}
-#header h1 {}
-#header ul {display:flex;}
-#header ul a {}
+#top_banner ul {display:flex;margin-left:auto;}
+#top_banner li {display:block;padding:0 15px;font-size:18px;color:#5f5e5e}
+#top_banner h1 img {width:80px;}
+
+
+nav {background-color:#e5e5e5;line-height:100px;}
+nav img {width:230px;}
+nav .container {display:flex;justify-content:space-between;width:1200px;margin:0 auto;padding:0 15px;}
+nav .container ul {display:flex;justify-content:center;font-size:22px;}
+nav .container ul li {display:block;position:relative;line-height:100px;padding:0 30px;margin-left:auto;}
+nav .container ul li:last-child {padding:0 15px 0 30px;}
+
+
+#main_visual {position: relative;}
+#main_visual .slogan {position:absolute;top:104px;left:365px;width:1200px;color:#000;text-align:left;font-size:36px;letter-spacing:-0.05em;}
+#main_visual .slogan h2 span {font-weight:600;}
+
+
+#main_visual .box {position:absolute;top:92px;left:1107px;width:429px;height:135px;background:#7082c0;padding:59px 65px 0 60px;color:#fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
