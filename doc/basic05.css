@@ -114,12 +114,12 @@ body {color:#333;}
 #product04 .container .con img {max-width:100%;}
 
 
-#product04 .container .con i {position:absolute;top:50%;background:#fff;padding:10px;border:1px solid #ddd;}
+#product04 .container .con i {position:absolute;top:26%;background:#fff;padding:10px;border:1px solid #ddd;}
 #product04 .container .con i.xi-arrow-left {left:0;}
 #product04 .container .con i.xi-arrow-right {right:0;}
 
 
-/*여기 다시 다 손봐야함, 그리고 글자 가운데 하고 공간 띄우기 */
+
 #product04 .dis h3 {font-size:24px;font-weight:500;margin-bottom:10px;}     
 #product04 .dis h3:after {content:"";display:block;width:40px;height:1px;background:#fe5500;margin:20px 0;}
 #product04 .dis p{font-weight:300;letter-spacing:-0.025em;margin-bottom:20px;line-height:24px;}
@@ -127,6 +127,21 @@ body {color:#333;}
 #product04 .dis a:hover i {border-radius:50% 50%;}
 #product04 .con strong {display:block;text-align:center;margin:10px 0;}
 #product04 .con span {display:block;text-align: center;}
+
+
+/*#tab*/
+#tab {padding:100px 0;background:#f7f7f7;}
+#tab .container {width:1200px;margin:0 auto;padding:0 15px;}
+#tab .tab_menu {display:flex;border-bottom:1px solid #ddd;margin-bottom:10px;}
+#tab .tab_menu li a {display:block;line-height:40px;padding:0 30px;background:#369;color:#fff;text-align:center;}
+#tab .tab_menu li~li {border-left:1px solid #f7f7f7;}
+
+#tab .tab_con {position:relative;height:300px;}
+#tab .tab_con .tab_slider {position: absolute;;top:0;left:0;width:100%;visibility:hidden;}
+#tab .tab_con .tab_slider.on {visibility: visible;}
+#tab .tab_con figure {padding:0 15px;}
+#tab .tab_con figure img {width:100%;}
+
 
 
 
