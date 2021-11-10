@@ -36,7 +36,8 @@ body {color:#333;}
 #main_visual .slogan {position: absolute;top:50%;left:50%;width:1200px;padding:0 15px;transform:translate(-50%,-50%);color:#fff;text-align: center;}
 #main_visual .slogan h2 {font-size:60px;font-weight:900;margin-bottom:10px;text-shadow:0 0 3px #666;}
 #main_visual .slogan p {font-weight:300;}
-#main_visual .slogan a {display:block;width:150px;height:35px;line-height:30px;background:#333;text-align:center;margin:20px auto;}  /*more박스가 가운데로 오는거*/
+#main_visual .slogan a {display:block;width:150px;height:35px;line-height:30px;background:#333;text-align:center;margin:20px auto;}  
+/*more박스가 가운데로 오는거*/
 
 
 /*section product01*/
