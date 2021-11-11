@@ -74,8 +74,8 @@ section img {max-width:100%;}
 #sec11 .container .move figure {width:500px;}
 
 
-#ani01 h2:hover {display:inline-block;animation:bounce 1s infinite;}
-
+#ani01 h2 {display:inline-block;animation:bounce 1s infinite;}
+/* #ani01 h2:hover 뒤에 호버를 붙여주면 마우스가 올라갔을때만 애니가 나온다  */
 
 
 
