@@ -1,0 +1,276 @@
+#wrap {}
+/* 
+   *{outline:1px solid #f00;}                  */
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------- #top_banner */
+
+
+#top_banner {background:#ddd9d6;}
+#top_banner .container {display:flex;position:relative;width:1200px;margin:0 auto;padding:15px 15px;}
+#top_banner .container figure img {width:120px;}
+#top_banner .con {margin-top:14px;margin-left:50px;}
+#top_banner .con h2 {font-size:24px;font-weight:100;letter-spacing:0.04em;margin-bottom:8px;font-weight:500;}
+#top_banner .con p {font-weight:300;letter-spacing:-0.025em;font-weight:400;}
+#top_banner i {position:absolute;top:25px;right:15px;font-size:13px;background:#555;color:#fff;border-radius:50%;width:27px;line-height:27px;text-align:center;}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------- #header*/
+
+
+/* #header {background:#13110e;}
+#header .container {display:flex;justify-content:space-between;position:relative;width:1200px;margin:0 auto;padding:40px 15px;}
+#header h1 {position:absolute;}
+/* #header h1 img {justify-content:center;} */
+/* #header .container nav>ul {display:flex;padding:0 15px;position:relative;color:#fff;}
+#header .container nav>ul>li {padding:0 30px;} */
+
+#header {}
+#header .container {width:1200px;margin:0 auto;}
+#header {line-height:80px;background:#14120e;padding:0 15px;}
+#header nav {display:flex;justify-content: space-between;}
+#header nav>ul {display:flex;color:#fff;} 
+#header nav>ul>li>a {display:block;padding:0 40px;font-size:16px;} 
+
+
+/*------------------------------------------------------------------------------------------------------------------------------  #main_visual*/
+
+
+#main_visual {position:relative;}
+#main_visual .main_slider figure {height:calc(100vh - 183px);background:#333;}
+#main_visual .main_slider .visual01 {background:url(../img/main_visual01.jpg) no-repeat center center/cover;}
+#main_visual .main_slider .visual02 {background:url(../img/main_visual02.jpg) no-repeat center center/cover;}
+#main_visual .main_slider .visual03 {background:url(../img/main_visual03.jpg) no-repeat center center/cover;}
+
+#main_visual .main_slider .txt {display:block;color:#fff;width:1200px;margin:0 auto;padding:0 85px;margin-top:100px;text-shadow:0 0 3px #666;}
+#main_visual .main_slider .txt h2 {font-size:28px;font-weight:200;letter-spacing:-0.025em;}
+#main_visual .main_slider .txt strong {display:block;font-size:90px;font-weight:500;letter-spacing:-0.025em;margin-bottom:20px;}
+#main_visual .main_slider .txt p {display:block;font-size:27px;font-weight:300;letter-spacing:-0.025em;margin-bottom:250px;}
+#main_visual .main_slider .txt a {display:block;font-size:21px;line-height:50px;width:157px;background:#333;text-align:center;border-radius:95px 95px;letter-spacing:-0.025em;}
+#main_visual .main_slider .txt a:hover {background:#dbd8d5;color:#000;}
+/* 질문 >>> 사진이 안으로 안에서 안커지고 밖으로 커질때... 
+   답변 >>> 이거 사진이 안에서 커지려면 html에서 밑에 그림의 2번처럼 싸는게 아니라 1번처럼 figure안에 div박스 클래스를 주고 그 안에 img를 싸면 된당 
+
+    <a href="#" class="list">
+        <figure>
+            <div class="case">
+1번          <img src="./img/section02.01.jpg" alt="">
+            </div>
+            <a href="#">G70</a>
+        </figure> 
+        <figure>
+            <img src="./img/section02.02.jpg" alt="">
+2번            <a href="#">G80</a>
+        </figure>
+
+
+*/
+
+
+#main_visual .slick-dots {position:absolute;display:flex;justify-content:center;bottom:70px;left:0;width:100%;}
+
+/* 질문 >>> 여긴 블록이 없는데 왜 탑 레프트가 먹히는거죠??
+답변 >>> top left는 position이 있어야 먹힙니당. 맨앞에 position을 잡아줬기 때문에 잡힙니당  */
+/* 질문 >>> 왜 앱솔루트를 했지만 박스가 왼쪽으로 잡히는거죠??? 
+답변 >>> position:absolute;를 하면 박스가 쪼그라들기 때문에 꼭꼭꼭 뒤에서 width:100%;로 박스를 펴 줘야한답니당당구리  */
+
+#main_visual .slick-dots li {width:18px;height:18px;border-radius:50px;background:#d5d2d2;margin:0 13px;}
+#main_visual .slick-dots li.slick-active {background:#5f5e5e;}
+#main_visual .slick-dots li button {display:none;}
+
+/* 질문 >>> justify-content:center; 와 ~:space-between 는 어디에서 먹히나요? 
+   답변 >>> flex가 되어야 먹힙니당 
+*/
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------  #section01*/
+
+#section01 {padding:120px 0;width:1200px;margin:0 auto;text-align:center;}
+#section01 h2 {font-size:45px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;}
+#section01 hr {display:block;margin:0 auto;border:none;border-bottom:2px solid #666;width:255px;}
+#section01 p {font-size:18px;font-weight:500;letter-spacing:-0.025em;line-height:10px;margin-bottom:45px;margin-top:20px;}
+
+#section01 .menu {display:block;color:#fff;width:210px;margin:40px auto 20px;}
+/*질문 >>> 마진 이렇게 2개 들어가도 되나요? 먹히는건지 아닌지.... 아님 margin:20px 0 40px 0; 이걸 뺴고 사진에 마진탑을 줘야 하나요  
+마진2개는 말도 안되고 */
+/* #section01 nav ul {margin:0 auto;} */
+#section01 .menu>ul>li {position:relative;line-height:40px;}
+#section01 .menu>ul>li>a>i {position:relative;line-height:40px;}
+#section01 .menu>ul>li>a {display:flex;justify-content:space-between;padding:0 5px;border-bottom:1px solid #333;color:#333;font-weight:400;} 
+#section01 .menu>ul ul a {line-height:50px;}
+#section01 i {line-height:30px;}
+#section01 .menu>ul>li>a.on i {transform:rotate(180deg)}
+/* 봐봐 #section01 ul>li>a {display:flex;justify-content:space-between;padding:0 20px;}  이렇게만 주니까 화살표는 박스가 세로로 잡히니까 
+#section01 i {line-height:50px;} 여기서 라인하이트를 줘서 가운데로 보낸다. */
+#section01 ul>li>ul>li~li {border-top:1px solid #666;}
+#section01 ul>li>ul {display:none;position:absolute;left:50%;transform:translateX(-50%);width:100%;text-align:center;background: #333;border:1px solid #333;z-index:999;}
+#section01 ul>li>ul>li:hover {background:#666;color:#fff;}
+
+
+#section01 .container {display:flex;flex-wrap:wrap}
+#section01 .container figure {display:block;margin-top:30px;padding:0 15px;}
+
+#section01 .case  {overflow:hidden;}
+#section01 figure img {transition:0.4s;}
+#section01 figure:hover img {transform:scale(1.1);}
+
+#section01 .container figure a {display:flex;justify-content:center;font-size:30px;letter-spacing:-0.025em;line-height:70px;background:#000;color:#fff;}
+#section01 .container figure a:hover {background:#2a2a2a;color:#f2f2f2;opacity:0.9;}
+
+
+
+/*--------------------------------------------------------------------------------------------------------이벤트---------------  #section02*/
+
+
+#section02 {padding:120px 0;background:#efeeee;}
+#section02 .container {display:flex;flex-wrap:wrap;width:1200px;margin:0 auto;padding:0 15px;align-items:center;margin-top:60px;}
+
+#section02 .title {text-align:center;}
+#section02 h2 {font-size:45px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;}
+#section02 hr {display:block;margin:0 auto;border:none;border-bottom:2px solid #666;width:110px;}
+#section02 p {font-size:18px;font-weight:500;letter-spacing:-0.025em;line-height:10px;margin-bottom:45px;margin-top:20px;}
+
+#section02 img {max-width:100%;}
+#section02 .pic {width:50%;}
+#section02 .let {width:50%;}
+
+
+#section02 .left {text-align:left;padding:0 0 0 50px;}
+#section02 .right {text-align:right;padding:0 50px 0 0;}
+
+#section02 .let_con h2 {font-size:27px;font-weight:500;letter-spacing:-0.025em;border-bottom:1px solid #333;margin-bottom:20px;}
+
+
+
+#section02 .let ul {font-size:25px;}
+#section02 .let ul li {position: relative;margin:0 10px;display:inline-block;}
+#section02 .let li:nth-child(1):before {content:"\e9ea";font-family: xeicon!important;color:#000;}
+#section02 .let li:nth-child(1):hover:before {content:"\e9e9";font-family: xeicon!important;color:#000;}
+#section02 .let li:nth-child(2):before {content:"\e9f1";font-family: xeicon!important;color:#000;}
+#section02 .let li:nth-child(2):hover:before {content:"\e9f0";font-family: xeicon!important;color:#000;}
+#section02 .let li:nth-child(3):before {content:"\e9c0";font-family: xeicon!important;color:#000;}
+/* nth-child 의 nth가 몇번째자식의 몇이 (1)이다.  */
+/* 질문 >>> 아이콘이 세로로 세워져 플렉스를 했는데 왜 이걸 display:inline-block;를 해야하나요? 
+답변 >>>  텍스트(i도 포함)를 박스로 만들고 가로로 가는 성질이 있어서 가로로 만들어 진겁니당 그리고 inline-block은 사이에 4px정도 띄워지는 성질이 있답니당*/
+
+
+
+#section02 .let_con p {font-size:18px;font-weight:400;line-height:20px;margin-bottom:15px;}
+#section02 .let_con strong {font-size:14px;font-weight:400;letter-spacing:0.025em;}
+
+
+
+/*---------------------------------------------------------------------------------------------------------메인배너-------------  #main_banner*/
+
+#main_banner {padding:100px 0 100px; background:url(../img/main_banner.jpg) no-repeat center center/cover;background-attachment:fixed;color:#fff;}
+#main_banner .container {width:1000px;margin:0 auto;}
+
+#main_banner .left {text-align:left;padding:0 0 120px 0;}
+#main_banner .left h2 {font-size:45px;font-weight:500;margin-bottom:10px;}
+#main_banner .left p {font-size:20px;font-weight:300;letter-spacing:-0.025em;margin-bottom:20px;}
+#main_banner .left em {font-size:20px;font-weight:400;letter-spacing:-0.025em;}
+
+#main_banner .right {text-align:right;padding:0 80px 0 0;}
+#main_banner .right h3 {font-size:27px;font-weight:500;margin-bottom:10px;}
+#main_banner .right p {font-size:20px;font-weight:300;letter-spacing:-0.025em;margin-bottom:10px;}
+#main_banner .right em {font-size:19px;font-weight:500;letter-spacing:3px;}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------비디오--------  #section04*/
+
+
+
+
+#section04 {padding:120px 0;width:1170px;margin:0 auto;text-align:center;}
+#section04 h2 {font-size:45px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;}
+#section04 hr {display:block;margin:0 auto;border:none;border-bottom:2px solid #666;width:100px;}
+#section04 p {font-size:18px;font-weight:500;letter-spacing:-0.025em;line-height:10px;margin-bottom:24px;margin-top:20px;}
+#section04 i {font-size:18px;padding:8px;background:#333;color:#fff;border-radius:5px;}
+/* #section04 .container figure {margin-top:50px;} */
+#section04 .container figure i {margin-bottom:40px;}
+#section04 .container .video01 {margin-top:30px;}
+
+
+/*---------------------------------------------------------------------------------------------------시승신청------------------  #section05*/
+/* flex를 하던가 인라인블록을 하던가 상황에 맞춰서 사용  */
+
+/* #section05 {background:#000;color:#fff;height:500px;position: relative;}
+#section05 .full {margin:0 auto;width:1200px;}
+
+#section05 .right {text-align:right;width:1200px;position: absolute;top:140px;left:50%;transform:translateX(-50%);padding:0 70px;}
+
+#section05 .right h2 {font-size:35px;font-weight:500;margin-bottom:18px;}
+#section05 .right p {font-size:17px;font-weight:300;letter-spacing:-0.035em;line-height:1.1;margin-bottom:60px;}
+
+
+#section05 .right .icon {text-align:right;} */
+
+/* 글이 두개가 들어가면 디스플레이 인라인블록도 안먹음  */
+/* #section05 .right .icon a {display:inline-block;font-size:18px;font-weight:500;background:#dbd8d5;color:#000;line-height:40px;width:110px;text-align:center;border-radius:99px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;margin-left:14px;}
+#section05 .right .icon a:hover {background:#333;font-weight:400;font-size:18px;color:#dbd8d5;} */
+
+
+/* background:#dbd8d5;color:#000; */
+
+
+#section05 {padding:130px 0;background:url(../img/section05_full.jpg) no-repeat top left/cover;}
+
+#section05 .right{display:inline-block;text-align:right;width:1200px;top:140px;left:50%;transform:translateX(15%);color:#fff;}
+
+#section05 .right h2 {font-size:35px;font-weight:500;margin-bottom:18px;}
+#section05 .right p {font-size:17px;font-weight:300;letter-spacing:-0.035em;line-height:1.1;margin-bottom:60px;}
+#section05 .right .icon a {display:inline-block;font-size:18px;font-weight:500;background:#dbd8d5;color:#000;line-height:40px;width:110px;text-align:center;border-radius:99px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;margin-left:14px;}
+#section05 .right .icon a:hover {background:#333;font-weight:400;font-size:18px;color:#dbd8d5;} 
+
+
+
+/*---------------------------------------------------------------------------------------------------방문예약신청-----지도-------  #section06*/
+
+
+
+#section06 {padding:120px 0;background:#f7f7f7;}
+#section06 .container {width:1200px;display:flex;margin:0 auto;justify-content:space-between;padding:0 15px;}
+#section06 h2 {font-size:45px;font-weight:500;letter-spacing:-0.025em;line-height:35px;margin-bottom:20px;margin-top:50px;}
+#section06 hr {display:block;border:none;border-bottom:2px solid #666;width:280px;margin-top:5px;}
+#section06 p {font-size:18px;font-weight:300;letter-spacing:-0.025em;line-height:20px;margin-bottom:45px;margin-top:20px;}
+
+
+
+
+/* #section06 .container .map {display:block;} */
+/* 이거 블락 안하면 안되는건가?? */
+
+#section06 .container .left .res {}
+/* 여기 사이를 띄우고 싶어요 .... */
+#section06 .container .left .res a {margin-right:10px;}
+
+#section06 .container .left a {display:inline-block;font-size:18px;font-weight:400;background:#333;color:#dbd8d5;line-height:45px;width:190px;text-align:center;border-radius:80px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;}
+#section06 .container .left a:hover {background:#dbd8d5;color:#000;font-weight:500;font-size:18px;}
+
+
+
+
+/* background:#dbd8d5;color:#000;
+background:#333;color:#dbd8d5; */
+
+/*-----------------------------------------------------------------------------------------------------------------------------#footer*/
+
+
+#footer {background:#14120e;color:#f4f4f4;font-weight:300;}
+#footer .container {display:flex;justify-content:space-between;width:1200px;margin:0 auto;line-height:80px;padding:0 15px;}
+#footer .customer_link {display:flex;}
+#footer .customer_link li {position: relative;}
+#footer .customer_link li a {display:block;padding:0 20px;}
+#footer .customer_link li~li:before {content:"I";position:absolute;top:0;left:0;}
+#footer .customer_link li:first-child a {padding:0 20px 0 0;}
+#footer hr {border:none;border-top:1px solid #666;}
+#footer .sns {font-size:20px;padding:15px;}
+#footer select {background:#333;padding:5px 15px;outline:none;}
+
+
+
+
+
