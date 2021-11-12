@@ -1,0 +1,60 @@
+body{background:#333;color:#fff;font-weight:300;text-align:center;}
+/* position이 없으면 좌표가 없고 z-index도 없다  */
+
+#bal {margin:200px 0;padding:10px 0;position:relative;}
+
+#bal h2 {font-size:18px;font-weight:100;letter-spacing:1em;margin-bottom:20px;}
+#bal p {font-size:14px;font-weight:100;line-height:1.6;margin-bottom:20px;}
+
+#bal .container {width:640px;height:430px;margin:0 auto;overflow:hidden;position:relative;}
+#bal .case {position:absolute;top:-700px;left:0;}
+
+
+#bal .btn {display:flex;justify-content:center;}
+#bal .btn li {width:20px;height:20px;background:#fff;border-radius:50%;margin:0 5px;cursor:pointer;
+text-indent:-9999px;}
+
+
+
+.sun {position:absolute;top:150px;left:150px;animation:sunmove 2s infinite linear;}
+
+@keyframes sunmove {
+    to {transform:rotate(360deg)}
+}
+
+
+
+.butterfly {position:absolute;bottom:250px;left:150px;animation:butterfly 10s linear both;}
+.butterfly figure {animation:butterflyw 1s infinite; }
+
+@keyframes butterflyw {
+    0% {transform:scaleX(0)}
+    50% {transform:scaleX(1)}
+    100% {transform:scaleX(0)}
+}
+
+@keyframes butterfly {
+    0% {transform:translate(0,0) rotate(45deg)}
+    10% {transform:translate(100px,0) rotate(50deg)}
+    20% {transform:translate(200px,0) rotate(55deg)}
+    30% {transform:translate(300px,0) rotate(65deg)}
+    40% {transform:translate(400px,0) rotate(70deg)}
+    50% {transform:translate(500px,0) rotate(75deg)}
+    60% {transform:translate(40,0) rotate(80deg)}
+    70% {transform:translate(30,0) rotate(85deg)}
+    80% {transform:translate(20,0) rotate(90deg)}
+    90% {transform:translate(10,0) rotate(95deg)}
+    100% {transform:translate(1200px,-300px) rotate(-45deg)}
+
+}
+
+
+
+
+
+
+
+
+
+
+
