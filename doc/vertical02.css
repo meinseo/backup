@@ -47,17 +47,73 @@
 #footer {position:fixed;top:0;right:0;width:350px;background:#369;height:100vh;}
 
 
-#header nav>ul>li a
-#header nav>ul>li>a 차이                       
+/* #header nav>ul>li a 자식+후손까지
+#header nav>ul>li>a 자식만    */
+
+
+.mopen {display:none;}
 
 
 
 
+@media (max-width:768px)  {
+    #header {position:fixed;top:0;left:-100%;width:calc(100% - 110px);height:100vh;background:#f2f2f2;padding:30px 15px 0 15px;transition:0.4s;z-index:999;}
+    #header.on {left:0;}
+    #header h1 {margin-bottom:100px;}
+    #header h1 img {width:70%;}
+    #header nav {}
+    #header nav>ul>li {border-bottom:1px solid #ddd;position:relative;}
+    #header nav>ul>li a {display:block;line-height:40px;}
+    #header nav>ul>li .submenu {display:none;position:static;top:0;left:300px;width:100%;background:#333;color:#fff;z-index:999;}
+    #header nav>ul>li .submenu li~li {border-top:1px solid #ddd;}
+    #header nav>ul>li .submenu a {padding-left:20px;}
+    #header nav>ul>li:hover .submenu {display:none;}
+
+
+    #visual {margin:0 0 0 0;background:#f00;height:100vh;}
+
+
+    .main_visual figure {position:relative;height:100vh;}
+    .main_visual .item01 {background:url(../lib/base/apc_vi_01.jpg) no-repeat left center/cover;}
+    .main_visual .item02 {background:url(../lib/base/apc_vi_02.jpg) no-repeat right center/cover;}
+    .main_visual .item03 {background:url(../lib/base/apc_vi_03.jpg) no-repeat center center/cover;}
+
+
+    .main_visual .container {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-shadow:0 0 3px rgba(0,0,0,0.5);width:100%;text-align:center;padding:0 30px;}
+    /* 가운데로 오는 공식! */
+
+    .main_visual figure .container h3 {opacity:0;transform:translateY(100px);font-size:31px;font-weight:700;margin-bottom:20px;}
+    .main_visual figure .container p {opacity:0;transform:translateY(100px);font-size:15px;font-weight:300;line-height:20px;}
+
+    .main_visual figure.on .container h3 {opacity:1;transform:translateY(0);transition:0.5s;}
+    .main_visual figure.on .container p {opacity:1;transform:translateY(0);transition:0.5s 0.5s;}
+
+
+    .main_visual .slick-dots {position:absolute;bottom:100px;left:0;width:100%;text-align:center;}
+    .main_visual .slick-dots li {display:inline-block;font-size:30px;margin:0 5px;color:#fff;}
+    .main_visual .slick-dots li:after {content:"\e9ee";font-family:xeicon!important;}
+    .main_visual .slick-dots li.slick-active {color:#f00;}
+    .main_visual .slick-dots li.slick-active:after {content:"\ea1e";}
+    .main_visual .slick-dots li button {display:none;}  
+    /* 이게 버튼안에 숫자를 없앰 */
+
+    .main_visual .slick-arrow {position:absolute;top:45%;z-index:998;}
+    .main_visual .slick-arrow.prev {left:30px;}
+    .main_visual .slick-arrow.next {right:30px;}
+
+    .main_visual .slick-arrow i {font-size:40px;padding:10px;background:rgba(0,0,0,0.4);color:#fff;border-radius:10px;}
 
 
 
+    #footer {position:static;top:0;right:0;width:auto;background:#369;height:auto;}
+
+    .mopen {display:block;position:fixed;top:30px;right:30px;font-size:30px;padding:10px;background:rgba(0,0,0,0.4);color:#fff;}
+}
 
 
+/* #footer {position:fixed;를
+#footer {position:static; 로 바꾸면 옆에 있던 푸터가 
+    반응형에서 밑으로 내려간다 */
 
 
 
