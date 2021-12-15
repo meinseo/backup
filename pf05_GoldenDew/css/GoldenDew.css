@@ -1,0 +1,116 @@
+/* body {height:100vh;background:linear-gradient(to top, #333 60%, #000);}
+.main_visual {position: relative;width:500px;margin:0 auto;overflow:hidden;}
+.case {width:1000px;transform: translateX(-250px);position:relative;}
+ 여긴 주석처리해놓음 .slogan {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:20px;font-weight:900;color:#fff;} 
+.bgndVideo {} */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+/* 
+*{outline:1px solid #f00;}  */
+
+
+#wrap {min-width:1900px;font-family:'Montserrat', sans-serif;}
+
+
+/* header */
+.header {position:relative;width:100%;height:160px;background:#fff;z-index:999;}
+.header .container {width:1200px;margin:0 auto;padding:0 15px;}
+.header .first_nav {display:flex;justify-content:space-between;line-height:110px;}
+.header .first_nav>ul {display:flex;line-height:90px;}
+.header .first_nav>ul {display:flex;font-size:15px;font-weight:500;font-family:"Montserrat";}
+
+.header .first_nav .right a {font-size:18px;}
+.header hr {border:none;border-bottom:1px solid #ddd;}
+
+.first_nav h1 {text-align:center;}
+.first_nav h1 img {max-width:33%;}
+
+.header .first_nav>ul.left li {display:block;margin-right:5px;font-size:15px;font-weight:500;color:#444;}
+.header .first_nav>ul.left li~li:before {content:"I";margin-right:6px;color:#666;}
+
+.header .first_nav>ul.right li {display:block;margin-left:7px;font-size:15px;font-weight:500;}
+.header .right li:first-child>a {display:inline-block;font-size:15px;width:150px;height:33px;line-height:32px;text-align:center;background:#dbb1d2;border-radius:15px;color:#fff;transform:translateY(-2px);margin-right:10px;}
+.header .right li:first-child>a:hover {border:1px solid #be7fb0;background:#fff;color:#90427f;font-weight:600;}
+.header .right li:first-child>a i {margin-left:5px;vertical-align:middle;line-height:32px;}
+.header .right li:first-child>a span {display:inline-block;margin-left:5px;vertical-align:middle;}
+
+
+
+
+
+
+/* second_nav */
+.second_nav .container {display:flex;width:1170px;justify-content:space-between;font-family:Montserrat;text-align:center;font-size:15px;font-weight:500;}
+.second_nav .container>.gnb {color:#000;padding:10px 0;}
+
+.second_nav .container .second_left {display:flex;}
+.second_nav .container .second_right {display:flex;justify-content:flex-end;color:#777;}
+
+.second_nav .container .gnb>li a {display:block;width:100%;height:100%;line-height:30px;padding:0 15px;position:relative;}
+.second_nav .container .gnb>li~li:after {content:"I";color:#666;position:absolute;top:7px;left:0;}
+.second_nav .container .gnb>li dl {position:absolute;top:0;left:0;}
+
+/* .second_nav .container .gnb>li:hover {background:#dbb1d2;color:#fff;} */
+.second_nav .gnb>li>ul>li {color:#000;}
+.second_nav .gnb>li>ul>li:hover {color:#90427f;}
+.second_nav .gnb>li {position:relative;}
+.second_nav .gnb>li>.depth02 {position:absolute;top:60px;left:0;width:200px;text-align:left;background:#fff;border:1px solid rgba(0,0,0,0.2);opacity:0;visibility:hidden;transition:0.3s;}
+.second_nav .gnb>li:hover>.depth02 {top:30px;opacity:1;visibility:visible;}
+
+.second_nav .gnb>li>a {overflow: hidden;}
+.second_nav .gnb>li span {display:block;background:#fff;position: absolute;top:30px;left:0;width:100%;}
+/* transition:0.3s 0.3s; */
+.second_nav .gnb>li:hover span {top:0;}
+
+
+/* .main_visual */
+.main_visual {position:absolute;width:100%;top:13px;left:0;}
+
+
+
+/* .top_banner */
+.top_banner {display:none;position:fixed;top:110px;left:50%;width:1170px;height:300px;background:#fff;opacity:80%;z-index:9999;transform:translateX(-50%);}
+
+.top_banner ul {font-size:30px;}
+.top_banner ul form {position:absolute;top:0;left:0;transform:translateX(-50%);}
+/* ㅇㅣ거 가운데로 오게하기 */
+.top_banner .search_bar button {border:none;background:none;margin-right:5px;}
+.top_banner .search_bar input {width:500px;border:1px solid #000;padding:0 7px;}
+
+.top_banner ul li:last-child {position:absolute;top:100px;right:190px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
