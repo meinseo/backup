@@ -34,6 +34,32 @@ $(function(){
         $('.top_banner').slideUp();
     });
 
+    // 팝업창 닫기
+    $('.popup_close').on('click',function(){
+        $(this).parent().hide();
+    });
+
+
+    // 오른쪽 움직이는 배너
+    $(window).on('scroll',function(){
+        var sct=$(window).scrollTop();
+        // if (sct>400)  {
+        //   $('#toTop').fadeIn()
+        // }else{
+        //   $('#toTop').fadeOut()
+    
+        // }
+        sct>400 ? $('#toTop').fadeIn() : $('#toTop').fadeOut();
+        $('.scroll_banner').css({top:300+sct})
+    });
+
+    // Totop / Todown 안먹힘 물어보기
+    $('scroll_banner>ul>.totop').on('click',function(){
+        $('html, body').animate({scrollTop:0},2000)
+    });
+    $('scroll_banner>ul>.todown').on('click',function(){
+        $('html, body').animate({scrollTop:0},2000)
+    });
 
 
 
@@ -42,6 +68,8 @@ $(function(){
 
 
 
+
+    
 
   //--------------------------------------------------------------------------------
 })
