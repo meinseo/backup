@@ -7,8 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100;200;300;400;500;600&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
-/* 
-*{outline:1px solid #f00;}  */
+
 
 
 #wrap {min-width:1900px;font-family:'Montserrat', sans-serif;}
@@ -67,8 +66,8 @@
 
 /* .main_visual */
 .main_visual {position:absolute;width:100%;top:13px;left:0;}
-/* 
-*{outline:1px solid #f00;}  */
+
+
 
 /* .top_banner */
 .top_banner {display:none;position:absolute;top:110px;left:50%;width:1170px;height:300px;background:#fff;opacity:80%;z-index:9999;transform:translateX(-50%);}
@@ -160,5 +159,3 @@
 
 
 
-/* 
-*{outline:1px solid #f00;}  */
