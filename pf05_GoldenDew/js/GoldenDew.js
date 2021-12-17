@@ -63,9 +63,27 @@ $(function(){
     });
 
 
+    // sec01 슬라이드
+    $('.pr_slider').slick({
+        arrows:false,
+        autoplay:true,
+        slidesToShow: 5,
+        dots:false,
+    });
+
+    // section01 슬라이드 버튼
+    $('.section01 .btn i.xi-angle-left-thin').on ('click',function(){
+        $('.pr_slider').slick('slickPrev');
+    });
+    $('.section01 .btn i.xi-angle-right-thin').on ('click',function(){
+        $('.pr_slider').slick('slickNext');
+    });
 
 
-
+    // 늘어나는 페이지
+    $('.section02 ul li').on('mouseenter', function(){
+        $(this).addClass('on').siblings().removeClass('on');
+    })
 
 
 

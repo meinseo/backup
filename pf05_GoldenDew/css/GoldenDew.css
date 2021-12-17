@@ -80,6 +80,7 @@
 
 .top_banner .search_bar input {background:none;border:none;border-bottom:1px solid #000;width:500px;outline:none;padding:0 7px;vertical-align:middle;font-size:24px;}
 .top_banner .search_bar input::placeholder {font-size:20px;margin-bottom:50px;vertical-align:middle;}
+/* .top_banner .search_bar li i{vertical-align:middle;} */
 
 .top_banner ul li:last-child {position:absolute;top:69px;right:240px;}
 
@@ -97,19 +98,29 @@
 .popup01 span {position:absolute;bottom:15px;right:20px;font-size:15px;color:#fff;background:#000;padding:3px;vertical-align:middle;}
 .popup01 i {vertical-align:middle;}
 
+
+*{outline:1px solid #f00--;}
+
 /* section01 top에서 938px까지가 동영상끝*/
-.section01 {padding:130px 0;background:#fff;margin-top:800px;position:relative;text-align:center;z-index:999;}
-.section01 .container {}
-.section01 h2 {font-size:27px;font-family:"Montserrat";letter-spacing:0.05em;font-weight:500;}
-.section01 h2:after {content:"";display:block;width:1px;height:25px;background:#dbb1d2;margin:10px auto;}
-.section01 p {font-size:15px;margin-bottom:40px;font-family: 'Noto Serif KR', serif;}
+.section01 {position:relative;padding:130px 0;background:#fff;margin-top:800px;position:relative;text-align:center;z-index:999;}
+
+.section01 .title h2 {font-size:27px;font-family:"Montserrat";letter-spacing:0.05em;font-weight:400;}
+.section01 .title h2:after {content:"";display:block;width:1px;height:25px;background:#dbb1d2;margin:10px auto;}
+.section01 .title p {font-size:15px;margin-bottom:60px;font-family: 'Noto Serif KR', serif;}
+
+.section01 .container {width:1400px;margin:0 auto;}
+.section01 .container .case {padding:0 15px;}
+.section01 .container figure {position:relative;border:1px solid #ddd;}
+.section01 .container figure img {max-width:245px;margin:0 auto;border-bottom:1px solid #ddd;}
+
+.section01 .container figure .icon {display:flex;position:absolute;bottom:15%;left:50%;transform:translateX(-50%);opacity:0;transition:0.5s;}
+.section01 .container figure:hover .icon {opacity:1;}
+.section01 .container figure .icon i {background:#dbb1d2;border-radius:50%;padding:5px;margin: 0 5px}
 
 
-
-
-
-
-
+.section01 .btn i {position:absolute;top:60%;left:50%;transform:translate(-50%,-50%);font-size:50px;color:#dbb1d2;}
+.section01 .btn i.xi-angle-left-thin {margin-left:-800px;}
+.section01 .btn i.xi-angle-right-thin {margin-left:800px;}
 
 
 
@@ -117,8 +128,8 @@
 
 /* .section02 */
 .section02 ul {display:flex;}
-.section02 ul li {flex:1;background:url(../img/sec_screen01.jpg) no-repeat center center/1000px;height:500px;}
-.section02 ul li:first-child {flex:2;}
+.section02 ul li {flex:1;background:url(../img/sec_screen01.jpg) no-repeat center center/1000px;height:800px;transition:0.5s;}
+.section02 ul li.on {flex:2;}
 
 /* .scroll_banner */
 .scroll_banner {display:none;position:absolute;top:300px;right:200px;cursor: pointer;}
@@ -145,7 +156,7 @@
 
 .footer .container .top .bottom {display:block;justify-content:space-between;}
 
-.footer .container .left .container strong {display:block;font-size:20px;font-weight:600;line-height:2;margin-top:15px;}
+.footer .container .left .container strong {display:block;font-size:20px;font-weight:500;line-height:2;margin-top:15px;}
 .footer .container .left .container span {display:block;font-size:14px;margin-bottom:30px;font-weight:500;}
 
 .footer .container .left .container dl {width:800px;}
