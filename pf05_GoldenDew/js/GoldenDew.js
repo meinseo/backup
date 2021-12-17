@@ -49,16 +49,17 @@ $(function(){
         //   $('#toTop').fadeOut()
     
         // }
-        sct>400 ? $('#toTop').fadeIn() : $('#toTop').fadeOut();
-        $('.scroll_banner').css({top:300+sct})
+        sct>700 ? $('.scroll_banner').fadeIn() : $('.scroll_banner').fadeOut();
+        $('.scroll_banner').css({top:350+sct})
     });
 
-    // Totop / Todown 안먹힘 물어보기
-    $('scroll_banner>ul>.totop').on('click',function(){
+    // Totop 
+    $('.scroll_banner>ul>.totop').on('click',function(){
         $('html, body').animate({scrollTop:0},2000)
     });
-    $('scroll_banner>ul>.todown').on('click',function(){
-        $('html, body').animate({scrollTop:0},2000)
+    $('.scroll_banner>ul>.todown').on('click',function(){
+        let dh = $(document).outerHeight(true);
+        $('html, body').animate({scrollTop:dh},2000)
     });
 
 

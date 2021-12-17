@@ -5,10 +5,10 @@
 .bgndVideo {} */
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100;200;300;400;500;600&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
 
-*{outline:1px solid #f00;} 
+*{outline:1px solid #f00--;} 
 
 
 #wrap {min-width:1900px;font-family:'Montserrat', sans-serif;}
@@ -60,7 +60,7 @@
 .second_nav .gnb>li:hover>.depth02 {top:30px;opacity:1;visibility:visible;}
 
 .second_nav .gnb>li>a {overflow: hidden;}
-.second_nav .gnb>li span {display:block;background:#fff;position: absolute;top:30px;left:0;width:100%;font-family: 'Montserrat', sans-serif;}
+.second_nav .gnb>li span {display:block;background:#fff;position: absolute;top:30px;left:0;width:100%;font-family: 'Noto Serif KR', serif;}
 /* transition:0.3s 0.3s; */
 .second_nav .gnb>li:hover span {top:0;}
 
@@ -68,50 +68,57 @@
 /* .main_visual */
 .main_visual {position:absolute;width:100%;top:13px;left:0;}
 
-
+*{outline:1px solid #f00--;} 
 
 /* .top_banner */
-.top_banner {display:none;position:fixed;top:110px;left:50%;width:1170px;height:300px;background:#fff;opacity:80%;z-index:9999;transform:translateX(-50%);}
+.top_banner {display:none;position:absolute;top:110px;left:50%;width:1170px;height:300px;background:#fff;opacity:80%;z-index:9999;transform:translateX(-50%);}
 
 .top_banner ul {font-size:30px;}
 .top_banner ul form {position:absolute;top:65px;left:250px;}
-/* ㅇㅣ거 가운데로 오게하기 */
-.top_banner .search_bar button {border:none;background:#dbb1d2;font-family:'Montserrat', sans-serif;font-weight:500;cursor: pointer;font-size:20px;width:120px;height:37px;}
+
+.top_banner .search_bar button {border:none;background:#dbb1d2;font-family:'Montserrat', sans-serif;font-weight:500;cursor: pointer;font-size:20px;width:120px;height:37px;vertical-align:middle;}
 .top_banner .search_bar button:hover {border:1px solid #dbb1d2;background:#fff;}
 
-.top_banner .search_bar input {background:none;border:1px solid #000;width:500px;outline:none;width:500px;padding:0 7px;}
+.top_banner .search_bar input {background:none;border:none;border-bottom:1px solid #000;width:500px;outline:none;padding:0 7px;vertical-align:middle;font-size:24px;}
+.top_banner .search_bar input::placeholder {font-size:20px;margin-bottom:50px;vertical-align:middle;}
 
 .top_banner ul li:last-child {position:absolute;top:69px;right:240px;}
 
 .top_banner .container {width:670px;margin:0 auto;position:absolute;top:130px;left:250px;}
-.top_banner .container strong {font-size:130px;margin-bottom:10px;}
-/* 근데 안먹음 블락 줘도 안먹음 */
-.top_banner .container .hot_search {display:flex;}
-.top_banner .container .hot_search em {display:block;width:auto;line-height:1.5;background:#dbb1d2;border-radius:15px;margin-right:10px;font-size:15px;}
-/* 글자크기 안맞고 마진도 안먹고 플렉스랩 해서 밑으로 두개 내리기  */
+.top_banner .container strong {font-size:15px;font-weight:500;line-height:2;}
+
+.top_banner .container .hot_search {display:flex;width:400px;flex-wrap:wrap;margin-right:5px;}
+.top_banner .container .hot_search em {display:block;width:auto;line-height:1.5;background:#dbb1d2;border-radius:15px;margin-right:10px;font-size:13px;padding:1px 5px;margin-top:6px;opacity:85%;}
+
+
+
 
 /* .popup01 */
 .popup01 {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);cursor: pointer;}
-.popup01 span {position:absolute;bottom:15px;right:20px;font-size:17px;color:#fff;background:#000;padding:3px;}
-
+.popup01 span {position:absolute;bottom:15px;right:20px;font-size:15px;color:#fff;background:#000;padding:3px;vertical-align:middle;}
+.popup01 i {vertical-align:middle;}
 
 /* section01 top에서 938px까지가 동영상끝*/
-.section01 {position:absolute;top:1084px;padding:0 0 130px 0;background:#fff;margin:0 auto;}
-.section01 .container {width:1200px;padding:0 15px;text-align:center;margin:0 auto;}
-.section01 h2 {font-size:28px;font-family:"Montserrat";letter-spacing:0.05em;}
-.section01 h2:after {content:"";display:block;width:1px;height:30px;background:#dbb1d2;margin:10px auto;}
-.section01 p {font-size:17px;margin-bottom:15px;}
+.section01 {padding:130px 0;background:#fff;margin-top:800px;position:relative;text-align:center;z-index:999;}
+.section01 .container {}
+.section01 h2 {font-size:27px;font-family:"Montserrat";letter-spacing:0.05em;font-weight:500;}
+.section01 h2:after {content:"";display:block;width:1px;height:25px;background:#dbb1d2;margin:10px auto;}
+.section01 p {font-size:15px;margin-bottom:40px;font-family: 'Noto Serif KR', serif;}
 
+
+/* .section02 */
+.section02 ul {display:flex;}
+.section02 ul li {flex:1;background:url(../img/sec_screen01.jpg) no-repeat center center/1000px;height:500px;}
+.section02 ul li:first-child {flex:2;}
 
 /* .scroll_banner */
-/* 메인 지나서 보여야 하는데 그걸 못함, 그리고 호버되는 아이콘 왜 배경이 늘어나는지 ... */
-.scroll_banner {position:absolute;top:300px;right:200px;transition:1s;cursor: pointer;}
+.scroll_banner {display:none;position:absolute;top:300px;right:200px;cursor: pointer;}
 .scroll_banner li {padding:15px;background:#dbb1d2;color:#000;margin:5px 0;font-size:22px;}
 
-.scroll_banner li:first-child:before {background:#dbb1d2;color:#000;}
-.scroll_banner li:first-child:hover:before {content:"\ea2b";font-family: xeicon!important;}
+.scroll_banner li:first-child:before {content:"\ead8";font-family: xeicon!important;background:#dbb1d2;color:#000;}
+.scroll_banner li:first-child:hover:before {content:"\ead7";font-family: xeicon!important;}
 
-.scroll_banner li:last-child:before {background:#dbb1d2;color:#000;}
+.scroll_banner li:last-child:before {content:"\ea3a";font-family: xeicon!important;background:#dbb1d2;color:#000;}
 .scroll_banner li:last-child:hover:before {content:"\eb70";font-family: xeicon!important;}
 
 
@@ -119,27 +126,29 @@
 /* .footer */
 .footer {position:relative;top:3000px;padding:80px 0;}
 .footer .container {width:1170px;margin:0 auto;}
-.footer .container .top {display:flex;justify-content:space-between;border-bottom:1px solid #666;margin-bottom:30px;border-top:1px solid #666;line-height:5;}
-.footer .container .top ul {display:flex;position: relative;font-size:16px;}
-.footer .container .top ul li a{display:block;padding:0 8px;}
-.footer .container .top ul li~li:before {content:"I";position:absolute;top:0;left:0;}
+.footer .container .top {display:flex;justify-content:space-between;border-bottom:1px solid #ddd;border-top:1px solid #ddd;line-height:64px;}
+.footer .container .top ul {display:flex;position: relative;font-size:14px;}
+.footer .container .top ul li a{display:block;padding:0 8px;line-height:64px;}
+.footer .container .top ul li {position: relative;}
+.footer .container .top ul li~li:after {content:"I";position:absolute;top:0;left:0;font-weight:300;}
 .footer .container .top ul li:nth-child(3) {font-weight:600;}
-.footer .container .top img {max-width:30%;margin-bottom:1px 0 5px 0;}
+.footer .container .top img {max-width:20%;margin-bottom:1px 0 5px 0;}
 
 .footer .container .top .bottom {display:block;justify-content:space-between;}
 
-.footer .container .left {}
-.footer .container .left .container {display:inline-block;width:500px;}
-.footer .container .left .container .strong {display:block;font-size:30px;font-weight:400;}
-.footer .container .left 
+.footer .container .left .container strong {display:block;font-size:20px;font-weight:600;line-height:2;margin-top:15px;}
+.footer .container .left .container span {display:block;font-size:14px;margin-bottom:30px;font-weight:500;}
+
+.footer .container .left .container dl {width:800px;}
+.footer .container .left .container dt {color:#666;display:inline-block;font-size:13px;margin-right:7px;margin-bottom:7px;}
+.footer .container .left .container dt:first-child {color:#000;}
+.footer .container .left .container address {display:block;font-size:14px;margin-top:25px;}
+
+.footer .container .right .sns {position:absolute;top:165px;right:380px;}
+.footer .container .right .sns i {font-size:17px;background:#dbb1d2;border-radius:50%;padding:8px;color:#fff;cursor: pointer;}
 
 
 
 
 
-
-
-
-
-
-
+*{outline:1px solid #f00--;} 
