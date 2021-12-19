@@ -86,7 +86,21 @@ $(function(){
     })
 
 
+    // sec03 슬라이드
+    $('.pr_slider').slick({
+        arrows:false,
+        autoplay:true,
+        slidesToShow: 5,
+        dots:false,
+    });
 
+    // section03 슬라이드 버튼
+    $('.section03 .btn i.xi-angle-left-thin').on ('click',function(){
+        $('.pr_slider').slick('slickPrev');
+    });
+    $('.section03 .btn i.xi-angle-right-thin').on ('click',function(){
+        $('.pr_slider').slick('slickNext');
+    });
 
     
 
