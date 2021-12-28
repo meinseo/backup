@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_골든듀_메인페이지</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/GoldenDew.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/GoldenDew.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div class="container">
+                <nav>
+                    <div class="first_nav">
+                        <ul class="left">
+                            <li><a href="#!">LOGIN</a></li>
+                            <li><a href="#!">ENTRY</a></li>
+                            <li><a href="#!">MY PAGE</a></li>
+                        </ul>
+                        <h1>
+                            <a href="#!"><img src="./img/logo.png" alt=""></a>
+                        </h1>
+                        <ul class="right">
+                            <li><a href="#!"><span>BRAND PAGE</span><i class="xi-angle-right-thin"></i></a></li>
+                            <li><a href="#!"><i class="xi-search"></i></a></li>
+                            <li><a href="#!"><i class="xi-gift-o"></i></a></li>
+                        </ul>
+                        </ul>
+                </nav>
+            </div>
+            <hr>
+            <div class="second_nav">
+                <div class="container">
+                    <ul class="gnb second_left">
+                        <li><a href="#!">
+                            #2021 Holiday</a>
+                            <ul class="depth02">
+                                <li><a href="#">New Holiday</a></li>
+                                <li><a href="#">Rainbow Holiday</a></li>
+                                <li><a href="#">Online Event</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!">ALL
+                            <span>모두</span>
+                        </a>
+                            <ul class="depth02">
+                                <li><a href="#">18K/PT</a></li>
+                                <li><a href="#">24k</a></li>
+                                <li><a href="#">10k</a></li>
+                                <li><a href="#">silver</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!">RING
+                            <span>반지</span>
+                        </a></li>
+                        <li><a href="#!">NECKLACE
+                            <span>목걸이</span>
+                        </a>
+                            <ul class="depth02">
+                                <li><a href="#">NECKLACE</a></li>
+                                <li><a href="#">PANDENT</a></li>
+                                <li><a href="#">CHAIN</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!">EARING
+                            <span>귀걸이</span>
+                        </a></li>
+                        <li><a href="#!">BRACELET
+                            <span>팔찌</span>
+                        </a></li>
+                        <li><a href="#!">WEDDING&COUPLE
+                            <span>웨딩 & 커플</span>
+                        </a></li>
+                    </ul>
+                    <ul class="gnb second_right">
+                        <li><a href="#">NEW</a></li>
+                        <li><a href="#">BEST</a></li>
+                        <li><a href="#">EVENT</a></li>
+                        <li><a href="#">REVEIW</a></li>
+                    </ul>
+                    <!-- ul안에는 div박스가 올수 없어 자꾸 div넣지마! 차라리 div안에 ul을 하던지 ul에 class를 주란 말이야! -->
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- <section class="main_visual">
+                <div class="case">
+                    <div class="bgndVideo"></div>
+                    <div class="slogan">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </div>                
+            </section> -->
+           <section class="main_visual">
+               <div class="bgndVideo"></div>
+           </section>
+
+           <section class="section01">
+                <div class="title">
+                    <h2>NEW</h2>
+                    <p>새로운 아이템</p>
+                </div>
+                <div class="container pr_slider">
+                    <div class="case">
+                        <figure>
+                            <a href="#!">
+                                <img src="./img/sec01_01_01.jpeg" alt="">
+                            </a>
+                            <h3>바르바로3 반지</h3>
+                            <strong>1,007,000원</strong>
+                            <span>1,060,000원</span>
+                            <em>30%</em>
+                            <ul class="icon">
+                                <li><a href="#!"><i class="xi-heart-o"></i></a></li>
+                                <li><a href="#!"><i class="xi-gift-o"></i></a></li>
+                            </ul>
+                        </figure>
+                    </div>
+                    <div class="case">
+                        <figure>
+                            <a href="#!"><img src="./img/sec01_02_01.jpeg" alt=""></a>
+                            <h3>바르바로3 반지</h3>
+                            <strong>1,007,000원</strong>
+                            <span>1,060,000원</span>
+                            <em>30%</em>
+                            <ul class="icon">
+                                <li><i class="xi-heart-o"></i></li>
+                                <li><i class="xi-gift-o"></i></a></li>
+                            </ul>
+                        </figure>
+                    </div>
+                    <div class="case">
+                        <figure>
+                            <a href="#!"><img src="./img/sec01_03_01.jpeg" alt=""></a>
+                            <h3>바르바로3 반지</h3>
+                            <strong>1,007,000원</strong>
+                            <span>1,060,000원</span>
+                            <em>30%</em>
+                            <ul class="icon">
+                                <li><i class="xi-heart-o"></i></li>
+                                <li><i class="xi-gift-o"></i></a></li>
+                            </ul>
+                        </figure>
+                    </div>
+                    <div class="case">
+                        <figure>
+                            <a href="#!"><img src="./img/sec01_04_01.jpg" alt=""></a>
+                            <h3>바르바로3 반지</h3>
+                            <strong>1,007,000원</strong>
+                            <span>1,060,000원</span>
+                            <em>30%</em>
+                            <ul class="icon">
+                                <li><i class="xi-heart-o"></i></li>
+                                <li><i class="xi-gift-o"></i></a></li>
+                            </ul>
+                        </figure>
+                    </div>
+                    <div class="case">
+                        <figure>
+                            <a href="#!"><img src="./img/sec01_05_01.jpg" alt=""></a>
+                            <h3>바르바로3 반지</h3>
+                            <strong>1,007,000원</strong>
+                            <span>1,060,000원</span>
+                            <em>30%</em>
+                            <ul class="icon">
+                                <li><i class="xi-heart-o"></i></li>
+                                <li><i class="xi-gift-o"></i></a></li>
+                            </ul>
+                        </figure>
+                    </div>
+                    <div class="case">
+                        <figure>
+                            <a href="#!"><img src="./img/sec01_06_01.jpg" alt=""></a>
+                            <h3>바르바로3 반지</h3>
+                            <strong>1,007,000원</strong>
+                            <span>1,060,000원</span>
+                            <em>30%</em>
+                            <ul class="icon">
+                                <li><i class="xi-heart-o"></i></li>
+                                <li><i class="xi-gift-o"></i></a></li>
+                            </ul>
+                        </figure>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a href="#!"><i class="xi-angle-left-thin"></i></a>
+                    <a href="#!"><i class="xi-angle-right-thin"></i></a>
+                </div>
+
+            </section>
+
+            <section class="section02">
+                <div class="title">
+                    <h2>COLLECTION</h2>
+                    <p>2021 NEW COLLECTION</p>
+                </div>
+                <ul>
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+
+            <section class="section03">
+                <div class="title">
+                    <h2>BEST</h2>
+                    <p>베스트 아이템 모음</p>
+                </div>
+                <!-- <div class="case">
+                    <div class="bgndVideo2"></div>
+                </div>     -->
+                <div class="container">
+                    <div class="right pr_slider">
+                        <div class="case">
+                            <figure>
+                                <a href="#!"><img src="./img/sec01_05_01.jpg" alt=""></a>
+                                <h3>바르바로3 반지</h3>
+                                <strong>1,007,000원</strong>
+                                <span>1,060,000원</span>
+                                <em>30%</em>
+                                <ul class="icon">
+                                    <li><i class="xi-heart-o"></i></li>
+                                    <li><i class="xi-gift-o"></i></a></li>
+                                </ul>
+                            </figure>
+                        </div>
+                        <div class="case">
+                            <figure>
+                                <a href="#!"><img src="./img/sec01_06_01.jpg" alt=""></a>
+                                <h3>바르바로3 반지</h3>
+                                <strong>1,007,000원</strong>
+                                <span>1,060,000원</span>
+                                <em>30%</em>
+                                <ul class="icon">
+                                    <li><i class="xi-heart-o"></i></li>
+                                    <li><i class="xi-gift-o"></i></a></li>
+                                </ul>
+                            </figure>
+                        </div>                    <div class="case">
+                            <figure>
+                                <a href="#!"><img src="./img/sec01_05_01.jpg" alt=""></a>
+                                <h3>바르바로3 반지</h3>
+                                <strong>1,007,000원</strong>
+                                <span>1,060,000원</span>
+                                <em>30%</em>
+                                <ul class="icon">
+                                    <li><i class="xi-heart-o"></i></li>
+                                    <li><i class="xi-gift-o"></i></a></li>
+                                </ul>
+                            </figure>
+                        </div>
+                        <div class="case">
+                            <figure>
+                                <a href="#!"><img src="./img/sec01_06_01.jpg" alt=""></a>
+                                <h3>바르바로3 반지</h3>
+                                <strong>1,007,000원</strong>
+                                <span>1,060,000원</span>
+                                <em>30%</em>
+                                <ul class="icon">
+                                    <li><i class="xi-heart-o"></i></li>
+                                    <li><i class="xi-gift-o"></i></a></li>
+                                </ul>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a href="#!"><i class="xi-angle-left-thin"></i></a>
+                    <a href="#!"><i class="xi-angle-right-thin"></i></a>
+                </div>
+                
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="top">
+                    <a href="#!"><img src="./img/logo.png" alt="" srcset=""></a>
+                    <ul>
+                        <li><a href="#!">회사소개</a></li>
+                        <li><a href="#!">이용안내</a></li>
+                        <li><a href="#!">개인정보처리방침</a></li>
+                        <li><a href="#!">이용약관</a></li>
+                        <li><a href="#!">구매안전 서비스</a></li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <div class="container">
+                            <strong>주얼리센터 1588-6576</strong>
+                            <span>평일 오전 9시 ~ 오후 6시 (점심시간 정오~오후 1시) / 주말, 공휴일 휴무</span>
+                            <dl>
+                                <dt>(주)골든듀</dt>
+                                <dt>대표:이필성</dt>
+                                <dt>주소:서울특별시 서초구 남부순환로 2365 (서초동) 골든듀</dt>
+                                <dt>사업자등록번호:2148188356</dt>
+                                <dt>통신판매업신고번호:제1996-00026호</dt>
+                                <dt>대표번호:1588-6576</dt>
+                                <dt>개인정보관리책임자:김주겸</dt>
+                                <dt>이메일:goldendew@goldendew.com</dt>
+                            </dl>
+                            <address>COPYRIGHT ⓒ (주)골든듀 . ALL RIGHTS RESERVED.</address>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="sns">
+                            <i class="xi-instagram"></i>
+                            <i class="xi-twitter"></i>
+                            <i class="xi-naver"></i>
+                            <i class="xi-youtube"></i>
+                        </div>
+                    </div>
+    
+                </div>
+                </div>
+        </footer>
+
+        <div class="top_banner">
+            <ul class="search_bar">
+                <form action="#">
+                    <input type="text" name="" value="" autofocus placeholder="검색어를 입력해주세요">
+                    <button>SEARCH</button>
+                </form>
+                <li><a href="#!"><i class="xi-close"></i></a></li>
+            </ul>
+            <div class="container">
+                <strong>인기검색어</strong>
+                <div class="hot_search">
+                    <em>#한지민주얼리</em>
+                    <em>#2021 홀리데이 컬렉션</em>
+                    <em>#골든듀 이벤트</em>
+                    <em>#베스트포토리뷰</em>
+                    <em>#골든듀 안심패킹 서비스</em>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup01">
+            <img src="./img/popup.jpeg" alt="">
+            <span class="popup_close">close<i class="xi-close"></i></span>
+        </div>
+
+        <div class="scroll_banner">
+            <ul>
+                <li></li>
+                <li class="totop"><i class="xi-angle-up-thin"></i></li>
+                <li class="todown"><i class="xi-angle-down-thin"></i></li>
+                <li></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
