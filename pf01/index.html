@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>01_서울시립미술관_메인페이지</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/work01.css">
+    <link rel="stylesheet" href="./css/seoulmuseum.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/work01.js"></script>
-
+    <script src="./js/seoulmuseum.js"></script>
+<!-- 동영상재생하는 프로그램 가져올때 경로 주의해서 가져오기  -->
 </head>
 <body>
+
     <div id="wrap">
-        <!--//top_banner//-->
+      
         <header id="top_banner">
             <div class="container">
                 <h1>
                     <a href="#">
-                        <img src="./img/서울시_logo.jpg" alt="logo">
+                        <img src="./img/city_logo.jpg" alt="logo">
                     </a>
                 </h1>
                 <div class="notice">
@@ -36,12 +39,14 @@
 
             </div>
         </header>
-         <!--//nav//-->
+         
+
+
         <nav>
             <div class="container">
                 <div class="left">
                     <h2>
-                        <a href="#"><img src="../pf01/img/미술관_logo.png" alt="로고"></i></a>
+                        <a href="#"><img src="./img/main_logo.png" alt="로고"></i></a>
                     </h2>
                 </div>
                 <ul class="gnb">
@@ -54,7 +59,10 @@
                 </ul>
             </div>
         </nav>
-        <!--//main//-->
+   
+
+
+
         <main>
             <section id="main_visual">
                 <div class="main">
@@ -63,7 +71,7 @@
                     </figure>
                 </div>
                 <div class="slogan">
-                    <h2>여럿이 만드는 <span>미술관</span>, 모두가 연결된 <span>미술관</span><br>
+                    <h2>여럿이 만드는 <span>미래</span>, 모두가 연결된 <span>미술관</span><br>
                         서울시립미술관은 언제나 여러분과 <span>함께합니다</span>.</h2>
                 </div>
          <!--//main_popup//-->        
@@ -92,11 +100,14 @@
                     </div>
                 </div>
             </section>
+
+            
+
             <section id="notice">
                 <div class="container">
                     <div class="notice_pic">
                         <figure class="ambel">
-                            <img src="./img/미술관_엠블럼.png" alt="">
+                            <img src="./img/abel.jpg" alt="">
                         </figure>
                     </div>
                     <div class="text01">
@@ -114,6 +125,9 @@
                     </div>
                 </div>
             </section>
+
+
+
             <section id="section01">
                 <h2>현재전시</h2>
                 <p>
@@ -147,7 +161,7 @@
                         <div class="Explanation">
                             <span>본 서소문본관 전시</span>
                             <h3>하루하루 탈출한다</h3>
-                            <strong> 제11회 서울미디어시티비엔날레 </strong>
+                            <strong>제11회 서울미디어시티비엔날레</strong>
                             <div class="date"> 210908-211121</div>    
                             <a href="#">더 알아보기 <i class="xi-plus"></i></a>
                         </div>
@@ -156,10 +170,197 @@
                     
                 </div>
                 <div class="icon">
-                    <a href="#"><i class="xi-arrow-left"></i></a>
-                    <a href="#"><i class="xi-arrow-right"></i></a>
+                    <i class="xi-arrow-left"></i>
+                    <i class="xi-arrow-right"></i>
+                </div>
+                <div class="num">
+                    <span>01</span>
                 </div>
             </section>
+
+
+
+
+            <section id="section02">
+                    <h2>예정전시</h2>
+                    <p>
+                        <a href="#"><i class="xi-arrow-left"></i></a>
+                        2021.10.30 (토요일)
+                        <a href="#"><i class="xi-calendar-check"></i></a>
+                        <a href="#"><i class="xi-arrow-right"></i></a>
+                    </p>
+                  
+                    <div class="container"> 
+                        <!-- 질문> 여긴 a박스로 꼭 싸야하나요?? 
+                        답변> a로 싸야지 클릭되는 손가락이 됩니당  -->
+                        <figure>
+                            <a href="#!">
+                                <div class="case">
+                                    <img src="./img/section02_01.jpg" alt="pos_left">
+                                </div>
+                                <span>[2021 시민큐레이터 기획전시]</span>
+                                <h3>&laquo;모든 것은 그 자리에&raquo;</h3>
+                                <strong>211104-211114</strong>
+                            </a>
+                        </figure>
+                        <!-- 질문> 이거 a안에 피규어랑 span h3 strpng 다 넣어야 하나요? 
+                        이거 안넣으면 나중에 a안에 있는 피규어만 클릭 할수 있고 글은 클릭을 못하는건지....?
+                        답변> 네 맞습니당 a로싸야 클릭하는 손가락이 바뀌고 링크를 걸 수 있습니당 -->
+                        <figure>
+                            <a href="#!">
+                                <div class="case">
+                                    <img src="./img/section02_02.jpg" alt="pos_right">
+                                </div>
+                                <span>[2021 시민큐레이터 기획전시]</span>
+                                <h3>&laquo;그래픽디자인, 2016~2021, 지금&raquo;</h3>
+                                <strong>211104-211114</strong>
+                            </a>
+                        </figure>
+                    </div> 
+            </section>
+
+
+
+
+        <section id="main_banner">
+                <h2>소장품 스마트검색</h2>
+                <p>서울시립미술관에서 소장하고있는 작품들을 상세하게 검색하여 보실 수 있습니다.</p>
+                <div class="container">
+                    <div class="search">
+                        <a href="#!">작가명 &nbsp;<i class="xi-caret-down-min"></i> </a>
+                        <a href="#!">제작연도<i class="xi-caret-down-min"></i> </a>
+                        <a href="#!">수집연도<i class="xi-caret-down-min"></i> </a>
+                        <a href="#!">부문<i class="xi-caret-down-min"></i> </a>
+                        <a href="#!">작품명<i class="xi-caret-down-min"></i> </a>
+                        <a href="#!">재료/기법<i class="xi-caret-down-min"></i> </a>
+                        <a href="#!">Search<i class="xi-search"></i> </a>
+                    </div>
+                </div>
+        </section>
+
+
+
+        <section id="section03">
+                <h2>현재교육</h2>
+                <p>
+                    <a href="#"><i class="xi-arrow-left"></i></a>
+                    2021.10.30 (토요일)
+                    <a href="#"><i class="xi-calendar-check"></i></a>
+                    <a href="#"><i class="xi-arrow-right"></i></a>
+                </p>
+                <div class="container">
+                   <figure>
+                       <a href="#!">
+                           <img src="./img/section03_01.jpg" alt="01">
+                           <h3>[2021 세마 멤버스 클럽]</h3>
+                           <h4>가상의 퍼블릭 프로그램 TF</h4>
+                           <h5>모집기간 2020.02.11 - 2020.02.27</h5>
+                           <strong>교육기간 2020.02.19 - 2020.02.28</strong>
+                       </a>
+                   </figure>
+                   <figure>
+                       <a href="#!">
+                           <img src="./img/section03_02.jpg" alt="02">
+                           <h3>[2021 세마 멤버스 클럽]</h3>
+                           <h4>가상의 퍼블릭 프로그램 TF</h4>
+                           <h5>모집기간 2020.02.11 - 2020.02.27</h5>
+                           <strong>교육기간 2020.02.19 - 2020.02.28</strong>
+                       </a>
+                   </figure>
+                   <figure>
+                       <a href="#!">
+                           <img src="./img/section03_03.jpg" alt="03">
+                           <h3>[2021 세마 멤버스 클럽]</h3>
+                           <h4>가상의 퍼블릭 프로그램 TF</h4>
+                           <h5>모집기간 2020.02.11 - 2020.02.27</h5>
+                           <strong>교육기간 2020.02.19 - 2020.02.28</strong>
+                       </a>
+                   </figure>
+                </div>
+        </section>
+
+
+
+
+        <section id="secction04">
+            <h2>SeMA MAGAZINE</h2>
+            <div class="container">                
+                <figure>
+                    <div class="case">
+                        <a href="#!">
+                            <img src="./img/section04_01.jpg" alt="">
+                            <p>2019 가을, 겨울호</p>
+                        </a>
+                        <a href="#!">
+                            <img src="./img/section04_02.jpg" alt="">
+                            <p>2019 가을, 겨울호</p>
+                        </a>
+                        <a href="#!">
+                            <img src="./img/section04_03.jpg" alt="">
+                            <p>2019 가을, 겨울호</p>
+                        </a>
+                        <a href="#!">
+                            <img src="./img/section04_04.jpg" alt="">
+                            <p>2019 가을, 겨울호</p>
+                        </a>
+                        <a href="#!">
+                            <img src="./img/section04_05.jpg" alt="">
+                            <p>2019 가을, 겨울호</p>
+                        </a>
+                        <a href="#!">
+                            <img src="./img/section04_06.jpg" alt="">
+                            <p>2019 가을, 겨울호</p>
+                        </a>
+                        <a href="#!">
+                            <img src="./img/section04_07.jpg" alt="">
+                            <p>2019 가을, 겨울호</p>
+                        </a>
+                        <a href="#!">
+                            <img src="./img/section04_08.jpg" alt="">
+                            <p>2019 가을, 겨울호</p>
+                        </a>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+
+
+        <section  id="section05">
+            <div class="container">
+                <figure>
+                    <h2>SeMA VIDEO</h2>
+                    <p>[2021 시민큐레이터 기획전시]</p>
+                    <strong>&laquo;역사의 방향들: 당신은 어떤 라인입니까&raquo;</strong>
+                    <div class="icon">
+                        <i class="xi-play"></i>
+                        <i class="xi-pause"></i>
+                        <i class="xi-tv"></i>
+                    </div>
+                    <h3>정치, 사회면 기사에서 ‘라인’이라는 단어는 심심치 않게 찾아볼 수 있다.<br> 
+                        주로 ‘라인을 타다’라는 문장으로 많이 사용되는데 여기서의 라인의 방향은 단선적이다.<br>
+                        사실 우리 모두 소위 타고 있는 어떤 라인이 존재하는데,<br> 
+                        그 방향은 여러 방향을 가리키고 있다. 그것은 바로 역사라는 라인이다.<br> 
+                        전시는 역사를 ‘선택’의 관점으로 보는 것에서 시작한다.<br> 
+                        역사는 우리가 선택한 것들의 집합이다. 역설적이게도<br> 
+                        누군가는 선택받지 못한 것을 선택함으로 또 다른 역사의 방향이 생겨난다.<br> 
+                        이렇듯 작가들은 자신의 선택을 전시에서 공유하며 또 다른 역사의 방향을 소개하고 있다.<br>
+                        작가들의 선택을 살펴보며 내가 바라보고 있던 역사의 방향에 대해 고민해보고<br> 
+                        다른 이들이 바라보고 있는 곳 그리고 그동안 보지 못하였던 것들을 생각하며<br> 
+                        또 다른 역사의 방향을 발견할 수 있다. 이 전시를 통해 만들어가는<br> 
+                        역사의 방향들에 대한 각자의 모든 이야기들이 또 다른 역사의 방향들 중 하나가 될 것이다.</h3>
+                </figure>
+                <figure>
+                    <div>
+                        <div id="mv01"></div>
+                    </div>
+                </figure>
+
+            </div>
+        </section>
+
+
+
         </main>
 
     </div>

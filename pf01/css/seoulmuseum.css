@@ -1,0 +1,189 @@
+#wrap  {min-width:1900px;}
+
+#top_banner {background:#fff;line-height:60px;}
+#top_banner .container {display:flex;width:1200px;margin:0 auto;padding:0 15px;}
+#top_banner .notice {margin-left:150px;font-size:14px;color:#5f5e5e}
+
+#top_banner ul {display:flex;margin-left:auto;}
+#top_banner li {display:block;padding:0 15px;font-size:18px;color:#5f5e5e}
+#top_banner h1 img {width:80px;}
+
+/*nav*/
+nav {background-color:#e5e5e5;line-height:100px;}
+nav img {width:230px;}
+nav .container {display:flex;justify-content:space-between;width:1200px;margin:0 auto;padding:0 15px;}
+nav .container ul {display:flex;justify-content:center;font-size:22px;}
+nav .container ul li {display:block;position:relative;line-height:100px;padding:0 30px;margin-left:auto;}
+nav .container ul li:last-child {padding:0 15px 0 30px;}
+
+/*메인_슬로건*/
+#main_visual {position: relative;}
+#main_visual .slogan {position:absolute;top:104px;left:365px;width:1200px;color:#000;text-align:left;font-size:36px;letter-spacing:-0.05em;}
+#main_visual .slogan span {font-weight:500;}
+
+/*메인_표*/
+#main_visual .box {position:absolute;top:92px;left:1107px;width:429px;background:#7082c0;color:#fff;}
+#main_visual .box h2 {display:block;font-size:36px;font-weight:400;padding:59px 65px 20px 60px;}
+#main_visual .box h2 span {display:block;font-size:21px;font-weight:300;margin-top:5px;}
+#main_visual .box h2 a {position:absolute;font-size:40px;top:54px;left:276px;}
+
+#main_visual .box ul {color:#fff;}
+#main_visual .box ul li {font-size:24px;line-height:50px;}
+#main_visual .box ul li a {padding:0 58px;}
+
+#main_visual .box ul li:hover {background:#293049;} /*선택하면 색 바뀌는것*/
+
+
+#main_visual .btn {display:flex;text-align:center;font-size:20px;line-height:120px;}
+#main_visual .btn .bottom_left {flex:1;background:#eeb310;}
+#main_visual .btn .bottom_left:hover {background:#b3870d;}
+#main_visual .btn .bottom_right {flex: 1;background:#a2958b;}
+#main_visual .btn .bottom_right:hover {background:#6a615a;}
+
+
+
+/*공지*/
+#notice {padding:100px 0;}   /*아래위 패딩준거*/
+#notice .container {display:flex;width:1200px;margin:0 auto;}
+#notice .container>div {padding:0 15px;}
+.ambel {transform:translateX(-20px)}
+#notice figure img {max-width:100%;}
+
+
+#notice .text01 h2 {font-size:24px;font-weight:400;margin-bottom:30px;margin-top:5px;}
+#notice .text01 p {font-size:21px;font-weight:300;letter-spacing:-0.05em;margin-bottom:25px;line-height:28px;}
+#notice .text01 strong {font-size:20px;font-weight:300;letter-spacing:-0.05em;line-height:48px;}
+
+
+
+/*section01*/
+#section01 {position:relative;padding:100px 0;background:#f2f2f2;text-align:center;}
+#section01 .container .itm {display:flex;align-items:center;justify-content:space-between;padding:0 100px;text-align:left;}
+#section01 .container figure {width:400px;}
+#section01 .container img {max-width:100%;}
+/* align-items:center; 아래위 가운데로
+justify-content:center; 양옆 기준으로 가운데로  */
+#section01 h2 {font-size:48px;margin-bottom:18px;}
+#section01 p {font-size:30px;color:#5e5c5c;margin-bottom:40px;}
+#section01 .Explanation {display:block;}
+#section01 .Explanation span {display:block;font-size:18px;margin-bottom:30px;}
+#section01 .Explanation h3 {font-size:43px;font-weight:500;margin-bottom:30px;}
+#section01 .Explanation strong {display:block;font-size:23px;color:#777777;margin-bottom:30px}
+#section01 .date {font-size:20px;}
+#section01 .icon i {position:absolute;bottom:300px;font-size:50px;}
+#section01 .icon i.xi-arrow-left {left:500px;}
+#section01 .icon i.xi-arrow-right {left:600px;}
+#section01 .num {position:absolute;bottom:170px;left:870px;font-size:50px;}
+
+/*이 안에 마진버텀을 줘야 하나 패딩을 줘야하나 근데 둘다 안먹히는데 
+블럭을 줘야하나 포지션을 줘야하나 근데 둘다 안먹히는데 >>> 해결완*/
+
+
+
+
+
+/*질문> 하이트 970은 안써도 되는지.... 
+답변> 높이에 집착하지말아요 패딩 아래위 100px 0 준걸로 맞춰요*/
+#section02 {position:relative;padding:100px 0px;text-align: center;}
+#section02 .container {display:flex;width:940px;margin:0 auto;}
+/* 940px는 그림2개랑 안에 90크기 포함해서 940을 width로 잡은것 */
+#section02 h2 {font-size:48px;margin-bottom:18px;}
+#section02 p {font-size:30px;color:#5e5c5c;margin-bottom:40px;}
+
+#section02 .container figure {flex:1;padding: 0 45px;}
+#section02 figure span {display:block;font-size:18px;color:#4c4b4b;margin-top:23px;}
+/* 뭐여 여긴 또 왜 margin-bottom 안먹히는겨 .... strong엔 먹히는데 뭐여.... */
+#section02 figure h3 {font-size:28px;margin-top:11px;}
+#section02 figure strong {display:block;font-size:22px;color:#4c4b4b;margin-top:13px;}
+
+
+/* 왜 여긴 또 사진이 동시에 커지는것인가..... 이건 html에서 사진 두개를 pic01,pic02로 따로 아이디를 줘서 그럼 case로 둘다 똑같이 이름을 주니 하나씩 됨 */
+/* .visual 넣으면 사진이 밖으로 커지고 .visual빼면 왜 안에서 커지는지 이유좀.... */
+#section02 .case {overflow:hidden;}
+#section02 figure img {transition:0.4s;}
+#section02 figure:hover img {transform:scale(1.1);}
+
+
+
+
+
+/*질문> background-attachment:fixed; 이게 뭐지.. 
+  답변> 사진 고정해야 안에서 스크롤 생겨서 움직입니당 */
+#main_banner {padding:100px 0;background:url(../img/section03.jpg) no-repeat center center/cover;background-attachment:fixed;color:#fff;text-align: center;margin:0 auto;}
+#main_banner h2 {font-size:48px;margin-bottom:22px;}
+#main_banner p {font-size:24px;color:#e0dddd;margin-bottom:97px;}
+
+
+
+
+
+#main_banner .container .search {display:flex;flex-wrap:wrap;justify-content:center;position:relative;width:1200px;margin:0 auto;padding:0 5px;}
+#main_banner .container .search a {display:block;width:calc(25% - 20px);font-size:22px;margin:5px 10px 3px;}
+#main_banner .container a {display:block;width:270px;height:90px;background:#131313;line-height:87px;font-weight:300;}
+#main_banner .container a:hover {background:#272727;color:#fff;font-weight:500;}
+/* 질문> 도저히 4개 3개로 안떨어져요 ...제발 얘좀 내려주세요 두줄로 ............그리고 왜 띄워쓰기 특수문자 넣었는데도 안띄워지는걸까요 문제가 뭘까요
+   답변> 우선 html에서 <br>로 줘서 문단을 나누려 하지말고, display:flex를 줘서 가로로 만든 뒤 (중요)flex-wrap:wrap(중요)로 싸고  
+   width:1200px;margin:0 auto;padding:0 5px와 width:calc(25% - 20px); margin:5px 10px 3px;로 자연스럽게 사이즈를 안에서 맞춰줘서 
+   밑으로 떨어뜨리면 됩니당. 어렵지만 계산을 통한 이해가 필요합니다.
+*/
+
+
+
+#section03 {position:relative;padding:100px 0;text-align:center;}
+#section03 .container {width:1200px;margin:0 auto;}
+#section03 h2 {font-size:48px;margin-bottom:18px;}
+#section03 p {font-size:30px;color:#5e5c5c;margin-bottom:40px;}
+#section03 .container {display:flex;}
+#section03 .container figure {flex:1;padding:0 15px;}
+#section03 .container figure img {width:100%;}
+#section03 .container figure h3 {font-size:18px;color:#4c4b4b;margin-top:15px;letter-spacing:-0.05em;}
+#section03 .container figure h4 {font-size:28px;margin-top:10px;letter-spacing:-0.025em;}
+#section03 .container figure h5 {font-size:18px;margin-top:7px;color:#444343;letter-spacing:-0.05;}
+#section03 .container figure strong  {font-size:18px;margin-top:7px;letter-spacing:-0.05em;}
+/* 질문> 여기는 맥스와이드 100이나 와이드 하이트로 사진 사이즈 조절 안해도 되나요?? 
+   답변> 해야합니당 위에 보시면 #section03 .container figure img {width:100%;}를 적었고, 
+   max-width나 width나 비슷합니당
+*/
+
+
+
+
+
+#secction04 {display:relative;padding:100px 0;background:#ecebeb;;}
+#secction04 .container {width:1200px;margin:0 auto;}
+#secction04 h2 {width:1200px;margin:0 auto;padding:0 15px;font-size:48px;margin-bottom:40px;}
+#secction04 figure .case {display:flex;flex-wrap: wrap;}
+#secction04 figure a {display:block;flex:25%;padding:0 15px;}
+#secction04 figure .case a img {width:100%;}
+#secction04 figure .case a p {text-align:center;margin-top:20px;margin-bottom:30px;}
+/* 왜.... 뭐가 문제일까 .... 
+왜 ..... html에서 case이름을 두개 다르게 줬어야 했나
+답변> 우선은 height를 970을 뭔저 줘서 그 안에 다 넣으려고 하니 힘든거고 높이를 주지말고 padding만 아래위로 100px 주고 
+그 안에서 사진을 띄우고 크기를  flex:25% 이렇게 한줄에 4개씩이니까 이런식으로 계산해서 넣으면 됩니당 
+한마디로 높이에 집착하지 말아라~ 한 스크롤 안에 안들어오면 어쩔수 없다~ 이말*/
+
+
+
+
+
+#section05 {padding:100px 0;}
+#section05 .container {display:flex;width:1200px;margin:0 auto;}
+#section05 .container figure {flex:1;padding:0 15px;}
+#section05 .container figure img {max-width:100%;}
+
+#section05 h2 {font-size:48px;margin-bottom:93px;}
+#section05 p {font-size:24px;color:#000000;margin-bottom:23px;}
+#section05 strong {display:block;font-size:30px;margin-bottom:20px;}
+#section05 .icon i {font-size:20px;padding:10px;background:#333;color:#fff;border-radius:5px;margin-bottom: 20px;}
+#section05 h3 {font-size:14px;letter-spacing:-0.025em;}
+#mv01 {margin-top:145px;}
+/* 동영상재생 실패 ..... 
+동영상을 가져오기전에 html에서 경로 확인을 먼저 해보세요 또 경로의 문제입니당 
+아 참, 그리고 맨 밑줄의 #mv01는 html에서 id로 줬기 때문에 저거 하나만 달랑 #을 달고 적어도 됩니당  */
+
+
+
+
+
+
+
