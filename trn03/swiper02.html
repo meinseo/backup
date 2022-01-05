@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>스와이프 슬라이드 01</title>
+    <title>Swiper02</title>
     <link rel="stylesheet" href="../lib/css/common.css">
     <link rel="stylesheet" href="../lib/css/swiper-bundle.min.css">
     <script src="../lib/js/swiper-bundle.min.js"></script>
@@ -19,87 +19,82 @@
         .main_slider .swiper-slide.on h2 {transform:translateY(0);opacity:1;transition:0.5s;}
         .main_slider .swiper-slide.on p {transform:translateY(0);opacity:1;transition:0.5s 0.3s;}
 
-        .main_slider .itm01 {background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover;}
-        .main_slider .itm02 {background:url(../lib/base/main_visual02.jpg) no-repeat center center/cover;}
-        .main_slider .itm03 {background:url(../lib/base/main_visual03.jpg) no-repeat center center/cover;}
+        .main_slider .item01 {background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover;}
+        .main_slider .item02 {background:url(../lib/base/main_visual02.jpg) no-repeat center center/cover;}
+        .main_slider .item03 {background:url(../lib/base/main_visual03.jpg) no-repeat center center/cover;}
 
-        .section {height:500vh;}
+        .sl01 {width:1200px;height:500px;margin:200px auto;background:#ddd;}
+        .sl02 {width:1200px;height:500px;margin:200px auto;background:#f00;}
     </style>
 </head>
 <body>
-
     <section id="visual">
         <div class="swiper main_slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide itm01">
-                  <div class="txt">
-                      <h2>01 Lorem ipsum dolor sit.</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eos.<br>Quisquam doloremque pariatur veritatis maiores accusantium nihil dolores.</p>
-                  </div>
-              </div>
-              <div class="swiper-slide itm02">
-                <div class="txt">
-                    <h2>02 Lorem ipsum dolor sit.</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eos.<br>Quisquam doloremque pariatur veritatis maiores accusantium nihil dolores.</p>
+                <div class="swiper-slide item01">
+                    <div class="txt">
+                        <h2>01 Lorem ipsum dolor sit.</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum expedita maiores omnis! Totam
+                            error adipisci quasi?
+                        </p>
+                    </div>
                 </div>
-              </div>
-              <div class="swiper-slide itm03">
-                <div class="txt">
-                    <h2>03 Lorem ipsum dolor sit.</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eos.<br>Quisquam doloremque pariatur veritatis maiores accusantium nihil dolores.</p>
+                <div class="swiper-slide item02">
+                    <div class="txt">
+                        <h2>02 Lorem ipsum dolor sit.</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum expedita maiores omnis! Totam
+                            error adipisci quasi?
+                        </p>
+                    </div>
                 </div>
-              </div>
+                <div class="swiper-slide item03">
+                    <div class="txt">
+                        <h2>03 Lorem ipsum dolor sit.</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum expedita maiores omnis! Totam
+                            error adipisci quasi?
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>       
+        </div>
     </section>
-    <section class="section"></section>
-    <section class="section"></section>
-    <section class="section"></section>
-    <section class="section"></section>
-    <section class="section"></section>
-
 <script>
+ //$('.swiper').slick();
+    //const 뒤 'main_slider' 이 부분 이름 마음대로 줘도 됨. 단 겹치지 않게.
+    const mainSlider = new Swiper('.main_slider', {
+        effect:'coverflow',
+        grabCursor:true,
+        centeredSlides:true,
+        slidesPerView:'auto',
+        loop:true,
+        // autoplay:{
+        //     delay:2000,
+        // },
+        // coverflowEffect: {
+        //   rotate: 200,
+        //   stretch: 100,
+        //   depth: 300,
+        //   modifier: 2,
+        //   slideShadows: true,
+        // },
 
-const mainSlider = new Swiper('.main_slider', {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    loop:true,
-    autoplay:{
-        delay:2000,
-    },
-
-    
-});
 
 
-//swiper addClass on
+    });
 const sItm = document.querySelectorAll('.swiper-slide');
-// $('.swiper-slide');
+// $ ('.swiper-slide');
 const itm = document.querySelector('.swiper-slide-active');
 itm.classList.add('on');
 mainSlider.on('slideChangeTransitionEnd',()=>{
+    // let idx=mainSlider.realIndex;
+    // console.log(idx);
+    // sItm[3].classList.add('on');
     const itm = document.querySelector('.swiper-slide-active');
     itm.classList.add('on');
 });
-mainSlider.on('slideChangeTransitionStart', ()=>{
+mainSlider.on('slideChangeTransitionStart',()=>{
     sItm.forEach(e=>e.classList.remove('on'));
-});
-
-//scroll event
-const SEC = document.querySelectorAll('.section');
-const WT=window.innerHeight;
-
-window.addEventListener("scroll", ()=>{
-        let sct=window.scrollY;
-        SEC.forEach(e=>{
-            let secTop = e.offsetTop;
-            let secH=e.clientHeight;
-            sct > secTop -(WT-secH)/2 ? e.classList.add('on') : e.classList.remove('on');
-        });
-
-});
+})
 </script>
 </body>
 </html>
