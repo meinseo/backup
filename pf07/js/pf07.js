@@ -16,7 +16,15 @@ $(".bgndVideo").YTPlayer({
 });
 
 
-
+$('.main_slider').slick({
+    autoplay:true,
+    autoplaySpeed:3000,
+    arrows:false,
+    fade:true,
+    pauseOnHover:false,
+    pauseOnFocus:false,
+    dots:true,
+});
     
 //----------------------------------------
 });
@@ -31,3 +39,5 @@ $(".bgndVideo").YTPlayer({
 
 // 경희의 봄
 // <iframe width="950" height="534" src="https://www.youtube.com/embed/3mr43DHz2_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+

@@ -1,7 +1,9 @@
 $(function(){
     //--------------------------------------------------------------------------------
+
+
     $(".bgndVideo").YTPlayer({
-        videoURL:'https://www.youtube.com/embed/h-wh01NsRSo',
+        videoURL:'UV4hyqN88nA',
         containment:'self',       
         autoPlay:true, 
         mute:true, 
@@ -9,11 +11,11 @@ $(function(){
         opacity:1,
         showControls:false,
         optimizeDisplay:false,
-    
+        ratio: '16/9'
     });
 
-    $(".bgndVideo").YTPlayer({
-        videoURL:'https://www.youtube.com/embed/UV4hyqN88nA',
+    $(".bgndVideo_second").YTPlayer({
+        videoURL:'h-wh01NsRSo',
         containment:'self',       
         autoPlay:true, 
         mute:true, 
@@ -71,6 +73,13 @@ $(function(){
         dots:false,
     });
 
+
+    $('.f_slider').slick({
+        arrows:false,
+        autoplay:true,
+        dots:false,
+    });
+
     // section01 슬라이드 버튼
     $('.section01 .btn i.xi-angle-left-thin').on ('click',function(){
         $('.pr_slider').slick('slickPrev');
@@ -103,6 +112,10 @@ $(function(){
     });
 
     
+    // section03 동영상
+
+
+
 
   //--------------------------------------------------------------------------------
 })
