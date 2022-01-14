@@ -11,6 +11,8 @@
 html {font-size:20px;}
 body {font-size:0.8rem;color:var(--dc);}
 
+.section {overflow:hidden;}
+
 #Wrap {min-width:95rem;}
 
 #header h1 {position:fixed;top:3rem;left:3rem;z-index:999;}
@@ -27,7 +29,7 @@ body {font-size:0.8rem;color:var(--dc);}
 #header nav li.on a:after {width:70%;}
 
 
-.section {background:url(./lib/base/bg_patten02.png)}
+.section {background:url(./lib/base/bg_patten02.png);}
 .section img {max-width:100%;}
 .section .mockup {background:url(./lib/base/mockup.png) no-repeat center top/100%;padding:7.5% 10% 8% 10%;}
 .container {position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;align-items:center;width:70rem;margin:0 auto;z-index:888;}
