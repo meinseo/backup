@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Serif+KR:wght@300;400;500;600;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Serif+KR:wght@300;400;500;600;700;900&display=swap');
 
 :root {
     --mc:#FAAE67;
@@ -6,53 +8,79 @@
     --lc:#f7f7f7;
     --dc:#444444;
     --gc:#dddddd;
+    --ac:#f25329;
 }
 
+* {outline:1px solid #;}
 html {font-size:20px;}
-body {font-size:0.8rem;color:var(--dc);}
-
-.section {overflow:hidden;}
-
+body {font-size:0.8rem;color:#000;}
 #Wrap {min-width:95rem;}
 
-#header h1 {position:fixed;top:3rem;left:3rem;z-index:999;}
-#header h1 a {display:block;width:15rem;}
+/* 페이지 배경색 */
+.section:first-child {overflow:hidden;background:url(./lib/base/bo_a.jpg) no-repeat center center/cover;background-attachment: fixed;}
+.section:last-child {overflow:hidden;background:url(./lib/base/bo_a.jpg) no-repeat center center/cover;background-attachment: fixed;}
+.section {overflow:hidden;background:url(./lib/base/bo_10.jpg) no-repeat center center/cover;background-attachment: fixed;}
 
 
-
-#header nav {position:fixed;top:50%;right:3rem;transform:translateY(-50%);z-index:999;}
-#header .cover_btn {position:fixed;top:3rem;right:3rem;cursor:pointer;z-index:999;}
-#header .cover_btn i {font-size:1.5rem;padding:.5rem;background:var(--lc)}
-
-#header nav li a {position:relative;display:block;width:3rem;height:1rem;text-indent:-99999px;}
-#header nav li a:after {content:"";position:absolute;top:0.35rem;right:0;display:block;width:40%;height:0.3rem;background:var(--dc);border-radius:0.15rem;transition:0.3s;}
-#header nav li.on a:after {width:70%;}
+/* 왼쪽 상단 2022 WEB UI&UX ART WORK 부분 */
+#header h1 {position:fixed;top:3rem;left:5rem;z-index:999;color:#fff;line-height:1.2;font-weight:200;}
+#header h1 a {display:block;width:15rem;font-family: 'Montserrat', sans-serif;}
 
 
-.section {background:url(./lib/base/bg_patten02.png);}
+/* nav부분 */
+#header nav {position:fixed;top:50%;left:5rem;transform:translateY(-50%);z-index:999;}
+#header .cover_btn {position:fixed;top:3rem;right:5rem;cursor:pointer;width:30px;height:30px;z-index:999;}
+#header .cover_btn span {position:absolute;left:0;width:100%;height:1px;background:#fff;transition:0.5s;}
+#header .cover_btn span:nth-child(1) {top:0;}
+#header .cover_btn span:nth-child(2) {top:10px;}
+#header .cover_btn span:nth-child(3) {top:10px;}
+#header .cover_btn span:nth-child(4) {top:20px;}
+
+#header .cover_btn.on span {background:#fff !important;}
+#header .cover_btn.on span:nth-child(1) {opacity:0;}
+#header .cover_btn.on span:nth-child(2) {transform:rotate(45deg);}
+#header .cover_btn.on span:nth-child(3) {transform:rotate(-45deg);}
+#header .cover_btn.on span:nth-child(4) {opacity:0;}
+
+#header .cover_btn.on:before {content:'';position:absolute;top:-4px;background:#ff9f42;width:100%;height:100%;transform:scale(1.3)}
+
+
+/* 왼쪽nav부분*/
+#header nav li a {position:relative;display:block;width:35rem;height:1.2rem;text-indent:-99999px;}
+#header nav li a:after {content:"";position:absolute;top:0.35rem;left:0;display:block;width:5%;height:0.08rem;background:var(--ac);border-radius:0.15rem;transition:0.3s;}
+#header nav li.on a:after {width:10%;}
+/* 애프터 써서 라인옆에 숫자 02 뜨게  */
+
+.container {position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;align-items:center;width:75rem;margin:0 auto;z-index:888;
+}
+*{outline:1px solid #369--;}
+/* .section {background:url(./lib/base/bg_patten02.png);} */
 .section img {max-width:100%;}
-.section .mockup {background:url(./lib/base/mockup.png) no-repeat center top/100%;padding:7.5% 10% 8% 10%;}
-.container {position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;align-items:center;width:70rem;margin:0 auto;z-index:888;}
-.section .mockup figure {position:relative;padding-bottom:56.25%;overflow:hidden;}
-.section .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:1s;cursor: pointer;}
+.section .mockup {position:relative;background:url(./lib/base/mockup04.png) no-repeat;width:800px;height:400px;}
+.section .mockup figure {position:absolute;top:20px;left:50%;transform:translateX(-50%);width:520px;height:340px;overflow:hidden;}
+/* padding-bottom:56.25%; */
+.section .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:5s;cursor:pointer;}
 .section .mockup figure:hover img {transform:translateY(-100%);top:100%;}
 
-.section .description h3 {font-family: 'Montserrat', sans-serif;font-size:2.5rem;font-weight:200;margin-bottom:1rem;}
-.section .description p {font-size:0.75rem;font-weight:300;margin-bottom:2rem;}
-.section .description dl {display:inline-flex;line-height:1.5rem;border-bottom:1px solid var(--gc);}
-.section .description dl dt {width:6rem;}
-.section .description dl dt:before {content:"※";margin-right:0.5rem}
+
+.section .description h3 img {max-width:33%;margin-bottom:20px;}
+/* .section .description h3 {font-family: 'Montserrat', sans-serif;font-size:2.5rem;font-weight:200;margin-bottom:1rem;} */
+.section .description p {font-size:15px;font-weight:400;margin-bottom:2rem;color:#666;}
+.section .description dl {display:flex;line-height:1.5rem;color:#666;font-size:15px;}
+.section .description dt {color:#000;font-size:13px;font-weight:400;}
+.section .description dl dt {width:4rem;}
+/* .section .description dl dt:before {content:"※";margin-right:0.5rem} */
 .section .description dl:last-of-type {margin-bottom:2rem;}
-.section .description dd span {display:inline-block;width:0.6rem;height:0.6rem;border-radius:50%;vertical-align:middle;}
+.section .description dd span {display:inline-block;width:0.8rem;height:0.8rem;border-radius:50%;vertical-align:middle;}
 .section .description dd strong {vertical-align:middle;margin-right:1rem;}
 
-
 .section .description ul {display:flex;gap:0.5rem;}
-.section .description ul a {display:block;background:var(--mc);color:var(--lc);line-height:3rem;padding:0 2rem;font-size:1rem;font-weight:100;border-radius:0.3rem;}
+.section .description ul a {display:block;background:#003058;color:var(--lc);line-height:3rem;padding:0 2rem;font-size:1rem;font-weight:100;border-radius:0.3rem;}
 
 
+/* 인트로 */
 .intro figure {position:relative;border-radius:35% 65% 60% 40% / 47% 30% 70% 53%;overflow:hidden;animation:int_movie 4s infinite linear}
-.intro .container::after {content:"";position:absolute;top:3rem;right:3rem;display:block;width:5rem;height:5rem;background:var(--sc);border-radius:50%;opacity:0.7;}
+.intro .container:after {content:"";position:absolute;top:3rem;right:3rem;display:block;width:5rem;height:5rem;background:var(--sc);border-radius:50%;opacity:0.7;}
  
 .intro figure:hover {border-radius:56% 44% 76% 24% / 25% 41% 59% 75%}
 .intro figure img {width:100%;}
@@ -63,9 +91,12 @@ body {font-size:0.8rem;color:var(--dc);}
     100% {border-radius:35% 65% 60% 40% / 47% 30% 70% 53%;}
 }
 
-.intro .slogan h2 {font-size:3rem;font-weight:700;margin-bottom:2rem;}
-.intro .slogan p {font-size:0.75rem;font-weight:300;margin-bottom:1rem;}
-.intro .slogan strong {display:block;font-size:1rem;font-weight:500;}
+*{outline:1px solid #fff--;}  
+
+/* .intro {color:#f25329;} */
+.intro .slogan .txt strong {font-weight:100;font-family:'Montserrat', sans-serif;}
+.intro .slogan h2 {font-size:3rem;font-weight:700;margin-bottom:1.5rem;color:#f25329;margin-left:150px;}
+.intro .slogan p {font-size:0.75rem;font-weight:400;margin-bottom:0.6rem;color:#fff;margin-left:152px;font-family:'Montserrat', sans-serif;}
 
 .intro .wheel {position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);width:1.5rem;height:2.5rem;border:2px solid var(--dc);font-size:0;border-radius:0.7rem;opacity:0.5;}
 .intro .wheel span {position:absolute;top:0.3rem;left:50%;transform:translateX(-50%);width:0.2rem;height:0.5rem;background:var(--dc);border-radius:0.1rem;animation:wheel 0.5s infinite}
@@ -73,6 +104,10 @@ body {font-size:0.8rem;color:var(--dc);}
 @keyframes wheel {
     to {top:0.6rem}
 }
+
+/* 날아오는거 */
+.portfolio_01 .description {transform:translateX(1300px);opacity:0;}
+.portfolio_01.on .description {transform:translateX(0);opacity: 1;;transition:0.7s;}
 
 .portfolio_01 .description dd span:nth-of-type(1) {background:#333333;}
 .portfolio_01 .description dd span:nth-of-type(2) {background:#666666;}
@@ -98,8 +133,9 @@ body {font-size:0.8rem;color:var(--dc);}
 
 .profile .inner {position:relative;width:20rem;height:20rem;padding:1rem;border:1px solid rgba(0,0,0,0.15);border-radius:50%;}
 .profile .inner strong {display:block;width:18rem;height:18rem;border-radius:50%;overflow:hidden;}
+.profile .inner strong img {max-width:100%;}
 .profile .inner span {position:absolute;top:0;left:calc(50% - 0.5rem);width:1rem;height:10rem;font-size:0;animation:circle_thoto 6s infinite linear;transform-origin:bottom;}
-.profile .inner span:after {content:"";display:block;width:1rem;height:1rem;background:var(--mc);border-radius:50%;margin-top:-0.5rem;}
+.profile .inner span:after {content:"";display:block;width:1rem;height:1rem;background:var(--ac);border-radius:50%;margin-top:-0.5rem;}
 
 
 @keyframes circle_thoto {
@@ -107,35 +143,24 @@ body {font-size:0.8rem;color:var(--dc);}
     100% {transform:rotate(1turn);}
 }
 
+
+/* nav 알 부분 */
 #cover {display:none;position:fixed;top:0;left:0;background:rgba(0,0,0,0.75);width:100%;height:100vh;z-index:998;}
-#cover ul {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:var(--dc);font-size:1rem;font-weight:300;line-height:1.5;text-align:center;background:var(--lc);padding:5rem;border-radius:50%;}
+#cover ul {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:var(--dc);font-size:1rem;font-weight:300;line-height:1.6;text-align:center;background:var(--lc);padding:5rem;border-radius:50%;}
+
+#cover ul li:hover {font-weight:500;}
+#cover ul li:first-child {margin-bottom:7px;}
+#cover ul li:last-child {margin-top:7px;}
+
+#cover ul li a {border-bottom:1px solid transparent;padding:0 0;transition:0.5s;}
+#cover ul li:hover a {border-bottom:1px solid #f25329;padding:0 7px;}
+/* border-bottom:1px 를 1.5로 바꾸면 왜 라인이 1초뒤에 얇아지는지 .... */
 
 
+
+/* 스펙아이콘 부분 */
 .spec {font-size:1.25rem;}
 .spec i {padding:0.5rem;background:var(--dc);color:var(--lc);margin:0 0.25rem;border-radius:50%;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -159,89 +184,22 @@ svg 배경으로 써서 사선 레이아웃
 
 
 
+/* 올라가는 버튼 */
+/* #footer .toTop {position:fixed;bottom:3rem;right:3rem;z-index:999;}
+#footer .toTop i {font-size:1.3rem;padding:.5rem;background:var(--ac);color:#fff;border-radius:50px;} */
 
+/* #footer address {position:fixed;bottom:3rem;right:3rem;z-index:999;color:#fff;text-align:right;} 원래 :right3임 */
 
+/* <Contact 부분> */
+#footer address {position:fixed;bottom:3rem;right:5rem;z-index:999;color:#fff;text-align:right;}
+/* font-family: 'Montserrat', sans-serif; */
+#footer address dl {font-size:20px;font-weight:500;line-height:1.5;}
+#footer address dl:after {content:"";display:block;width:40px;height:2px;background:#f25329;margin:10px 0 12px auto;}
+#footer address dt {margin-bottom:2px;color:#a7a7a7;font-weight:700;}
+#footer address dd {color:#a7a7a7;font-weight:700;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#footer .toTop {position:fixed;bottom:3rem;right:3rem;z-index:999;}
-#footer .toTop i {font-size:1.5rem;padding:.5rem;background:var(--lc)}
-#footer address {position:fixed;bottom:3rem;left:3rem;z-index:999;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 마지막 프로필 얼굴 이모지로 넣기 */
+/* 
+맨 마지막 프로필 페이지 들어갔을때 오른쪽 하단 컨택 부분에 하얀색 삼각형으로 각주 넣기  */
