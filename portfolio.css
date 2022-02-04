@@ -255,7 +255,7 @@ body {font-size:0.8rem;color:#000;}
 
     .intro .slogan {transform:translateY(190px);}
     .intro .slogan h2 {font-size:3rem;font-weight:700;margin-bottom:1.5rem;color:#f25329;margin-left:90px;}
-    .intro .slogan p {font-size:0.8rem;font-weight:400;margin-bottom:0.6rem;color:#fff;margin-left:90px;font-family:'Montserrat', sans-serif;}
+    .intro .slogan p {font-size:1rem;font-weight:400;margin-bottom:0.6rem;color:#fff;margin-left:90px;font-family:'Montserrat', sans-serif;}
 
     .intro .wheel {position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);width:1.5rem;height:2.5rem;border:2px solid var(--dc);font-size:0;border-radius:0.7rem;opacity:0.5;}
     .intro .wheel span {position:absolute;top:0.3rem;left:50%;transform:translateX(-50%);width:0.2rem;height:0.5rem;background:var(--dc);border-radius:0.1rem;animation:wheel 0.5s infinite}
@@ -281,7 +281,7 @@ body {font-size:0.8rem;color:#000;}
     /* <Contact 부분> */
     #footer address {position:fixed;bottom:3rem;right:3rem;z-index:999;color:#fff;text-align:right;}
     #footer address em {font-size:20px;color:var(--ac);display:block;margin-bottom:7px;}
-    #footer address dl {font-size:13px;font-weight:400;margin-bottom:10px;}
+    #footer address dl {font-size:13px;font-weight:500;margin-bottom:10px;}
     #footer address dl:after {content:"";display:block;width:40px;height:2px;background:#f25329;margin:10px 0 12px auto;}
     #footer address dt {margin-bottom:2px;color:#a7a7a7;font-weight:700;font-size:12px;}
     #footer address dd {color:#a7a7a7;font-weight:700;font-size:12px;}
