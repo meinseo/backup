@@ -22,7 +22,7 @@ $(function(){
     
     //WEB is My MONEY
     new Typed('.slogan_txt',{
-        strings: ['생각하는 디자이너,', '2022 meinseo PORTFOLIO !'],
+        strings: ['생각하는 디자이너,', '2022 meinseo PORTFOLIO ! '],
         typeSpeed:150, 
     });
     
