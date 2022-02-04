@@ -13,11 +13,17 @@ $(function(){
             sideBar.eq(idx).addClass('on').siblings().removeClass('on');
             idx==0||idx==6 ? $('.cover_btn span').css({background:'#fff'}) :  $('.cover_btn span').css({background:'#f25329'}); 
             idx==0||idx==6 ? $('.number').hide() : $('.number').show();
-            $('.number').text("0"+destination.index).css({color:sectionColor[destination.index]})
+            $('.number').text("0"+destination.index).css({color:sectionColor[destination.index]});
+            if($(window).width()<768) {
+                idx==0||idx==6 ? $('#header , #footer').show() : $('#header ,  #footer').hide();
+            }
         },
-
-        
+    
     });
+
+    $(window).on('resize', function(){
+        $('#header , #footer').removeAttr('style');
+    })
     
     
     //WEB is My MONEY
