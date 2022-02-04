@@ -243,9 +243,9 @@ body {font-size:0.8rem;color:#000;}
     body {font-size:0.8rem;color:#000;}
     #Wrap {min-width:0;}
 
-    /* 인트로 */
-    .intro figure img {width:100%;transform:translateX(10px);}
-    .intro figure {width:200px;animation:spinlight 2s infinite linear;margin:50px auto;}
+    /* 인트로 전구 이미지 */
+    .intro figure img {width:100%;transform:translateX(10px);transform:translateY(-150px);}
+    .intro figure {width:180px;animation:spinlight 2s infinite linear;margin:50px auto;}
 
     @keyframes spinlight {
         0% {opacity: 0;}
@@ -253,8 +253,9 @@ body {font-size:0.8rem;color:#000;}
         100% {opacity: 0;}
     }
 
-    .intro .slogan h2 {font-size:3rem;font-weight:700;margin-bottom:1.5rem;color:#f25329;margin-left:80px;}
-    .intro .slogan p {font-size:0.75rem;font-weight:400;margin-bottom:0.6rem;color:#fff;margin-left:152px;font-family:'Montserrat', sans-serif;}
+    .intro .slogan {transform:translateY(190px);}
+    .intro .slogan h2 {font-size:3rem;font-weight:700;margin-bottom:1.5rem;color:#f25329;margin-left:90px;}
+    .intro .slogan p {font-size:0.5rem;font-weight:400;margin-bottom:0.6rem;color:#fff;margin-left:90px;font-family:'Montserrat', sans-serif;}
 
     .intro .wheel {position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);width:1.5rem;height:2.5rem;border:2px solid var(--dc);font-size:0;border-radius:0.7rem;opacity:0.5;}
     .intro .wheel span {position:absolute;top:0.3rem;left:50%;transform:translateX(-50%);width:0.2rem;height:0.5rem;background:var(--dc);border-radius:0.1rem;animation:wheel 0.5s infinite}
@@ -274,17 +275,16 @@ body {font-size:0.8rem;color:#000;}
 
 
     /* 왼쪽 상단 세모 2022 WEB UI&UX ART WORK 부분 */
-    #header h1 {position:fixed;top:3rem;left:3rem;z-index:999;color:#fff;line-height:1.2;font-weight:300;}
+    #header h1 {position:fixed;top:3rem;left:3rem;z-index:999;color:#fff;line-height:1.2;font-weight:300;font-size:10px;}
     #header h1 a {display:block;width:15rem;font-family: 'Montserrat', sans-serif;}
 
     /* <Contact 부분> */
     #footer address {position:fixed;bottom:3rem;right:3rem;z-index:999;color:#fff;text-align:right;}
-    /* font-family: 'Montserrat', sans-serif; */
-    #footer address em {font-size:24px;color:var(--ac);display:block;margin-bottom:7px;}
-    #footer address dl {font-size:20px;font-weight:500;margin-bottom:10px;}
+    #footer address em {font-size:20px;color:var(--ac);display:block;margin-bottom:7px;}
+    #footer address dl {font-size:14px;font-weight:400;margin-bottom:10px;}
     #footer address dl:after {content:"";display:block;width:40px;height:2px;background:#f25329;margin:10px 0 12px auto;}
-    #footer address dt {margin-bottom:2px;color:#a7a7a7;font-weight:700;}
-    #footer address dd {color:#a7a7a7;font-weight:700;}
+    #footer address dt {margin-bottom:2px;color:#a7a7a7;font-weight:700;font-size:10px;}
+    #footer address dd {color:#a7a7a7;font-weight:700;font-size:10px;}
 
     /* nav부분 */
     #header nav {position:fixed;top:50%;left:5rem;transform:translateY(-50%);z-index:999;}
@@ -316,7 +316,7 @@ body {font-size:0.8rem;color:#000;}
 
 
     /* 왼쪽nav bar*/
-    #header nav li a {position:relative;display:block;width:5rem;height:1.2rem;text-indent:-99999px;}
+    #header nav li a {position:relative;display:none;width:5rem;height:1.2rem;text-indent:-99999px;}
     #header nav li a:after {content:"";position:absolute;top:0.35rem;left:0;display:block;width:1.7rem;height:0.08rem;background:var(--ac);border-radius:0.15rem;transition:0.3s;}
     #header nav li.on a:after {width:3.2rem;}
 
