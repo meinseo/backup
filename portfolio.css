@@ -254,7 +254,7 @@ body {font-size:0.8rem;color:#000;}
 
     .intro .slogan {transform:translateY(215px);}
     .intro .slogan h2 {font-size:3rem;font-weight:700;margin-bottom:1.5rem;color:#f25329;margin-left:90px;}
-    .intro .slogan p {font-size:1.1rem;font-weight:400;margin-bottom:0.6rem;color:#fff;margin-left:90px;font-family:'Montserrat', sans-serif;}
+    .intro .slogan p {font-size:1rem;font-weight:400;margin-bottom:0.6rem;color:#fff;margin-left:90px;font-family:'Montserrat', sans-serif;}
 
     .intro .wheel {position:absolute;bottom:15rem;left:50%;transform:translateX(-50%);width:1.5rem;height:2.5rem;border:2px solid var(--lc);font-size:0;border-radius:0.7rem;opacity:0.5;}
     .intro .wheel span {position:absolute;top:0.3rem;left:50%;transform:translateX(-50%);width:0.2rem;height:0.5rem;background:var(--lc);border-radius:0.1rem;animation:wheel 0.5s infinite}
