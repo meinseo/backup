@@ -3,6 +3,7 @@ $(function(){
     
     let sc=$('.section');
     let sideBar=$('nav li');
+    const sectionColor=['#e1e6ea','#e1e6ea','#e1e6ea']
     $('#main').fullpage({
         anchors:['intro', 'portfolio_01', 'portfolio_02', 'portfolio_03', 'portfolio_04', 'portfolio_05', 'profile'],
         css3:false,
@@ -11,6 +12,8 @@ $(function(){
             sc.eq(idx).addClass('on').siblings().removeClass('on');
             sideBar.eq(idx).addClass('on').siblings().removeClass('on');
             idx==0||idx==6 ? $('.cover_btn span').css({background:'#fff'}) :  $('.cover_btn span').css({background:'#f25329'}); 
+            idx==0||idx==6 ? $('.number').hide() : $('.number').show();
+            $('.number').text("0"+destination.index).css({color:sectionColor[destination.index]})
         },
 
         
