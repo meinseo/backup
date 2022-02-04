@@ -26,6 +26,16 @@ $(function(){
     })
     
     
+
+
+    $(window).on('load resize', function() {
+           if($(window).width() > 768) {
+              Rsd.slick('unslick');
+           }else{
+              Rsd.not('.slick-initialized').slick(slickOptions);
+           }
+    });
+    
     //WEB is My MONEY
     new Typed('.slogan_txt',{
         strings: ['생각하는 디자이너,', '2022 meinseo PORTFOLIO ! '],

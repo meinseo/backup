@@ -323,22 +323,25 @@ body {font-size:0.8rem;color:#000;}
 
     /* 컨테이너/목업 */
     .container {position:relative;display:flex;flex-flow:column wrap;gap:0;align-items:stretch;width:100%;margin:0 auto;z-index:888;padding:20px;
-    background-color:#000;}
+   }
     .section img {width:100%;}
-    .section .mockup {position:relative;background:url(./lib/base/mockup09.png) no-repeat;width:100%;height:300px;overflow:hidden;border-radius:15px 0 15px 0;}
+    .section .mockup {position:relative;background:url(./lib/base/mockup09.png) no-repeat;width:100%;height:310px;overflow:hidden;border-radius:20px 0 20px 0;}
     .section .mockup figure {position:relative;top:0;left:0;transform:translateX(0);width:100%;height:337px;overflow:hidden;}
-    /* .section .mockup figure {position:absolute;top:20px;left:50%;transform:translateX(-50%);width:520px;height:340px;overflow:hidden;} */
     .section .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:5s;cursor:pointer;}
-    .section .mockup figure:hover img {transform:translateY(-100%);top:100%;}
-
+    .section .mockup figure:hover img {transform:translateY(-100%);top:100%;}s
     .section .description h3 img {max-width:200px;margin:0 0 0 0;}
+
+
+
+    .portfolio_01 .container {background-color:#e1e6ea;}
+   
 
 
 
     /* 페이지설명 */
 
-    /* 페이지설명 ver1.*/*{outline:1px solid #369--;}
-    .section .description em {margin-left:auto;padding:0 130px;font-family: 'NanumSquare', sans-serif;color:var(--ac);display:block;font-size:18px;font-weight:600;text-align:right;transform:translateY(30px);}
+    /* 페이지설명 ver1.*/*{outline:1px solid #369;}
+    .section .description em {margin-left:auto;padding:0 5px;font-family: 'NanumSquare', sans-serif;color:var(--ac);display:block;font-size:17px;font-weight:700;text-align:left;position:relative;top:-385px;left:1rem}
     .section .portfolio_01 .description p {font-size:15px;font-weight:400;margin-bottom:2rem;color:#666;}
     .section .description dl {margin:0 20px;display:flex;line-height:1.7rem;color:#666;font-size:15px;}
     .section .description dt {color:#000;font-size:15px;font-weight:500;font-family: 'Montserrat', sans-serif;}
@@ -349,7 +352,8 @@ body {font-size:0.8rem;color:#000;}
     .section .description dd span {display:inline-block;width:0.8rem;height:0.8rem;border-radius:50%;vertical-align:middle;}
     .section .description dd strong {vertical-align:middle;margin-right:1rem;}
 
-    .section .description ul {margin:0 20px;display:flex;gap:0.5rem;font-family: 'Montserrat', sans-serif;}
+    .section .description ul {position:absolute;top:-13px;left:30px;margin:0 30px;display:flex;gap:0.5rem;font-family: 'Montserrat', sans-serif;}
+    /* left맞는지 ..? */
     .section .description ul a {display:block;background:#916e5c;color:var(--lc);line-height:2.5rem;padding:0 2rem;font-size:0.8rem;font-weight:300;border-radius:0.7rem;}
 
     .section .description ul li:first-child a:hover {background:#003057;}
@@ -408,7 +412,7 @@ body {font-size:0.8rem;color:#000;}
     *{outline:1px solid #fff--;} 
 
     /* 프로필 내용 */
-    .profile .container {width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:0;align-items:stretch;}
+    .profile .container {width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:0;align-items:stretch;}
     .profile .container>figure {width:33.333%;}
     .profile .container>div {width:33.333%;padding:30px 40px;}
 
