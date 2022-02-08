@@ -102,12 +102,14 @@ body {font-size:0.8rem;color:#000;}
 }
 *{outline:1px solid #369--;}
 .section img {max-width:100%;}
-.section .mockup {position:relative;background:url(./lib/base/mockup04.png) no-repeat;width:800px;height:400px;}
-.section .mockup figure {position:absolute;top:20px;left:50%;transform:translateX(-50%);width:520px;height:337px;overflow:hidden;}
+/* .section .mockup {position:relative;background:url(./lib/base/mockup04.png) no-repeat;width:800px;height:400px;} */
+.section .mockup {position:relative;background:url(./lib/base/mockup06.png) no-repeat;width:600px;height:510px;margin:0 130px;}
+.section .mockup figure {position:absolute;top:18px;left:50%;transform:translateX(-50%);width:580px;height:337px;overflow:hidden;}
 /* .section .mockup figure {position:absolute;top:20px;left:50%;transform:translateX(-50%);width:520px;height:340px;overflow:hidden;} */
 .section .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:5s;cursor:pointer;}
 .section .mockup figure:hover img {transform:translateY(-100%);top:100%;}
 
+.section .description {margin:0 -60px;width:700px;}
 .section .description h3 img {max-width:200px;margin:0 0 20px 20px;}
 
 
@@ -127,11 +129,26 @@ body {font-size:0.8rem;color:#000;}
 .section .description dd strong {vertical-align:middle;margin-right:1rem;}
 
 .section .description ul {margin:0 20px;display:flex;gap:0.5rem;font-family: 'Montserrat', sans-serif;}
-.section .description ul a {display:block;background:#916e5c;color:var(--lc);line-height:2.5rem;padding:0 2rem;font-size:0.8rem;font-weight:300;border-radius:0.7rem;}
 
-.section .description ul li:first-child a:hover {background:#003057;}
-.section .description ul li:last-child a {background:#ccc;color:#000;font-weight:400;}
-.section .description ul li:last-child a:hover {background:#0f4978;color:#fff;}
+
+/* 웹 디자인가이드 버튼 */
+
+.portfolio_01 .description ul a {display:block;background:#dbb1d2;color:var(--lc);line-height:2.5rem;padding:0 2rem;font-size:0.8rem;font-weight:400;border-radius:0.7rem;}
+.portfolio_01 .description ul li:first-child a:hover {background:#dbb1d2;color:#000;font-weight:400;}
+.portfolio_01 .description ul li:last-child a {background:#f3f1ea;color:#000;font-weight:400;}
+.portfolio_01 .description ul li:last-child a:hover {background:#8766ad;color:#000;}
+
+
+.portfolio_02 .description ul a {display:block;background:#600624;color:var(--lc);line-height:2.5rem;padding:0 2rem;font-size:0.8rem;font-weight:300;border-radius:0.7rem;}
+.portfolio_02 .description ul li:first-child a:hover {background:#fcd5ce;color:#000;font-weight:400;}
+.portfolio_02 .description ul li:last-child a {background:#f3f1ea;color:#000;font-weight:400;}
+.portfolio_02 .description ul li:last-child a:hover {background:#fcd5ce;color:#000;}
+
+
+.portfolio_03 .description ul a {display:block;background:#916e5c;color:var(--lc);line-height:2.5rem;padding:0 2rem;font-size:0.8rem;font-weight:300;border-radius:0.7rem;}
+.portfolio_03 .description ul li:first-child a:hover {background:#003057;}
+.portfolio_03 .description ul li:last-child a {background:#ccc;color:#000;font-weight:400;}
+.portfolio_03 .description ul li:last-child a:hover {background:#0f4978;color:#fff;}
 
 
 /* 페이지설명 ver2.*/
@@ -152,14 +169,17 @@ body {font-size:0.8rem;color:#000;}
 
 
 /* 색깔 동그라미 */
-.portfolio_01 .description dd span:nth-of-type(1) {background:#003057;}
-.portfolio_01 .description dd span:nth-of-type(2) {background:#0f4978;}
-.portfolio_01 .description dd span:nth-of-type(3) {background:#916e5c;}
+.portfolio_01 .description dd span:nth-of-type(1) {background:#dbb1d2;}
+.portfolio_01 .description dd span:nth-of-type(2) {background:#8766ad;}
+.portfolio_01 .description dd span:nth-of-type(3) {background:#c71717;}
 
-.portfolio_02 .description dd span:nth-of-type(1) {background:#ff0000;}
-.portfolio_02 .description dd span:nth-of-type(2) {background:#ffff00;}
-.portfolio_02 .description dd span:nth-of-type(3) {background:#336699;}
+.portfolio_02 .description dd span:nth-of-type(1) {background:#600624;}
+.portfolio_02 .description dd span:nth-of-type(2) {background:#fcd5ce;}
+.portfolio_02 .description dd span:nth-of-type(3) {background:#f3f1ea;}
 
+.portfolio_03 .description dd span:nth-of-type(1) {background:#003057;}
+.portfolio_03 .description dd span:nth-of-type(2) {background:#0f4978;}
+.portfolio_03 .description dd span:nth-of-type(3) {background:#916e5c;}
 
 
 /*프로필 사진*/
@@ -325,7 +345,7 @@ body {font-size:0.8rem;color:#000;}
     .container {position:relative;display:flex;flex-flow:column wrap;gap:0;align-items:stretch;width:100%;margin:0 auto;z-index:888;padding:20px;
    }
     .section img {width:100%;}
-    .section .mockup {position:relative;background:url(./lib/base/mockup09.png) no-repeat;width:100%;height:310px;overflow:hidden;border-radius:20px 0 20px 0;}
+    .section .mockup {position:relative;background:url(./lib/base/mockup09.png) no-repeat;width:100%;height:310px;overflow:hidden;border-radius:20px 0 20px 0;margin:0 auto;}
     .section .mockup figure {position:relative;top:0;left:0;transform:translateX(0);width:100%;height:337px;overflow:hidden;}
     .section .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:5s;cursor:pointer;}
     .section .mockup figure:hover img {transform:translateY(-100%);top:100%;}s
@@ -333,14 +353,14 @@ body {font-size:0.8rem;color:#000;}
 
 
 
-    .portfolio_01 .container {background-color:#e1e6ea;}
+    .portfolio_01 .container {background-color:#e1e6ea;height:100vh;padding-top:100px;}
    
 
 
 
     /* 페이지설명 */
 
-    /* 페이지설명 ver1.*/*{outline:1px solid #369;}
+    /* 페이지설명 ver1.*/*{outline:1px solid #369--;}
     .section .description em {margin-left:auto;padding:0 5px;font-family: 'NanumSquare', sans-serif;color:var(--ac);display:block;font-size:17px;font-weight:700;text-align:left;position:relative;top:-385px;left:1rem}
     .section .portfolio_01 .description p {font-size:15px;font-weight:400;margin-bottom:2rem;color:#666;}
     .section .description dl {margin:0 20px;display:flex;line-height:1.7rem;color:#666;font-size:15px;}
