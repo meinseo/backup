@@ -99,7 +99,7 @@
 .popup01 i {vertical-align:middle;}
 
 
-*{outline:1px solid #f00;}
+*{outline:1px solid #f00--;}
 
 /* section01 top에서 938px까지가 동영상끝*/
 .section01 {position:relative;padding:130px 0;background:#fff;margin-top:800px;position:relative;text-align:center;z-index:999;}
@@ -118,8 +118,9 @@
 .section01 .container figure .icon i {background:#dbb1d2;border-radius:50%;padding:5px;margin: 0 5px}
 
 .section01 .container h3 {font-size:18px;line-height:2;}
-
-
+.section01 .container strong {display:block;}
+.section01 .container span {}
+.section01 .container em {}
 
 .section01 .btn i {position:absolute;top:60%;left:50%;transform:translate(-50%,-50%);font-size:50px;color:#dbb1d2;}
 .section01 .btn i.xi-angle-left-thin {margin-left:-800px;}
