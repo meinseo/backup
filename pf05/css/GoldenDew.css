@@ -99,7 +99,7 @@
 .popup01 i {vertical-align:middle;}
 
 
-*{outline:1px solid #f00;}
+*{outline:1px solid #f00--;}
 
 /* section01 top에서 938px까지가 동영상끝*/
 .section01 {position:relative;padding:130px 0;background:#fff;margin-top:800px;position:relative;text-align:center;z-index:999;}
