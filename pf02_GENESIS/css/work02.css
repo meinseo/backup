@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
 #wrap {}
 /* 
    *{outline:1px solid #f00;}                  */
@@ -7,48 +11,68 @@
 /*--------------------------------------------------------------------------------------------------------------------------- #top_banner */
 
 
+*{outline:1px solid #f00--;}
+
 #top_banner {background:#ddd9d6;}
-#top_banner .container {display:flex;position:relative;width:1200px;margin:0 auto;padding:15px 15px;}
-#top_banner .container figure img {width:120px;}
-#top_banner .con {margin-top:14px;margin-left:50px;}
-#top_banner .con h2 {font-size:24px;font-weight:100;letter-spacing:0.04em;margin-bottom:8px;font-weight:500;}
-#top_banner .con p {font-weight:300;letter-spacing:-0.025em;font-weight:400;}
-#top_banner i {position:absolute;top:25px;right:15px;font-size:13px;background:#555;color:#fff;border-radius:50%;width:27px;line-height:27px;text-align:center;}
+#top_banner .container {display:flex;position:relative;width:1200px;margin:0 auto;padding:15px;}
+#top_banner .container figure img {width:100px;}
+#top_banner .con {margin-top:18px;margin-left:50px;}
+#top_banner .con h2 {font-size:18px;font-weight:500;letter-spacing:0.04em;margin-bottom:6px;}
+#top_banner .con p {font-size:14PX;letter-spacing:-0.025em;font-weight:400;}
+#top_banner i {position:absolute;top:25px;right:15px;font-size:13px;background:#555;color:#fff;width:27px;line-height:27px;text-align:center;cursor: pointer;}
 
 
 /*------------------------------------------------------------------------------------------------------------------------------- #header*/
 
 
-/* #header {background:#13110e;}
-#header .container {display:flex;justify-content:space-between;position:relative;width:1200px;margin:0 auto;padding:40px 15px;}
-#header h1 {position:absolute;}
-/* #header h1 img {justify-content:center;} */
-/* #header .container nav>ul {display:flex;padding:0 15px;position:relative;color:#fff;}
-#header .container nav>ul>li {padding:0 30px;} */
+*{outline:1px solid #f00--;}
 
-#header {}
-#header .container {width:1200px;margin:0 auto;}
-#header {line-height:80px;background:#14120e;padding:0 15px;}
-#header nav {display:flex;justify-content: space-between;}
-#header nav>ul {display:flex;color:#fff;} 
-#header nav>ul>li>a {display:block;padding:0 40px;font-size:16px;} 
+/* .gnb */
+.gnb {background:#000;position:relative;border-bottom:1px solid transparent;}
+.gnb .depth01 {display:flex;justify-content:space-between;width:1200px;margin:0 auto;color:#fff;}
+.gnb .depth01 h1 {padding:17px 0 0 0;}
+.gnb .depth01>li>a {display:block;padding:0 3rem;font-size:1rem;font-weight:400;line-height:5;}
+.gnb .depth01>li>a:hover {color:#ad7b61;}
+.gnb .depth01>li {position:relative;}
+
+.gnb .depth02 {padding:10px 0 0 0;height:0;overflow:hidden;position:absolute;top:4rem;left:0;width:100%;transition:0.5s;z-index:999;}
+
+.gnb:before {content:"";display:block;width:100%;height:0;background:#000;opacity:0.9;position:absolute;top:calc(5rem + 1px);left:0;transition:0.5s;z-index:999;}
+.gnb:hover {border-bottom:1px solid rgba(255,255,255,0.3);}
+.gnb:hover:before {height:23rem;}
+.gnb:hover .depth02 {padding:20px 0 0 0;height:23rem;font-size:13px;font-weight:300;}
+
+.gnb .depth02>li>a {position:relative;display:block;line-height:1.8rem;text-align:center;color:#fff;padding:0.5rem 0;}
+.gnb .depth02>li>a:hover {color:#ad7b61;font-size:14px;transition:0.2s;font-weight:400;}
+
+/* .gnb .depth02>li>a:after {content:"";display:block;width:0;height:1px;margin:0 auto;background:#85604c;transition:0.5s;} */
+.gnb .depth02>li>a:hover:after {width:80%;}
 
 
 /*------------------------------------------------------------------------------------------------------------------------------  #main_visual*/
 
+/* *{outline:1px solid #f00;} */
+/* 183 */
 
 #main_visual {position:relative;}
-#main_visual .main_slider figure {height:calc(100vh - 183px);background:#333;}
-#main_visual .main_slider .visual01 {background:url(../img/main_visual01.jpg) no-repeat center center/cover;}
-#main_visual .main_slider .visual02 {background:url(../img/main_visual02.jpg) no-repeat center center/cover;}
+#main_visual .main_slider figure {height:calc(100vh - 70px);background:#333;}
+#main_visual .main_slider .visual01 {background:url(../img/main_visual01_01.jpg) no-repeat center center/cover;}
+#main_visual .main_slider .visual02 {background:url(../img/main_visual02_02.webp) no-repeat center center/cover;}
 #main_visual .main_slider .visual03 {background:url(../img/main_visual03.jpg) no-repeat center center/cover;}
 
-#main_visual .main_slider .txt {display:block;color:#fff;width:1200px;margin:0 auto;padding:0 85px;margin-top:100px;text-shadow:0 0 3px #666;}
-#main_visual .main_slider .txt h2 {font-size:28px;font-weight:200;letter-spacing:-0.025em;}
-#main_visual .main_slider .txt strong {display:block;font-size:90px;font-weight:500;letter-spacing:-0.025em;margin-bottom:20px;}
-#main_visual .main_slider .txt p {display:block;font-size:27px;font-weight:300;letter-spacing:-0.025em;margin-bottom:250px;}
-#main_visual .main_slider .txt a {display:block;font-size:21px;line-height:50px;width:157px;background:#333;text-align:center;border-radius:95px 95px;letter-spacing:-0.025em;}
-#main_visual .main_slider .txt a:hover {background:#dbd8d5;color:#000;}
+#main_visual .main_slider .txt {display:block;color:#fff;width:1200px;margin:0 auto;padding:0 85px;margin-top:220px;font-family: 'Montserrat', sans-serif;}
+#main_visual .main_slider .txt h2 {opacity:0;transform:translateY(100px);font-size:18px;font-weight:300;letter-spacing:-0.025em;margin-bottom:10px;}
+#main_visual .main_slider .txt strong {opacity:0;transform:translateY(100px);display:block;font-size:80px;font-weight:500;letter-spacing:-0.025em;margin-bottom:20px;text-shadow:1px 1px 0 #000;text-indent:-10px;}
+#main_visual .main_slider .txt p {opacity:0;transform:translateY(100px);display:block;font-size:20px;font-weight:300;letter-spacing:-0.025em;margin-bottom:150px;}
+#main_visual .main_slider .txt a {display:block;font-size:16px;line-height:45px;width:160px;background:#000;text-align:center;letter-spacing:-0.025em;border:1px solid #fff;}
+#main_visual .main_slider .txt a:hover {background:#fff;color:#000;}
+
+
+#main_visual .main_slider figure.on .txt h2 {opacity:1;transform:translateY(0);transition:0.5s;}
+#main_visual .main_slider figure.on .txt strong {opacity:1;transform:translateY(0);transition:0.7s 0.7s;}
+#main_visual .main_slider figure.on .txt p {opacity:1;transform:translateY(0);transition:0.7s 1.4s;}
+
+
 /* 질문 >>> 사진이 안으로 안에서 안커지고 밖으로 커질때... 
    답변 >>> 이거 사진이 안에서 커지려면 html에서 밑에 그림의 2번처럼 싸는게 아니라 1번처럼 figure안에 div박스 클래스를 주고 그 안에 img를 싸면 된당 
 
@@ -68,12 +92,12 @@
 */
 
 
-#main_visual .slick-dots {position:absolute;display:flex;justify-content:center;bottom:70px;left:0;width:100%;}
+#main_visual .slick-dots {position:absolute;display:flex;justify-content:center;bottom:50px;left:0;width:100%;cursor: pointer;}
 /* 질문 >>> 여긴 블록이 없는데 왜 탑 레프트가 먹히는거죠??
 답변 >>> top left는 position이 있어야 먹힙니당. 맨앞에 position을 잡아줬기 때문에 잡힙니당  */
 /* 질문 >>> 왜 앱솔루트를 했지만 박스가 왼쪽으로 잡히는거죠??? 
 답변 >>> position:absolute;를 하면 박스가 쪼그라들기 때문에 꼭꼭꼭 뒤에서 width:100%;로 박스를 펴 줘야한답니당당구리  */
-#main_visual .slick-dots li {width:18px;height:18px;border-radius:50px;background:#d5d2d2;margin:0 13px;}
+#main_visual .slick-dots li {width:16px;height:16px;border-radius:50px;background:#d5d2d2;margin:0 13px;}
 #main_visual .slick-dots li.slick-active {background:#5f5e5e;}
 #main_visual .slick-dots li button {display:none;}
 
@@ -81,14 +105,17 @@
    답변 >>> flex가 되어야 먹힙니당 
 */
 
+#main_visual i {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#d5d2d2;font-size:50px;font-weight:100;cursor: pointer;z-index: 9999;}
+#main_visual .icon .xi-angle-left-thin {margin-left:-800px;}
+#main_visual .icon .xi-angle-right-thin {margin-left:800px;}
 
-
+*{outline:1px solid #f00--;}
 /*------------------------------------------------------------------------------------------------------------------------------  #section01*/
 
 #section01 {padding:120px 0;width:1200px;margin:0 auto;text-align:center;}
-#section01 h2 {font-size:45px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;}
+#section01 h2 {font-size:40px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;font-family: 'Montserrat', sans-serif;}
 #section01 hr {display:block;margin:0 auto;border:none;border-bottom:2px solid #666;width:255px;}
-#section01 p {font-size:18px;font-weight:500;letter-spacing:-0.025em;line-height:10px;margin-bottom:45px;margin-top:20px;}
+#section01 p {font-size:17px;font-weight:300;letter-spacing:-0.025em;line-height:10px;margin-bottom:45px;margin-top:20px;}
 
 #section01 .menu {display:block;color:#fff;width:210px;margin:40px auto 20px;}
 /*질문 >>> 마진 이렇게 2개 들어가도 되나요? 먹히는건지 아닌지.... 아님 margin:20px 0 40px 0; 이걸 뺴고 사진에 마진탑을 줘야 하나요  
@@ -126,9 +153,9 @@
 #section02 .container {display:flex;flex-wrap:wrap;width:1200px;margin:0 auto;padding:0 15px;align-items:center;margin-top:60px;}
 
 #section02 .title {text-align:center;}
-#section02 h2 {font-size:45px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;}
+#section02 h2 {font-size:40px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;font-family: 'Montserrat', sans-serif;}
 #section02 hr {display:block;margin:0 auto;border:none;border-bottom:2px solid #666;width:110px;}
-#section02 p {font-size:18px;font-weight:500;letter-spacing:-0.025em;line-height:10px;margin-bottom:45px;margin-top:20px;}
+#section02 p {font-size:17px;font-weight:300;letter-spacing:-0.025em;line-height:10px;margin-bottom:45px;margin-top:20px;}
 
 #section02 img {max-width:100%;}
 #section02 .pic {width:50%;}
@@ -142,7 +169,7 @@
 
 
 
-#section02 .let ul {font-size:25px;}
+#section02 .let ul {font-size:25px;cursor: pointer;}
 #section02 .let ul li {position: relative;margin:0 10px;display:inline-block;}
 #section02 .let li:nth-child(1):before {content:"\e9ea";font-family: xeicon!important;color:#000;}
 #section02 .let li:nth-child(1):hover:before {content:"\e9e9";font-family: xeicon!important;color:#000;}
@@ -162,20 +189,20 @@
 
 /*---------------------------------------------------------------------------------------------------------메인배너-------------  #main_banner*/
 
-#main_banner {padding:100px 0 100px; background:url(../img/main_banner.jpg) no-repeat center center/cover;background-attachment:fixed;color:#fff;}
+#main_banner {padding:90px 0 90px; background:url(../img/main_banner.jpg) no-repeat center center/cover;background-attachment:fixed;color:#fff;}
 #main_banner .container {width:1000px;margin:0 auto;}
 
 #main_banner .left {text-align:left;padding:0 0 120px 0;}
-#main_banner .left h2 {font-size:45px;font-weight:500;margin-bottom:10px;}
-#main_banner .left p {font-size:20px;font-weight:300;letter-spacing:-0.025em;margin-bottom:20px;}
-#main_banner .left em {font-size:20px;font-weight:400;letter-spacing:-0.025em;}
+#main_banner .left h2 {font-size:35px;font-weight:400;margin-bottom:13px;}
+#main_banner .left p {font-size:18px;font-weight:300;letter-spacing:-0.025em;margin-bottom:20px;}
+#main_banner .left em {font-size:20px;font-weight:300;letter-spacing:-0.025em;}
 
 #main_banner .right {text-align:right;padding:0 80px 0 0;}
-#main_banner .right h3 {font-size:27px;font-weight:500;margin-bottom:10px;}
-#main_banner .right p {font-size:20px;font-weight:300;letter-spacing:-0.025em;margin-bottom:10px;}
+#main_banner .right h3 {font-size:24px;font-weight:400;margin-bottom:10px;}
+#main_banner .right p {font-size:18px;font-weight:300;letter-spacing:-0.025em;margin-bottom:10px;}
 #main_banner .right em {font-size:19px;font-weight:500;letter-spacing:3px;}
 
-
+*{outline:1px solid #f00--;}
 
 /*-----------------------------------------------------------------------------------------------------------------비디오--------  #section04*/
 
@@ -183,10 +210,10 @@
 
 
 #section04 {padding:120px 0;width:1170px;margin:0 auto;text-align:center;}
-#section04 h2 {font-size:45px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;}
+#section04 h2 {font-size:40px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;font-family: 'Montserrat', sans-serif;}
 #section04 hr {display:block;margin:0 auto;border:none;border-bottom:2px solid #666;width:100px;}
-#section04 p {font-size:18px;font-weight:500;letter-spacing:-0.025em;line-height:10px;margin-bottom:24px;margin-top:20px;}
-#section04 i {font-size:18px;padding:8px;background:#333;color:#fff;border-radius:5px;}
+#section04 p {font-size:17px;font-weight:300;letter-spacing:0.025em;line-height:10px;margin-bottom:45px;margin-top:20px;}
+#section04 i {font-size:18px;padding:8px;background:#333;color:#fff;border-radius:5px;cursor: pointer;}
 /* #section04 .container figure {margin-top:50px;} */
 #section04 .container figure i {margin-bottom:40px;}
 #section04 .container .video01 {margin-top:30px;}
@@ -218,11 +245,15 @@
 
 #section05 .right{display:inline-block;text-align:right;width:1200px;top:140px;left:50%;transform:translateX(15%);color:#fff;}
 
-#section05 .right h2 {font-size:35px;font-weight:500;margin-bottom:18px;}
-#section05 .right p {font-size:17px;font-weight:300;letter-spacing:-0.035em;line-height:1.1;margin-bottom:60px;}
-#section05 .right .icon a {display:inline-block;font-size:18px;font-weight:500;background:#dbd8d5;color:#000;line-height:40px;width:110px;text-align:center;border-radius:99px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;margin-left:14px;}
-#section05 .right .icon a:hover {background:#333;font-weight:400;font-size:18px;color:#dbd8d5;} 
+#section05 .right h2 {font-size:35px;font-weight:400;margin-bottom:22px;}
+#section05 .right p {font-size:17px;font-weight:300;letter-spacing:-0.025em;line-height:1.2;margin-bottom:60px;}
 
+/* #section05 .right .icon a {display:inline-block;font-size:16px;font-weight:400;background:#dbd8d5;color:#000;line-height:40px;width:130px;text-align:center;border-radius:99px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;margin-left:14px;}
+#section05 .right .icon a:hover {background:#333;color:#dbd8d5;}  */
+
+
+#section05 .right .icon a {display:inline-block;font-size:16px;font-weight:400;background:#000;color:#fff;line-height:40px;width:150px;text-align:center;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;margin-left:14px;border:1px solid #fff;}
+#section05 .right .icon a:hover {background:#fff;color:#000;}
 
 
 /*---------------------------------------------------------------------------------------------------방문예약신청-----지도-------  #section06*/
@@ -231,22 +262,22 @@
 
 #section06 {padding:120px 0;background:#f7f7f7;}
 #section06 .container {width:1200px;display:flex;margin:0 auto;justify-content:space-between;padding:0 15px;}
-#section06 h2 {font-size:45px;font-weight:500;letter-spacing:-0.025em;line-height:35px;margin-bottom:20px;margin-top:50px;}
-#section06 hr {display:block;border:none;border-bottom:2px solid #666;width:280px;margin-top:5px;}
-#section06 p {font-size:18px;font-weight:300;letter-spacing:-0.025em;line-height:20px;margin-bottom:45px;margin-top:20px;}
-
-
-
+#section06 h2 {font-size:40px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;font-family: 'Montserrat', sans-serif;}
+/* #section06 hr {display:block;border:none;border-bottom:2px solid #666;width:280px;margin-top:5px;} */
+#section06 p {font-size:16px;font-weight:300;letter-spacing:-0.025em;line-height:20px;margin-bottom:45px;margin-top:20px;}
 
 /* #section06 .container .map {display:block;} */
 /* 이거 블락 안하면 안되는건가?? */
 
-#section06 .container .left .res {}
-/* 여기 사이를 띄우고 싶어요 .... */
 #section06 .container .left .res a {margin-right:10px;}
 
-#section06 .container .left a {display:inline-block;font-size:18px;font-weight:400;background:#333;color:#dbd8d5;line-height:45px;width:190px;text-align:center;border-radius:80px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;}
-#section06 .container .left a:hover {background:#dbd8d5;color:#000;font-weight:500;font-size:18px;}
+
+/* #section06 .container .left a {display:inline-block;font-size:16px;font-weight:400;background:#333;color:#dbd8d5;line-height:45px;width:190px;text-align:center;border-radius:80px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;}
+#section06 .container .left a:hover {background:#dbd8d5;color:#000;} */
+
+#section06 .container .left a {display:inline-block;font-size:16px;font-weight:300;background:#000;color:#fff;border:1px solid #fff;line-height:45px;width:190px;text-align:center;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;}
+#section06 .container .left a:hover {background:#fff;color:#000;border:1px solid #000;}
+
 
 
 
@@ -257,18 +288,20 @@ background:#333;color:#dbd8d5; */
 /*-----------------------------------------------------------------------------------------------------------------------------#footer*/
 
 
+*{outline:1px solid #f00--;}
+
 #footer {background:#14120e;color:#f4f4f4;font-weight:300;}
-#footer .container {display:flex;justify-content:space-between;width:1200px;margin:0 auto;line-height:80px;padding:0 15px;}
-#footer .customer_link {display:flex;}
-#footer .customer_link li {position: relative;}
-#footer .customer_link li a {display:block;padding:0 20px;}
-#footer .customer_link li~li:before {content:"I";position:absolute;top:0;left:0;}
-#footer .customer_link li:first-child a {padding:0 20px 0 0;}
-#footer hr {border:none;border-top:1px solid #666;}
-#footer .sns {font-size:20px;padding:15px;}
-#footer select {background:#333;padding:5px 15px;outline:none;}
+#footer .container {display:flex;width:1200px;margin:0 auto;padding:0 15px;justify-content:space-between;}
+#footer .customer_link {display:flex;line-height:100px;}
+#footer .customer_link li {position: relative;font-size:14px;font-weight:300;padding:0 20px;}
+#footer .customer_link li:nth-child(4) {color:#ad7b61;font-weight:400;font-size:15px;}
+#footer .customer_link li~li:before {content:"I";position:absolute;top:0;left:0;color:#fff;}
+#footer hr {border:none;border-top:1px solid #333;}
+#footer .sns {font-size:17px;padding:0 15px;line-height:100px;}
+#footer .sns i {border-radius:50%;background:#ad7b61;padding:10px;}
 
-
-
-
-
+#footer .lastfooter figure {margin-bottom:20px;}
+#footer .lastfooter {text-align:center;padding:40px 0;}
+#footer .lastfooter em {font-size:12px;}
+#footer .toTop {display:none;position:fixed;bottom:5rem;right:8rem;cursor: pointer;z-index:999;}
+#footer .toTop i {font-size:1.3rem;padding:.5rem;background:#000;color:#fff;}
