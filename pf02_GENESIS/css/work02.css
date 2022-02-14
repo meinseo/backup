@@ -248,12 +248,12 @@
 #section05 .right h2 {font-size:35px;font-weight:400;margin-bottom:22px;}
 #section05 .right p {font-size:17px;font-weight:300;letter-spacing:-0.025em;line-height:1.2;margin-bottom:60px;}
 
-/* #section05 .right .icon a {display:inline-block;font-size:16px;font-weight:400;background:#dbd8d5;color:#000;line-height:40px;width:130px;text-align:center;border-radius:99px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;margin-left:14px;}
-#section05 .right .icon a:hover {background:#333;color:#dbd8d5;}  */
+#section05 .right .icon a {display:inline-block;font-size:16px;font-weight:400;background:#dbd8d5;color:#000;line-height:40px;width:130px;text-align:center;border-radius:99px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;margin-left:14px;}
+#section05 .right .icon a:hover {background:#333;color:#dbd8d5;} 
 
 
-#section05 .right .icon a {display:inline-block;font-size:16px;font-weight:400;background:#000;color:#fff;line-height:40px;width:150px;text-align:center;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;margin-left:14px;border:1px solid #fff;}
-#section05 .right .icon a:hover {background:#fff;color:#000;}
+/* #section05 .right .icon a {display:inline-block;font-size:16px;font-weight:400;background:#000;color:#fff;line-height:40px;width:150px;text-align:center;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;margin-left:14px;border:1px solid #fff;}
+#section05 .right .icon a:hover {background:#fff;color:#000;} */
 
 
 /*---------------------------------------------------------------------------------------------------방문예약신청-----지도-------  #section06*/
@@ -272,11 +272,11 @@
 #section06 .container .left .res a {margin-right:10px;}
 
 
-/* #section06 .container .left a {display:inline-block;font-size:16px;font-weight:400;background:#333;color:#dbd8d5;line-height:45px;width:190px;text-align:center;border-radius:80px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;}
-#section06 .container .left a:hover {background:#dbd8d5;color:#000;} */
+#section06 .container .left a {display:inline-block;font-size:16px;font-weight:400;background:#333;color:#dbd8d5;line-height:45px;width:190px;text-align:center;border-radius:80px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;}
+#section06 .container .left a:hover {background:#dbd8d5;color:#000;}
 
-#section06 .container .left a {display:inline-block;font-size:16px;font-weight:300;background:#000;color:#fff;border:1px solid #fff;line-height:45px;width:190px;text-align:center;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;}
-#section06 .container .left a:hover {background:#fff;color:#000;border:1px solid #000;}
+/* #section06 .container .left a {display:inline-block;font-size:16px;font-weight:300;background:#000;color:#fff;border:1px solid #fff;line-height:45px;width:190px;text-align:center;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;}
+#section06 .container .left a:hover {background:#fff;color:#000;border:1px solid #000;} */
 
 
 
@@ -287,8 +287,8 @@ background:#333;color:#dbd8d5; */
 
 /*-----------------------------------------------------------------------------------------------------------------------------#footer*/
 
-
-*{outline:1px solid #f00--;}
+/* 
+*{outline:1px solid #f00;} */
 
 #footer {background:#14120e;color:#f4f4f4;font-weight:300;}
 #footer .container {display:flex;width:1200px;margin:0 auto;padding:0 15px;justify-content:space-between;}
@@ -302,6 +302,6 @@ background:#333;color:#dbd8d5; */
 
 #footer .lastfooter figure {margin-bottom:20px;}
 #footer .lastfooter {text-align:center;padding:40px 0;}
-#footer .lastfooter em {font-size:12px;}
+#footer .lastfooter em {font-size:14px;}
 #footer .toTop {display:none;position:fixed;bottom:5rem;right:8rem;cursor: pointer;z-index:999;}
 #footer .toTop i {font-size:1.3rem;padding:.5rem;background:#000;color:#fff;}
