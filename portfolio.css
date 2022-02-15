@@ -323,7 +323,7 @@ body {font-size:0.8rem;color:#000;}
 
     .intro .slogan {text-align:center;transform:translateY(-30px);}
     .intro .slogan h2 {font-size:3rem;font-weight:700;margin-bottom:1.5rem;color:#f25329;margin-left:0;}
-    .intro .slogan p {font-size:0.75rem;font-weight:400;margin-bottom:0.6rem;color:#fff;margin-left:0;font-family:'Montserrat', sans-serif;}
+    .intro .slogan p {font-size:1rem;font-weight:400;margin-bottom:0.6rem;color:#fff;margin-left:0;font-family:'Montserrat', sans-serif;}
 
     .intro .wheel {position:absolute;bottom:16rem;left:50%;transform:translateX(-50%);width:1.5rem;height:2.5rem;border:2px solid var(--lc);font-size:0;border-radius:0.7rem;opacity:0.5;}
     .intro .wheel span {position:absolute;top:0.3rem;left:50%;transform:translateX(-50%);width:0.2rem;height:0.5rem;background:var(--lc);border-radius:0.1rem;animation:wheel 0.5s infinite}
@@ -349,11 +349,11 @@ body {font-size:0.8rem;color:#000;}
 
     /* <Contact 부분> */
     #footer address {position:fixed;bottom:3rem;right:3rem;z-index:999;color:#fff;text-align:right;}
-    #footer address em {font-size:22px;color:var(--ac);display:block;margin-bottom:5px;}
-    #footer address dl {font-size:15px;font-weight:400;margin-bottom:10px;}
+    #footer address em {font-size:20px;color:var(--ac);display:block;margin-bottom:5px;}
+    #footer address dl {font-size:13px;font-weight:400;margin-bottom:12px;}
     #footer address dl:after {content:"";display:block;width:40px;height:2px;background:#f25329;margin:7px 0 9px auto;}
     #footer address dt {margin-bottom:2px;color:#a7a7a7;font-weight:500;font-size:12px;}
-    #footer address dd {color:#a7a7a7;font-weight:500;font-size:12px;}
+    #footer address dd {color:#a7a7a7;font-weight:600;font-size:12px;}
 
     /* nav부분 */
     #header nav {position:fixed;top:50%;left:5rem;transform:translateY(-50%);z-index:999;}
@@ -374,7 +374,7 @@ body {font-size:0.8rem;color:#000;}
 
     /* nav 알 부분 */
     #cover {display:none;position:fixed;top:0;left:0;background:rgba(0,0,0,0.75);width:100%;height:100vh;z-index:998;}
-    #cover ul {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:var(--dc);font-size:1rem;font-weight:300;line-height:1.6;text-align:center;background:var(--lc);padding:5rem;border-radius:50%;}
+    #cover ul {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:var(--dc);font-size:2rem;font-weight:300;line-height:1.6;text-align:center;background:var(--lc);padding:5rem;border-radius:50%;}
 
     #cover ul li:hover {font-weight:500;}
     #cover ul li:first-child {margin-bottom:7px;}

@@ -53,6 +53,7 @@ $(function(){
     
     $('#cover a').on('click', function(){
         $('#cover').slideUp(); 
+        $('.cover_btn').toggleClass('on');
     });
     
     $('#cover').on('scroll wheel touchmove', function(){
