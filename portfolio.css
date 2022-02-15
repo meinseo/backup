@@ -339,20 +339,20 @@ body {font-size:0.8rem;color:#000;}
     .section {overflow:hidden;background:url(./lib/base/bo_p5.jpg) no-repeat center center/cover;background-attachment: fixed;}
 
     /* 배경 숫자 */
-    .number {position:fixed;top:140px;right:250px;font-size:300px;color:#e1e6ea;z-index:1;font-family: 'Monoton', cursive;font-weight:400;letter-spacing:0.05em;font-style:italic;}
+    .number {display:none !important;position:fixed;top:140px;right:250px;font-size:300px;color:#e1e6ea;z-index:1;font-family: 'Monoton', cursive;font-weight:400;letter-spacing:0.05em;font-style:italic;}
     /* .number {position:fixed;top:60px;right:270px;font-size:350px;color:#e1e6ea;z-index:1;font-family: 'Montserrat', sans-serif;font-weight:600;letter-spacing:0.05em;} */
 
 
     /* 왼쪽 상단 세모 2022 WEB UI&UX ART WORK 부분 */
     #header h1 {position:fixed;top:3rem;left:3rem;z-index:999;color:#fff;line-height:1.2;font-weight:300;}
-    #header h1 a {display:block;width:15rem;font-family: 'Montserrat', sans-serif;font-size:12px;}
+    #header h1 a {display:block;width:15rem;font-family: 'Montserrat', sans-serif;font-size:13px;}
 
     /* <Contact 부분> */
     #footer address {position:fixed;bottom:3rem;right:3rem;z-index:999;color:#fff;text-align:right;}
     #footer address em {font-size:20px;color:var(--ac);display:block;margin-bottom:5px;}
-    #footer address dl {font-size:13px;font-weight:400;margin-bottom:12px;}
+    #footer address dl {font-size:13px;font-weight:500;margin-bottom:12px;}
     #footer address dl:after {content:"";display:block;width:40px;height:2px;background:#f25329;margin:7px 0 9px auto;}
-    #footer address dt {margin-bottom:2px;color:#a7a7a7;font-weight:500;font-size:12px;}
+    #footer address dt {margin-bottom:2px;color:#a7a7a7;font-weight:600;font-size:12px;}
     #footer address dd {color:#a7a7a7;font-weight:600;font-size:12px;}
 
     /* nav부분 */
@@ -374,7 +374,7 @@ body {font-size:0.8rem;color:#000;}
 
     /* nav 알 부분 */
     #cover {display:none;position:fixed;top:0;left:0;background:rgba(0,0,0,0.75);width:100%;height:100vh;z-index:998;}
-    #cover ul {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:var(--dc);font-size:2rem;font-weight:300;line-height:1.6;text-align:center;background:var(--lc);padding:5rem;border-radius:50%;}
+    #cover ul {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:var(--dc);font-size:2.3rem;font-weight:300;line-height:1.6;text-align:center;background:var(--lc);padding:5rem;border-radius:50%;}
 
     #cover ul li:hover {font-weight:500;}
     #cover ul li:first-child {margin-bottom:7px;}
@@ -392,15 +392,14 @@ body {font-size:0.8rem;color:#000;}
 
     /* 컨테이너/목업 */
     .container {position:relative;display:flex;align-items:center;width:80%;margin:0 auto;z-index:888;flex-direction:column;}
-    *{outline:1px solid #369--;}
+    *{outline:1px solid #369;}
     .container>* {width:100%;}
     .section img {max-width:100%;}
-    /* .section .mockup {position:relative;background:url(./lib/base/mockup04.png) no-repeat;width:800px;height:400px;} */
-    .section .mockup {}
+    .section .mockup {position:relative;}
     /* .section .mockup {position:relative;background:url(./lib/base/mockup06.png) no-repeat;width:600px;height:510px;margin:0 130px;} */
-    .section .mockup figure {position:relative;background:url(./lib/base/mockup10.png) no-repeat;overflow:hidden;width:600px;height:430px;margin:0 auto;padding:15px;}
+    .section .mockup figure {position:relative;background:url(./lib/base/mockup10.png) no-repeat center center/contain;overflow:hidden;width:320px;height:200px;margin:0 auto;padding:20px;}
     /* .section .mockup figure {position:absolute;top:20px;left:50%;transform:translateX(-50%);width:520px;height:340px;overflow:hidden;} */
-    .section .mockup .phone {position:absolute;top:100px;left:500px;background:url(./lib/base/mockup15.png) no-repeat top center/contain;width:200px;height:500px;margin:0 auto;padding:15px;}
+    .section .mockup .phone {display:none;position:absolute;top:100px;left:500px;background:url(./lib/base/mockup15.png) no-repeat top center/contain;width:200px;height:500px;margin:0 auto;padding:15px;}
     .section .mockup figure img {position:relative;transition:5s;cursor:pointer;}
     .section .mockup .case {overflow:hidden;border-radius:18px;height:400px;}
     .section .mockup figure:hover img {transform:translateY(calc(-100% + 400px));}
