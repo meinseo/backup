@@ -223,8 +223,10 @@
 
 *{outline:1px solid #369--;}
 
-#footer .toTop {position:fixed;bottom:4.5rem;right:5rem;z-index:999;}
+#footer .toTop {display:none;position:fixed;bottom:4.5rem;right:5rem;z-index:999;cursor: pointer;}
 #footer .toTop i {font-size:1.3rem;padding:.5rem;background:#600624;color:#fff;}
+/* #footer .toTop {display:none;position:fixed;bottom:4.5rem;right:5rem;cursor:pointer;z-index:999;}
+#footer .toTop i {font-size:1.3rem;padding:.5rem;background:#600624;color:#fff;} */
 
 
 #footer {background:#f2f2f2;}
