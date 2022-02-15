@@ -311,7 +311,8 @@ body {font-size:0.8rem;color:#000;}
 
 
     /* 인트로 */
-    .intro figure img {width:80%;transform:translateX(40px);}
+    .intro figure {text-align:center;}
+    .intro figure img {width:70%;transform:translateX(0) translateY(-45px);}
     .intro figure {order:-1;width:auto;animation:spinlight 2s infinite linear;}
 
     @keyframes spinlight {
@@ -320,8 +321,9 @@ body {font-size:0.8rem;color:#000;}
         100% {opacity: 0;}
     }
 
+    .intro .slogan {text-align:center;transform:translateY(-30px);}
     .intro .slogan h2 {font-size:3rem;font-weight:700;margin-bottom:1.5rem;color:#f25329;margin-left:0;}
-    .intro .slogan p {font-size:0.75rem;font-weight:400;margin-bottom:0.6rem;color:#fff;margin-left:152px;font-family:'Montserrat', sans-serif;}
+    .intro .slogan p {font-size:0.75rem;font-weight:400;margin-bottom:0.6rem;color:#fff;margin-left:0;font-family:'Montserrat', sans-serif;}
 
     .intro .wheel {position:absolute;bottom:16rem;left:50%;transform:translateX(-50%);width:1.5rem;height:2.5rem;border:2px solid var(--lc);font-size:0;border-radius:0.7rem;opacity:0.5;}
     .intro .wheel span {position:absolute;top:0.3rem;left:50%;transform:translateX(-50%);width:0.2rem;height:0.5rem;background:var(--lc);border-radius:0.1rem;animation:wheel 0.5s infinite}
@@ -343,15 +345,15 @@ body {font-size:0.8rem;color:#000;}
 
     /* 왼쪽 상단 세모 2022 WEB UI&UX ART WORK 부분 */
     #header h1 {position:fixed;top:3rem;left:3rem;z-index:999;color:#fff;line-height:1.2;font-weight:300;}
-    #header h1 a {display:block;width:15rem;font-family: 'Montserrat', sans-serif;}
+    #header h1 a {display:block;width:15rem;font-family: 'Montserrat', sans-serif;font-size:12px;}
 
     /* <Contact 부분> */
     #footer address {position:fixed;bottom:3rem;right:3rem;z-index:999;color:#fff;text-align:right;}
-    #footer address em {font-size:20px;color:var(--ac);display:block;margin-bottom:5px;}
+    #footer address em {font-size:22px;color:var(--ac);display:block;margin-bottom:5px;}
     #footer address dl {font-size:15px;font-weight:400;margin-bottom:10px;}
     #footer address dl:after {content:"";display:block;width:40px;height:2px;background:#f25329;margin:7px 0 9px auto;}
-    #footer address dt {margin-bottom:2px;color:#a7a7a7;font-weight:500;}
-    #footer address dd {color:#a7a7a7;font-weight:500;}
+    #footer address dt {margin-bottom:2px;color:#a7a7a7;font-weight:500;font-size:12px;}
+    #footer address dd {color:#a7a7a7;font-weight:500;font-size:12px;}
 
     /* nav부분 */
     #header nav {position:fixed;top:50%;left:5rem;transform:translateY(-50%);z-index:999;}
