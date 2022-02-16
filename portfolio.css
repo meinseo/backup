@@ -321,7 +321,7 @@ body {font-size:0.8rem;color:#000;}
         100% {opacity: 0;}
     }
 
-    .intro .slogan {text-align:center;transform:translateY(-40px);}
+    .intro .slogan {text-align:center;transform:translateY(-45px);}
     .intro .slogan h2 {font-size:3rem;font-weight:700;margin-bottom:1.5rem;color:#f25329;margin-left:0;}
     .intro .slogan p {font-size:1rem;font-weight:400;margin-bottom:0.6rem;color:#fff;margin-left:0;font-family:'Montserrat', sans-serif;}
 
@@ -455,19 +455,19 @@ body {font-size:0.8rem;color:#000;}
     .portfolio_01 .description ul li:last-child a:hover {background:#dbb1d2;color:#fff;}
 
 
-    .portfolio_02 .description ul a {display:block;background:#600624;color:var(--lc);line-height:2.5rem;padding:0 2rem;font-size:0.8rem;font-weight:300;border-radius:0.7rem;}
+    .portfolio_02 .description ul a {display:block;background:#600624;color:var(--lc);line-height:2.5rem;padding:0.2rem  2.5rem;font-size:1.2rem;font-weight:400;border-radius:0.7rem;}
     .portfolio_02 .description ul li:first-child a:hover {background:#fcd5ce;color:#000;font-weight:400;}
     .portfolio_02 .description ul li:last-child a {background:#f3f1ea;color:#000;font-weight:400;}
     .portfolio_02 .description ul li:last-child a:hover {background:#fcd5ce;color:#000;}
 
 
-    .portfolio_03 .description ul a {display:block;background:#916e5c;color:var(--lc);line-height:2.5rem;padding:0 2rem;font-size:0.8rem;font-weight:300;border-radius:0.7rem;}
+    .portfolio_03 .description ul a {display:block;background:#916e5c;color:var(--lc);line-height:2.5rem;padding:0.2rem 2.5rem;font-size:1.2rem;font-weight:400;border-radius:0.7rem;}
     .portfolio_03 .description ul li:first-child a:hover {background:#003057;}
     .portfolio_03 .description ul li:last-child a {background:#ccc;color:#000;font-weight:400;}
     .portfolio_03 .description ul li:last-child a:hover {background:#0f4978;color:#fff;}
 
     /* 바꿔야함 */
-    .portfolio_04 .description ul a {display:block;background:#535353;color:var(--lc);line-height:2.5rem;padding:0 2rem;font-size:0.8rem;font-weight:300;border-radius:0.7rem;}
+    .portfolio_04 .description ul a {display:block;background:#535353;color:var(--lc);line-height:2.5rem;padding:0.2rem 2.5rem;font-size:1.2rem;font-weight:400;border-radius:0.7rem;}
     .portfolio_04 .description ul li:first-child a:hover {background:#333;}
     .portfolio_04 .description ul li:last-child a {background:#cccc;color:#000;font-weight:400;}
     .portfolio_04 .description ul li:last-child a:hover {background:#f3eded;color:#333;}
@@ -486,13 +486,13 @@ body {font-size:0.8rem;color:#000;}
     .portfolio_01 .description {transform:translateX(1300px);opacity:0;width:80%;}
     .portfolio_01.on .description {transform:translateX(0);opacity: 1;;transition:0.7s;}
 
-    .portfolio_02 .description {transform:translateX(-500px);opacity:0;}
+    .portfolio_02 .description {transform:translateX(-500px);opacity:0;width:80%;}
     .portfolio_02.on .description {transform:translateX(0);opacity: 1;;transition:0.7s;}
 
-    .portfolio_03 .description {transform:translateX(1300px);opacity:0;}
+    .portfolio_03 .description {transform:translateX(1300px);opacity:0;width:80%;}
     .portfolio_03.on .description {transform:translateX(0);opacity: 1;;transition:0.7s;}
 
-    .portfolio_04 .description {transform:translateX(-500px);opacity:0;}
+    .portfolio_04 .description {transform:translateX(-500px);opacity:0;width:80%;}
     .portfolio_04.on .description {transform:translateX(0);opacity: 1;;transition:0.7s;}
 
 
