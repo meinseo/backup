@@ -392,7 +392,7 @@ body {font-size:0.8rem;color:#000;}
 
     /* 컨테이너/목업 */
     .container {position:relative;display:flex;align-items:center;width:80%;margin:0 auto;z-index:888;flex-direction:column;}
-    *{outline:1px solid #369;}
+    *{outline:1px solid #369--;}
     .container>* {width:100%;}
     .section img {max-width:100%;}
     .section .mockup {position:relative;}
