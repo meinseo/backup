@@ -409,7 +409,7 @@ body {font-size:0.8rem;color:#000;}
     .section .description {width:600px;margin:0 auto;}
 
     /* 브랜드제목 */
-    .section .description h3 {font-size:37px;font-family: 'Montserrat', sans-serif;font-weight:600;margin-bottom:30px;letter-spacing:0.02em;}
+    .section .description h3 {font-size:30px;font-family: 'Montserrat', sans-serif;font-weight:600;margin-bottom:30px;margin-top:10px;letter-spacing:0.02em;}
     .portfolio_01 .description h3 {color:#4c2e6c;}
     .portfolio_02 .description h3 {color:#600624;}
     .portfolio_03 .description h3 {color:#003057;}
@@ -432,10 +432,10 @@ body {font-size:0.8rem;color:#000;}
 
     /* 페이지설명 */
 
-    /* 페이지설명 ver1.*/*{outline:1px solid #369--;}
-    .section .description em {margin-left:0;font-family:  'Montserrat', 'NanumSquare', sans-serif;color:var(--ac);display:block;font-size:17px;font-weight:500;text-align:left;transform:translateY(60px);}
+    /* 페이지설명 ver1.*/*{outline:1px solid #fff--;}
+    .section .description em {margin-left:0;font-family:  'Montserrat', 'NanumSquare', sans-serif;color:var(--ac);display:block;font-size:15px;font-weight:500;text-align:left;transform:translateY(65px);line-height:2.5rem;}
     .section .portfolio_01 .description p {font-size:15px;font-weight:400;margin-bottom:2rem;color:#666;}
-    .section .description dl {font-family: 'Montserrat', sans-serif;display:block;line-height:1.8rem;color:#666;font-size:15px;}
+    .section .description dl {font-family: 'Montserrat', sans-serif;display:block;line-height:2rem;color:#666;font-size:15px;margin-bottom:5px;}
     .section .description dt {color:#000;font-size:15px;font-weight:500;}
     .section .description dd {color:#333;font-size:15px;font-weight:400;}
     .section .description dl dt {width:4.2rem;}
@@ -449,7 +449,7 @@ body {font-size:0.8rem;color:#000;}
 
     /* 웹 디자인가이드 버튼 */
 
-    .portfolio_01 .description ul a {display:block;background:#4c2e6c;color:var(--lc);line-height:2.5rem;padding:0 2rem;font-size:0.8rem;font-weight:400;border-radius:0.7rem;}
+    .portfolio_01 .description ul a {display:block;background:#4c2e6c;color:var(--lc);line-height:2.5rem;padding:0 3rem;font-size:1.2rem;font-weight:400;border-radius:0.7rem;}
     .portfolio_01 .description ul li:first-child a:hover {background:#dbb1d2;color:#000;font-weight:400;}
     .portfolio_01 .description ul li:last-child a {background:#f3f1ea;color:#000;font-weight:400;}
     .portfolio_01 .description ul li:last-child a:hover {background:#dbb1d2;color:#fff;}
