@@ -321,11 +321,11 @@ body {font-size:0.8rem;color:#000;}
         100% {opacity: 0;}
     }
 
-    .intro .slogan {text-align:center;transform:translateY(-30px);}
+    .intro .slogan {text-align:center;transform:translateY(-40px);}
     .intro .slogan h2 {font-size:3rem;font-weight:700;margin-bottom:1.5rem;color:#f25329;margin-left:0;}
     .intro .slogan p {font-size:1rem;font-weight:400;margin-bottom:0.6rem;color:#fff;margin-left:0;font-family:'Montserrat', sans-serif;}
 
-    .intro .wheel {position:absolute;bottom:16rem;left:50%;transform:translateX(-50%);width:1.5rem;height:2.5rem;border:2px solid var(--lc);font-size:0;border-radius:0.7rem;opacity:0.5;}
+    .intro .wheel {position:absolute;bottom:15rem;left:50%;transform:translateX(-50%);width:1.5rem;height:2.5rem;border:2px solid var(--lc);font-size:0;border-radius:0.7rem;opacity:0.5;}
     .intro .wheel span {position:absolute;top:0.3rem;left:50%;transform:translateX(-50%);width:0.2rem;height:0.5rem;background:var(--lc);border-radius:0.1rem;animation:wheel 0.5s infinite}
 
     @keyframes wheel {
@@ -351,7 +351,7 @@ body {font-size:0.8rem;color:#000;}
     #footer address {position:fixed;bottom:3rem;right:3rem;z-index:999;color:#fff;text-align:right;}
     #footer address em {font-size:20px;color:var(--ac);display:block;margin-bottom:5px;}
     #footer address dl {font-size:13px;font-weight:500;margin-bottom:12px;}
-    #footer address dl:after {content:"";display:block;width:40px;height:2px;background:#f25329;margin:7px 0 9px auto;}
+    #footer address dl:after {content:"";display:block;width:35px;height:2px;background:#f25329;margin:10px 0 5px auto;}
     #footer address dt {margin-bottom:2px;color:#a7a7a7;font-weight:600;font-size:12px;}
     #footer address dd {color:#a7a7a7;font-weight:600;font-size:12px;}
 
@@ -435,8 +435,8 @@ body {font-size:0.8rem;color:#000;}
     /* 페이지설명 ver1.*/*{outline:1px solid #fff--;}
     .section .description em {margin-left:0;font-family: 'Montserrat', 'NanumSquare', sans-serif;color:var(--ac);display:block;font-size:15px;font-weight:500;text-align:left;transform:translateY(0);line-height:1;padding:15px 0 5px 0;}
     .section .portfolio_01 .description p {font-size:15px;font-weight:400;margin-bottom:2rem;color:#666;}
-    .section .description dl {font-family: 'Montserrat', sans-serif;display:block;line-height:1.8rem;font-size:14px;color:#666;margin-bottom:5px;}
-    .section .description dt {color:#000;font-size:14px;font-weight:500;}
+    .section .description dl {font-family: 'Montserrat', sans-serif;display:block;line-height:1.8rem;font-size:14px;color:#666;margin-bottom:7px;}
+    .section .description dt {color:#000;font-size:15px;font-weight:500;}
     .section .description dd {color:#333;font-size:14px;font-weight:400;}
     .section .description dl dt {width:4.2rem;}
 

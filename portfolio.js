@@ -15,7 +15,13 @@ $(function(){
             idx==0||idx==6 ? $('.number').hide() : $('.number').show();
             $('.number').text("0"+destination.index).css({color:sectionColor[destination.index]});
             if($(window).width()<768) {
-                idx==0||idx==6 ? $('#header , #footer').show() : $('#header ,  #footer').hide();
+                if(idx==0||idx==6) {
+                    $('#header h1').css({color:'#fff'})
+                    $('#footer').show();
+                } else  {
+                    $('#header h1').css({color:'#f25329',fontWeight:'400'})
+                    $('#footer').hide();
+                } 
             }
         },
     
