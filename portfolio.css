@@ -101,11 +101,11 @@ body {font-size:0.8rem;color:#000;}
 /* 컨테이너/목업 */
 .container {position:relative;display:flex;align-items:center;width:70rem;margin:0 auto;z-index:888;
 }
-*{outline:1px solid #369--;}
+/* *{outline:1px solid #369--;} */
 .container>* {width:700px;}
 .section img {max-width:100%;}
 /* .section .mockup {position:relative;background:url(./lib/base/mockup04.png) no-repeat;width:800px;height:400px;} */
-.section .mockup {}
+
 /* .section .mockup {position:relative;background:url(./lib/base/mockup06.png) no-repeat;width:600px;height:510px;margin:0 130px;} */
 .section .mockup figure {position:relative;background:url(./lib/base/mockup10.png) no-repeat;overflow:hidden;width:600px;height:430px;margin:0 auto;padding:15px;}
 /* .section .mockup figure {position:absolute;top:20px;left:50%;transform:translateX(-50%);width:520px;height:340px;overflow:hidden;} */
@@ -142,7 +142,7 @@ body {font-size:0.8rem;color:#000;}
 
 /* 페이지설명 */
 
-/* 페이지설명 ver1.*/*{outline:1px solid #369--;}
+/* 페이지설명 ver1.*/
 .section .description em {margin-left:auto;font-family:  'Montserrat', 'NanumSquare', sans-serif;color:var(--ac);display:block;font-size:17px;font-weight:500;text-align:right;transform:translateY(30px);}
 .section .portfolio_01 .description p {font-size:15px;font-weight:400;margin-bottom:2rem;color:#666;}
 .section .description dl {font-family: 'Montserrat', sans-serif;display:flex;line-height:1.8rem;color:#666;font-size:15px;}
@@ -188,7 +188,7 @@ body {font-size:0.8rem;color:#000;}
 
 
 
-*{outline:1px solid #fff--;}  
+/* *{outline:1px solid #fff--;}   */
 
 
 
@@ -243,7 +243,7 @@ body {font-size:0.8rem;color:#000;}
     100% {transform:rotate(1turn);}
 }
 
-*{outline:1px solid #fff--;} 
+/* *{outline:1px solid #fff--;}  */
 
 /* 프로필 내용 */
 .profile .container {width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:0;align-items:stretch;}
@@ -284,7 +284,7 @@ body {font-size:0.8rem;color:#000;}
 .spec ul li {margin-right:5px;}
 .spec i {padding:0.5rem;background:#333;color:var(--lc);margin:0 0.25rem;border-radius:50%;font-size:20px;}
 
-*{outline:1px solid #fff--;} 
+
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -392,7 +392,7 @@ body {font-size:0.8rem;color:#000;}
 
     /* 컨테이너/목업 */
     .container {position:relative;display:flex;align-items:center;width:100%;margin:0 auto;z-index:888;flex-direction:column;}
-    *{outline:1px solid #369--;}
+    /* *{outline:1px solid #369--;} */
     .container>* {width:100%;}
     .section img {max-width:100%;}
     .section .mockup {position:relative;order:-1;}
@@ -432,7 +432,7 @@ body {font-size:0.8rem;color:#000;}
 
     /* 페이지설명 */
 
-    /* 페이지설명 ver1.*/*{outline:1px solid #fff--;}
+    /* 페이지설명 ver1.*/
     .section .description em {margin-left:0;font-family: 'Montserrat', 'NanumSquare', sans-serif;color:var(--ac);display:block;font-size:15px;font-weight:500;text-align:left;transform:translateY(0);line-height:1;padding:15px 0 5px 0;}
     .section .portfolio_01 .description p {font-size:15px;font-weight:400;margin-bottom:2rem;color:#666;}
     .section .description dl {font-family: 'Montserrat', sans-serif;display:block;line-height:1.8rem;font-size:14px;color:#666;margin-bottom:7px;}
@@ -476,9 +476,6 @@ body {font-size:0.8rem;color:#000;}
     /* 페이지설명 ver2.*/
     /* .portfolio_02 .description {margin-left:200px;} */
 
-
-
-    *{outline:1px solid #fff--;}  
 
 
 
@@ -534,7 +531,7 @@ body {font-size:0.8rem;color:#000;}
     }
 
     /* 프로필 내용 */
-    .profile .container {width:95%;margin:0 auto;display:block;height:380px;overflow-x:hidden;}
+    .profile .container {width:95%;margin:0 auto;display:block;height:380px;overflow-x:hidden;overflow-y:scroll;}
     .profile .container::-webkit-scrollbar {
         width: 2px;
     }
