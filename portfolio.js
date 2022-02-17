@@ -85,8 +85,13 @@ $(function(){
           Rsd.slick('unslick');
        }else{
           Rsd.not('.slick-initialized').slick(slickOptions);
+          
        }
     });
+
+    $('.profile .container').on('scroll wheel touchmove', function(e){
+        if($(window).width() < 769) {e.stopPropagation();} 
+    })
     
     //-----------------------------------------------------
     })

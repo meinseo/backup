@@ -423,7 +423,7 @@ body {font-size:0.8rem;color:#000;}
     .portfolio_05 .container .case img {position:relative;transition:0.5s;cursor:pointer;width:100%;}
     .portfolio_05 .container .case img:hover {transform:scale(1.05);}
 
-    .portfolio_05 .container .case a {display:block;background:#eee9e9;color:var(--lc);line-height:3rem;padding:0 2rem;font-size:1rem;font-weight:400;border-radius:0.7rem;}
+    .portfolio_05 .container .case a {display:block;background:#eee9e9;color:var(--lc);line-height:3.2rem;padding:0 2rem;font-size:2.5rem;font-weight:400;border-radius:0.7rem;}
     .portfolio_05 .container .case li a:hover {background:#333;color:#fff;font-weight:300;}
 
     .portfolio_05 .container .case ul li a {display:block;text-align:center;font-size:0.9rem;margin-top:0;font-weight:600;font-family: 'Montserrat','NanumSquare', sans-serif;color:#444;}
@@ -536,7 +536,7 @@ body {font-size:0.8rem;color:#000;}
     *{outline:1px solid #fff--;} 
 
     /* 프로필 내용 */
-    .profile .container {width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:0;align-items:stretch;}
+    .profile .container {width:95%;margin:0 auto;display:block;height:400px;overflow-x:hidden;}
     .profile .container>figure {width:33.333%;}
     .profile .container>div {width:33.333%;padding:30px 40px;}
 
