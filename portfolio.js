@@ -66,6 +66,27 @@ $(function(){
         return false;
     });
     
+
+    var Rsd = $('.r_slider');
+
+    var slickOptions = {
+       infinite: true,
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       autoplay:true,
+       autoplaySpeed:2000,
+       //centerMode:true,
+       dots:false,
+       arrows:false,
+    };
+ 
+    $(window).on('load resize', function() {
+       if($(window).width() > 768) {
+          Rsd.slick('unslick');
+       }else{
+          Rsd.not('.slick-initialized').slick(slickOptions);
+       }
+    });
     
     //-----------------------------------------------------
     })

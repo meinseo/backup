@@ -418,15 +418,15 @@ body {font-size:0.8rem;color:#000;}
 
     /* .portfolio_05 트레이닝 페이지 */
     /* .portfolio_05 h3 {font-size:40px;font-family: 'Montserrat', sans-serif;font-weight:600;margin-bottom:80px;letter-spacing:0.02em;text-align:center;color:var(--ac);} */
-    .portfolio_05 .container .case {position:relative;background:url(./lib/base/mockup11.png) no-repeat center center/contain;width:600px;height:430px;padding:10px 30px;}
-    .portfolio_05 .container .case figure {height:410px;overflow:hidden;border-radius:15px;}
-    .portfolio_05 .container .case img {position:relative;transition:0.5s;cursor:pointer;width:330px;}
+    .portfolio_05 .container .case {position:relative;background:transparent;width:600px;height:auto;padding:10px 30px;width:80%;}
+    .portfolio_05 .container .case figure {overflow:hidden;border-radius:15px;height:400px;margin-bottom:30px;border:6px solid #333;}
+    .portfolio_05 .container .case img {position:relative;transition:0.5s;cursor:pointer;width:100%;}
     .portfolio_05 .container .case img:hover {transform:scale(1.05);}
 
-    .portfolio_05 .container .case a {display:block;background:#eee9e9;color:var(--lc);line-height:2.5rem;padding:0 2rem;font-size:0.8rem;font-weight:300;border-radius:0.7rem;}
+    .portfolio_05 .container .case a {display:block;background:#eee9e9;color:var(--lc);line-height:3rem;padding:0 2rem;font-size:1rem;font-weight:400;border-radius:0.7rem;}
     .portfolio_05 .container .case li a:hover {background:#333;color:#fff;font-weight:300;}
 
-    .portfolio_05 .container .case ul li a {display:block;text-align:center;font-size:0.9rem;margin-top:30px;font-weight:600;font-family: 'Montserrat','NanumSquare', sans-serif;color:#444;}
+    .portfolio_05 .container .case ul li a {display:block;text-align:center;font-size:0.9rem;margin-top:0;font-weight:600;font-family: 'Montserrat','NanumSquare', sans-serif;color:#444;}
 
 
 
