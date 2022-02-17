@@ -521,9 +521,9 @@ body {font-size:0.8rem;color:#000;}
     }
 
     .profile {position:relative;}
-    .profile .inner {position:absolute;top:100px;left:-130px;width:15rem;height:15rem;padding:1rem;border:1px solid rgba(255,255,255,0.5);border-radius:50%;transform:translate(180px,-100px);}
+    .profile .inner {position:static;top:0;left:-130px;width:15rem;height:15rem;padding:1rem;border:1px solid rgba(255,255,255,0.5);border-radius:50%;transform:translate(30px,12px);}
     .profile .inner strong {display:block;width:13rem;height:13rem;border-radius:50%;overflow:hidden;}
-    .profile .inner strong img {max-width:150%;transform:translateX(-80px);}
+    .profile .inner strong img {max-width:150%;transform:translateX(0);}
     .profile .inner span {position:absolute;top:0;left:calc(50% - 0.5rem);width:1rem;height:7.5rem;font-size:0;animation:circle_thoto 6s infinite linear;transform-origin:bottom;}
     .profile .inner span:after {content:"";display:block;width:1rem;height:1rem;background:var(--ac);border-radius:50%;margin-top:-0.5rem;}
 
@@ -536,40 +536,40 @@ body {font-size:0.8rem;color:#000;}
     *{outline:1px solid #fff--;} 
 
     /* 프로필 내용 */
-    .profile .container {width:95%;margin:0 auto;display:block;height:400px;overflow-x:hidden;}
+    .profile .container {width:95%;margin:0 auto;display:block;height:350px;overflow-x:hidden;}
     .profile .container>figure {width:33.333%;}
     .profile .container>div {width:33.333%;padding:30px 40px;}
 
-    .profile em {position:relative;display:flex;line-height:1.7rem;color:var(--ac);font-size:22px;font-family:'Montserrat', sans-serif;margin-bottom:20px;font-weight:500;}
-    .profile em:after {position:absolute;top:40px;left:0;content:"";display:block;width:45px;height:2px;background:#f25329;}
-    .pf dl {display:flex;line-height:1.7rem;color:#fff;font-size:17px;font-family:'Montserrat', sans-serif;}
-    .pf dt {color:#fff;font-size:17px;font-weight:400;font-family: 'Montserrat', sans-serif;}
-    .pf dd {color:#fff;font-size:16px;font-weight:300;}
-    .pf dl dt {width:5rem;}
+    .profile em {position:relative;display:flex;line-height:1.7rem;color:var(--ac);font-size:18px;font-family:'Montserrat', sans-serif;margin-bottom:20px;font-weight:500;}
+    .profile em:after {position:absolute;top:25px;left:0;content:"";display:block;width:45px;height:2px;background:#f25329;}
+    .pf dl {display:block;line-height:1.7rem;color:#fff;font-size:17px;font-family:'Montserrat', sans-serif;width:30rem;}
+    .pf dt {color:#fff;font-size:13px;font-weight:400;font-family: 'Montserrat', sans-serif;}
+    .pf dd {color:#fff;font-size:12px;font-weight:300;margin-bottom:9px;}
+    .pf dl dt {width:30rem;}
 
-    .edu  em {display:flex;line-height:1.7rem;color:var(--ac);font-size:22px;font-family:'Montserrat', sans-serif;margin-bottom:20px;font-weight:500;}
-    .edu  em:after {position:absolute;top:40px;left:0;content:"";display:block;width:45px;height:2px;background:#f25329;}
-    .edu  dl {line-height:1.3rem;color:#fff;font-size:17px;font-family:'Montserrat', sans-serif;}
-    .edu  dt {color:#fff;font-size:16px;font-weight:400;font-family: 'Montserrat', sans-serif;}
-    .edu  dd {color:#f2f2f2;font-size:14px;font-weight:300;}
-    .edu  dl dt {width:17rem;}
+    .edu  em {display:flex;line-height:1.7rem;color:var(--ac);font-size:18px;font-family:'Montserrat', sans-serif;margin-bottom:20px;font-weight:500;}
+    .edu  em:after {position:absolute;top:25px;left:0;content:"";display:block;width:45px;height:2px;background:#f25329;}
+    .edu  dl {line-height:1.7rem;color:#fff;font-size:17px;font-family:'Montserrat', sans-serif;}
+    .edu  dt {color:#fff;font-size:13px;font-weight:400;font-family: 'Montserrat', sans-serif;}
+    .edu  dd {color:#f2f2f2;font-size:12px;font-weight:300;margin-bottom:9px;}
+    .edu  dl dt {width:30rem;}
 
-    .Lic  em {display:flex;line-height:1.7rem;color:var(--ac);font-size:22px;font-family:'Montserrat', sans-serif;margin-bottom:20px;font-weight:500;}
-    .Lic  em:after {position:absolute;top:40px;left:0;content:"";display:block;width:45px;height:2px;background:#f25329;}
-    .Lic  dl {line-height:1.3rem;color:#fff;font-size:17px;font-family:'Montserrat', sans-serif;}
-    .Lic  dt {color:#fff;font-size:16px;font-weight:400;font-family: 'Montserrat', sans-serif;}
-    .Lic  dd {color:#f2f2f2;font-size:14px;font-weight:300;}
-    .Lic  dl dt {width:13rem;}
+    .Lic  em {display:flex;line-height:1.7rem;color:var(--ac);font-size:18px;font-family:'Montserrat', sans-serif;margin-bottom:20px;font-weight:500;}
+    .Lic  em:after {position:absolute;top:25px;left:0;content:"";display:block;width:45px;height:2px;background:#f25329;}
+    .Lic  dl {line-height:1.7rem;color:#fff;font-size:17px;font-family:'Montserrat', sans-serif;}
+    .Lic  dt {color:#fff;font-size:13px;font-weight:400;font-family: 'Montserrat', sans-serif;}
+    .Lic  dd {color:#f2f2f2;font-size:12px;font-weight:300;margin-bottom:9px;}
+    .Lic  dl dt {width:30rem;}
 
-    .award  em {display:flex;line-height:1.7rem;color:var(--ac);font-size:22px;font-family:'Montserrat', sans-serif;margin-bottom:20px;font-weight:500;}
-    .award  em:after {position:absolute;top:40px;left:0;content:"";display:block;width:45px;height:2px;background:#f25329;}
-    .award  dl {line-height:1.3rem;color:#fff;font-size:17px;font-family:'Montserrat', sans-serif;}
-    .award  dt {color:#fff;font-size:16px;font-weight:400;font-family: 'Montserrat', sans-serif;}
-    .award  dd {color:#f2f2f2;font-size:14px;font-weight:300;}
-    .award  dl dt {width:20rem;}
+    .award  em {display:flex;line-height:1.7rem;color:var(--ac);font-size:18px;font-family:'Montserrat', sans-serif;margin-bottom:20px;font-weight:500;}
+    .award  em:after {position:absolute;top:25px;left:0;content:"";display:block;width:45px;height:2px;background:#f25329;}
+    .award  dl {line-height:1.7rem;color:#fff;font-size:17px;font-family:'Montserrat', sans-serif;}
+    .award  dt {color:#fff;font-size:13px;font-weight:400;font-family: 'Montserrat', sans-serif;}
+    .award  dd {color:#f2f2f2;font-size:12px;font-weight:300;margin-bottom:9px;}
+    .award  dl dt {width:30rem;}
 
-    .spec em {display:flex;line-height:1.7rem;color:var(--ac);font-size:22px;font-family:'Montserrat', sans-serif;margin-bottom:20px;font-weight:500;}
-    .spec em:after {position:absolute;top:40px;left:0;content:"";display:block;width:45px;height:2px;background:#f25329;}
+    .spec em {display:flex;line-height:1.7rem;color:var(--ac);font-size:18px;font-family:'Montserrat', sans-serif;margin-bottom:20px;font-weight:500;width:20rem;}
+    .spec em:after {position:absolute;top:25px;left:0;content:"";display:block;width:45px;height:2px;background:#f25329;}
     .spec ul {display:flex;}
     .spec ul li {margin-right:5px;}
     .spec i {padding:0.5rem;background:#333;color:var(--lc);margin:0 0.25rem;border-radius:50%;font-size:20px;}
