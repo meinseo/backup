@@ -138,7 +138,7 @@
 
 
 #section02 {padding:120px 0;background:#efeeee;}
-#section02 .container {display:flex;flex-wrap:wrap;width:1200px;margin:0 auto;padding:0 15px;align-items:center;margin-top:60px;}
+#section02 .container {display:flex;flex-wrap:wrap;width:1200px;margin:0 auto;padding:0;align-items:center;margin-top:60px;}
 
 #section02 .title {text-align:center;}
 #section02 h2 {font-size:40px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;font-family: 'Montserrat', sans-serif;}
@@ -249,6 +249,7 @@
 
 #section06 {padding:120px 0;background:#f7f7f7;}
 #section06 .container {width:1200px;display:flex;margin:0 auto;justify-content:space-between;padding:0 15px;}
+#section06 .container>div {flex:1;}
 #section06 h2 {font-size:40px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;font-family: 'Montserrat', sans-serif;}
 /* #section06 hr {display:block;border:none;border-bottom:2px solid #666;width:280px;margin-top:5px;} */
 #section06 p {font-size:16px;font-weight:300;letter-spacing:-0.025em;line-height:20px;margin-bottom:45px;margin-top:20px;}
@@ -382,7 +383,7 @@ background:#333;color:#dbd8d5; */
    /* 봐봐 #section01 ul>li>a {display:flex;justify-content:space-between;padding:0 20px;}  이렇게만 주니까 화살표는 박스가 세로로 잡히니까 
    #section01 i {line-height:50px;} 여기서 라인하이트를 줘서 가운데로 보낸다. */
    #section01 ul>li>ul>li~li {border-top:1px solid #666;}
-   #section01 ul>li>ul {display:none;position:absolute;left:50%;transform:translateX(-50%);width:100%;text-align:center;background: #333;border:1px solid #333;z-index:999;}
+   #section01 ul>li>ul {display:none;position:absolute;left:50%;transform:translateX(-50%);width:100%;text-align:center;background: #333;font-weight:100;border:1px solid #333;z-index:999;}
    #section01 ul>li>ul>li:hover {background:#666;color:#fff;}
 
 
@@ -393,7 +394,7 @@ background:#333;color:#dbd8d5; */
    #section01 figure img {transition:0.4s;}
    #section01 figure:hover img {transform:scale(1.1);}
 
-   #section01 .container figure a {display:flex;justify-content:center;font-size:22px;letter-spacing:-0.025em;line-height:55px;background:#333;color:#fff;}
+   #section01 .container figure a {display:flex;justify-content:center;font-size:22px;letter-spacing:-0.025em;line-height:55px;background:#222;color:#fff;}
    #section01 .container figure a:hover {background:#2a2a2a;color:#f2f2f2;opacity:0.9;}
 
 
@@ -402,18 +403,18 @@ background:#333;color:#dbd8d5; */
 
 
    #section02 {padding:120px 28px;background:#efeeee;}
-   #section02 .container {display:flex;flex-wrap:wrap;width:auto;margin:0 auto;padding:0 15px;align-items:center;margin-top:60px;}
+   #section02 .container {display:flex;flex-wrap:wrap;width:auto;margin:0 auto;padding:0;align-items:center;margin-top:60px;}
 
    #section02 .title {text-align:center;}
    #section02 h2 {font-size:30px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;font-family: 'Montserrat', sans-serif;}
    #section02 hr {display:block;margin:0 auto;border:none;border-bottom:2px solid #666;width:110px;}
    #section02 p {font-size:14px;font-weight:300;letter-spacing:-0.025em;line-height:10px;margin-bottom:45px;margin-top:20px;}
 
-   #section02 img {max-width:290px}
+   #section02 img {max-width:320px}
    #section02 .pic {order:-1;width:100%;margin-bottom:15px;}
    #section02 .let {width:100%;}
 
-   *{outline:1px solid #f00--;}
+
    #section02 .left {text-align:left;padding:0;}
    #section02 .right {text-align:left;padding:0;}
 
@@ -434,25 +435,25 @@ background:#333;color:#dbd8d5; */
 
 
 
-   #section02 .let_con p {font-size:15px;font-weight:300;line-height:17px;margin-bottom:10px;}
-   #section02 .let_con strong {font-size:12px;font-weight:300;letter-spacing:0.025em;}
+   #section02 .let_con p {font-size:15px;font-weight:300;line-height:17px;margin-bottom:7px;}
+   #section02 .let_con strong {font-size:13px;font-weight:300;letter-spacing:0.025em;}
 
 
 
    /*---------------------------------------------------------------------------------------------------------메인배너-------------  #main_banner*/
 
-   #main_banner {padding:90px 0 90px; background:url(../img/main_banner.jpg) no-repeat center center/cover;background-attachment:fixed;color:#fff;}
-   #main_banner .container {width:1000px;margin:0 auto;}
+   #main_banner {padding:90px 0 90px; background:url(../img/main_banner.jpg) no-repeat center center/cover;background-attachment:scroll;color:#fff;}
+   #main_banner .container {width:auto;margin:0 auto;}
 
-   #main_banner .left {text-align:left;padding:0 0 120px 0;}
-   #main_banner .left h2 {font-size:35px;font-weight:400;margin-bottom:13px;}
-   #main_banner .left p {font-size:18px;font-weight:300;letter-spacing:-0.025em;margin-bottom:20px;}
-   #main_banner .left em {font-size:20px;font-weight:300;letter-spacing:-0.025em;}
+   #main_banner .left {text-align:left;padding:0 0 120px 28px;font-family: 'Montserrat', sans-serif;}
+   #main_banner .left h2 {font-size:22px;font-weight:400;margin-bottom:13px;}
+   #main_banner .left p {font-size:17px;font-weight:300;letter-spacing:-0.025em;margin-bottom:10px;}
+   #main_banner .left em {font-size:13px;font-weight:300;letter-spacing:-0.025em;}
 
-   #main_banner .right {text-align:right;padding:0 80px 0 0;}
-   #main_banner .right h3 {font-size:24px;font-weight:400;margin-bottom:10px;}
-   #main_banner .right p {font-size:18px;font-weight:300;letter-spacing:-0.025em;margin-bottom:10px;}
-   #main_banner .right em {font-size:19px;font-weight:500;letter-spacing:3px;}
+   #main_banner .right {text-align:right;padding:0 28px 0 0;font-family: 'Montserrat', sans-serif;}
+   #main_banner .right h3 {font-size:18px;font-weight:400;margin-bottom:10px;}
+   #main_banner .right p {font-size:15px;font-weight:300;letter-spacing:-0.025em;margin-bottom:10px;}
+   #main_banner .right em {font-size:14px;font-weight:500;letter-spacing:3px;}
 
 
    /*-----------------------------------------------------------------------------------------------------------------비디오--------  #section04*/
@@ -460,70 +461,41 @@ background:#333;color:#dbd8d5; */
 
 
 
-   #section04 {padding:120px 0;width:1170px;margin:0 auto;text-align:center;}
-   #section04 h2 {font-size:40px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;font-family: 'Montserrat', sans-serif;}
+   #section04 {padding:120px 28px;width:auto;margin:0 auto;text-align:center;background:#efeeee;}
+   #section04 h2 {font-size:30px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;font-family: 'Montserrat', sans-serif;}
    #section04 hr {display:block;margin:0 auto;border:none;border-bottom:2px solid #666;width:100px;}
-   #section04 p {font-size:17px;font-weight:300;letter-spacing:0.025em;line-height:10px;margin-bottom:45px;margin-top:20px;}
-   #section04 i {font-size:18px;padding:8px;background:#333;color:#fff;border-radius:5px;cursor: pointer;}
+   #section04 p {font-size:14px;font-weight:400;letter-spacing:0.025em;line-height:15px;margin-bottom:25px;margin-top:20px;font-family: 'Montserrat', sans-serif;}
+   #section04 i {font-size:15px;padding:7px;background:#333;color:#fff;border-radius:5px;cursor: pointer;}
    /* #section04 .container figure {margin-top:50px;} */
-   #section04 .container figure i {margin-bottom:40px;}
+   #section04 .container figure i {margin-bottom:20px;}
    #section04 .container .video01 {margin-top:30px;}
 
 
    /*---------------------------------------------------------------------------------------------------시승신청------------------  #section05*/
-   /* flex를 하던가 인라인블록을 하던가 상황에 맞춰서 사용  */
 
-   /* #section05 {background:#000;color:#fff;height:500px;position: relative;}
-   #section05 .full {margin:0 auto;width:1200px;}
+   #section05 {padding:170px 0;background:url(../img/section05_full.jpg) no-repeat top middle/cover;background-attachment:scroll;}
 
-   #section05 .right {text-align:right;width:1200px;position: absolute;top:140px;left:50%;transform:translateX(-50%);padding:0 70px;}
+   #section05 .right {display:inline-block;text-align:left;width:auto;top:140px;left:50%;transform:translate(15%,110%);color:#fff;font-family: 'Montserrat', sans-serif;}
 
-   #section05 .right h2 {font-size:35px;font-weight:500;margin-bottom:18px;}
-   #section05 .right p {font-size:17px;font-weight:300;letter-spacing:-0.035em;line-height:1.1;margin-bottom:60px;}
+   #section05 .right h2 {font-size:20px;font-weight:400;margin-bottom:15px;}
+   #section05 .right p {font-size:14px;font-weight:300;letter-spacing:-0.025em;line-height:1.2;margin-bottom:20px;}
 
-
-   #section05 .right .icon {text-align:right;} */
-
-   /* 글이 두개가 들어가면 디스플레이 인라인블록도 안먹음  */
-   /* #section05 .right .icon a {display:inline-block;font-size:18px;font-weight:500;background:#dbd8d5;color:#000;line-height:40px;width:110px;text-align:center;border-radius:99px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;margin-left:14px;}
-   #section05 .right .icon a:hover {background:#333;font-weight:400;font-size:18px;color:#dbd8d5;} */
-
-
-   /* background:#dbd8d5;color:#000; */
-
-
-   #section05 {padding:130px 0;background:url(../img/section05_full.jpg) no-repeat top left/cover;}
-
-   #section05 .right{display:inline-block;text-align:right;width:1200px;top:140px;left:50%;transform:translateX(15%);color:#fff;}
-
-   #section05 .right h2 {font-size:35px;font-weight:400;margin-bottom:22px;}
-   #section05 .right p {font-size:17px;font-weight:300;letter-spacing:-0.025em;line-height:1.2;margin-bottom:60px;}
-
-   #section05 .right .icon a {display:inline-block;font-size:16px;font-weight:400;background:#dbd8d5;color:#000;line-height:40px;width:130px;text-align:center;border-radius:99px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;margin-left:14px;}
+   #section05 .right .icon a {display:inline-block;font-size:15px;font-weight:400;background:#dbd8d5;color:#000;line-height:35px;width:120px;text-align:center;border-radius:99px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;margin-left:0;}
    #section05 .right .icon a:hover {background:#333;color:#dbd8d5;} 
-
-
-   /* #section05 .right .icon a {display:inline-block;font-size:16px;font-weight:400;background:#000;color:#fff;line-height:40px;width:150px;text-align:center;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;margin-left:14px;border:1px solid #fff;}
-   #section05 .right .icon a:hover {background:#fff;color:#000;} */
-
 
    /*---------------------------------------------------------------------------------------------------방문예약신청-----지도-------  #section06*/
 
 
+   #section06 {padding:120px 28px;background:#efeeee;}
+   #section06 .container {width:auto;display:block;margin:0 auto;justify-content:space-between;padding:0;}
+   #section06 h2 {font-size:30px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;font-family: 'Montserrat', sans-serif;}
+   #section06 p {font-size:15px;font-weight:300;letter-spacing:-0.025em;line-height:17px;margin-bottom:20px;margin-top:20px;}
 
-   #section06 {padding:120px 0;background:#f7f7f7;}
-   #section06 .container {width:1200px;display:flex;margin:0 auto;justify-content:space-between;padding:0 15px;}
-   #section06 h2 {font-size:40px;font-weight:500;letter-spacing:-0.025em;line-height:40px;margin-bottom:10px;font-family: 'Montserrat', sans-serif;}
-   /* #section06 hr {display:block;border:none;border-bottom:2px solid #666;width:280px;margin-top:5px;} */
-   #section06 p {font-size:16px;font-weight:300;letter-spacing:-0.025em;line-height:20px;margin-bottom:45px;margin-top:20px;}
-
-   /* #section06 .container .map {display:block;} */
-   /* 이거 블락 안하면 안되는건가?? */
-
+   #section06 .container .left .res {display:flex;margin-bottom:30px;}
    #section06 .container .left .res a {margin-right:10px;}
 
 
-   #section06 .container .left a {display:inline-block;font-size:16px;font-weight:400;background:#333;color:#dbd8d5;line-height:45px;width:190px;text-align:center;border-radius:80px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;}
+   #section06 .container .left a {display:block;font-size:14px;font-weight:300;background:#333;color:#dbd8d5;line-height:35px;width:160px;text-align:center;border-radius:80px;letter-spacing:-0.025em;bottom:100px;left:1300px;opacity:0.9;}
    #section06 .container .left a:hover {background:#dbd8d5;color:#000;}
 
    /*-----------------------------------------------------------------------------------------------------------------------------#footer*/
@@ -531,18 +503,18 @@ background:#333;color:#dbd8d5; */
 
 
    #footer {background:#14120e;color:#f4f4f4;font-weight:300;}
-   #footer .container {display:flex;width:1200px;margin:0 auto;padding:0 15px;justify-content:space-between;}
-   #footer .customer_link {display:flex;line-height:100px;}
-   #footer .customer_link li {position: relative;font-size:14px;font-weight:300;padding:0 20px;}
+   #footer .container {display:block;width:auto;margin:0 auto;padding:0;justify-content:space-between;}
+   #footer .customer_link {display:block;line-height:20px;text-align:center;}
+   #footer .customer_link li {display:inline-block;position: relative;font-size:14px;font-weight:300;padding:10px 0;}
    #footer .customer_link li:nth-child(4) {color:#ad7b61;font-weight:400;font-size:15px;}
-   #footer .customer_link li~li:before {content:"I";position:absolute;top:0;left:0;color:#fff;}
+   #footer .customer_link li~li:before {display:none;content:"I";position:absolute;top:0;left:0;color:#fff;}
    #footer hr {border:none;border-top:1px solid #333;}
-   #footer .sns {font-size:17px;padding:0 15px;line-height:100px;}
+   #footer .sns {font-size:17px;padding:0 15px;line-height:50px;}
    #footer .sns i {border-radius:50%;background:#ad7b61;padding:10px;}
 
    #footer .lastfooter figure {margin-bottom:20px;}
-   #footer .lastfooter {text-align:center;padding:40px 0;}
-   #footer .lastfooter em {font-size:14px;}
+   #footer .lastfooter {text-align:center;padding:30px 0;}
+   #footer .lastfooter em {font-size:10px;}
    #footer .toTop {display:none;position:fixed;bottom:5rem;right:8rem;cursor: pointer;z-index:999;}
    #footer .toTop i {font-size:1.3rem;padding:.5rem;background:#000;color:#fff;}
 
