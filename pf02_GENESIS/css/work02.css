@@ -138,7 +138,7 @@
 
 /*--------------------------------------------------------------------------------------------------------이벤트---------------  #section02*/
 
-*{outline:1px solid #f00--;}
+
 #section02 {padding:120px 0;background:#efeeee;}
 #section02 .container {display:flex;flex-wrap:wrap;width:1200px;margin:0 auto;padding:0 15px;align-items:center;}
 
@@ -312,7 +312,7 @@ background:#333;color:#dbd8d5; */
 
    /*------------------------------------------------------------------------------------------------------------------------------- #header*/
 
-   *{outline:1px solid #f00--;}
+
    /* .gnb */
    .gnb {position:fixed;top:0;left:-100%;background:#000;border-bottom:1px solid transparent;z-index:9999;width:calc(100% - 90px);height:100vh;transition:0.5s;}
    .gnb.on {left:0;}
