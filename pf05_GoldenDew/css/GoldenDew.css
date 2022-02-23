@@ -116,8 +116,11 @@
 .section01 .container figure:hover .icon {opacity:1;}
 .section01 .container figure .icon i {background:#dbb1d2;border-radius:50%;padding:5px;margin: 0 5px}
 /* 아이콘 호버 바꾸는거 */
-/* .section01 .container figure .icon:first-child:before {content:"\ea11";font-family: xeicon!important;}
-.section01 .container figure .icon:first-child:hover:before {content:"\ea10";font-family: xeicon!important;} */
+
+.section01 .case li:nth-child(1):before {content:"\ea11";font-family: xeicon!important;color:#000;background:#dbb1d2;border-radius:50%;padding:5px;margin: 0 5px}
+.section01 .case li:nth-child(1):hover:before {content:"\ea10";font-family: xeicon!important;color:#000;background:#dbb1d2;border-radius:50%;padding:5px;margin: 0 5px}
+.section01 .case li:nth-child(2):before {content:"\ea3a";font-family: xeicon!important;background:#dbb1d2;border-radius:50%;padding:5px;margin: 0 5px}
+.section01 .case li:nth-child(2):hover:before {content:"\eb70";font-family: xeicon!important;background:#dbb1d2;border-radius:50%;padding:5px;margin: 0 5px}
 
 .section01 .container h3 {font-size:17px;font-weight:400;padding:23px 0 10px 0;}
 .section01 .container strong {font-size:16px;text-decoration:line-through solid 2px #dbb1d2;font-weight:400;margin-right:10px;color:#333;}
