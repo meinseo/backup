@@ -76,7 +76,7 @@ $(function(){
        autoplay:true,
        autoplaySpeed:2000,
        //centerMode:true,
-       dots:true,
+       dots:false,
        arrows:false,
     };
  
