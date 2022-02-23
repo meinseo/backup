@@ -110,14 +110,17 @@ body {font-size:0.8rem;color:#000;}
 /* .section .mockup figure {position:absolute;top:20px;left:50%;transform:translateX(-50%);width:520px;height:340px;overflow:hidden;} */
 .section .mockup .phone {position:absolute;top:100px;left:500px;background:url(./lib/base/mockup15.png) no-repeat top center/contain;width:200px;height:500px;margin:0 auto;padding:15px;}
 
+.portfolio_01 .mockup .phone {position:absolute;top:100px;left:500px;background:url(./lib/base/mockup15.png) no-repeat top center/contain;width:200px;height:500px;margin:0 auto;padding:9px 10px;}
+.portfolio_01 .mockup .phone img {transition:10s;}
+
 .portfolio_04 .mockup .phone {position:absolute;top:120px;left:620px;background:url(./lib/base/mockup15.png) no-repeat top center/contain;width:200px;height:500px;margin:0 auto;padding:9px 10px;}
 .portfolio_04 .mockup .phone img {transition:10s;}
 
 .section .mockup figure img {position:relative;transition:5s;cursor:pointer;}
 .section .mockup .case {overflow:hidden;border-radius:18px;height:400px;}
-.section .mockup figure:hover img {transform:translateY(calc(-100% + 400px));}
+.section .mockup figure:hover img {transform:translateY(calc(-100% + 380px));}
 
-.section .mockup .phone .case {height:390px;}
+.section .mockup .phone .case {height:380px;}
 
 
 .section .description {width:600px;margin:0 auto;}
