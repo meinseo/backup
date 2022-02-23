@@ -1,19 +1,37 @@
 $(function(){
     //--------------------------------------------------------------------------------
+    //첫번째 동영상
+    //기본일때
+    if($(window).width() > 768) {
+        var vset = {
+            videoURL:'UV4hyqN88nA',
+            containment:'.main_visual',       
+            autoPlay:true, 
+            mute:true, 
+            startAt:0, 
+            opacity:1,
+            showControls:false,
+            optimizeDisplay:false,
+            ratio: '16/9'
+        }
+    } else {
+        //반응형일때
+        var vset = {
+            videoURL:'UV4hyqN88nA',
+            containment:'.main_visual',       
+            autoPlay:true, 
+            mute:true, 
+            startAt:0, 
+            opacity:1,
+            showControls:false,
+            //optimizeDisplay:false,
+            //ratio: '16/9'
+        }
+    }
 
+    $(".bgndVideo").YTPlayer(vset);
 
-    $(".bgndVideo").YTPlayer({
-        videoURL:'UV4hyqN88nA',
-        containment:'self',       
-        autoPlay:true, 
-        mute:true, 
-        startAt:0, 
-        opacity:1,
-        showControls:false,
-        optimizeDisplay:false,
-        ratio: '16/9'
-    });
-
+    //두번째 동영상
     $(".bgndVideo_second").YTPlayer({
         videoURL:'h-wh01NsRSo',
         containment:'self',       
@@ -77,10 +95,10 @@ $(function(){
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                //infinite: true,
-                //dots: false,
+                infinite: true,
+                dots: false
               }
-            }
+            },
         ]
     });
 
@@ -88,7 +106,19 @@ $(function(){
     $('.f_slider').slick({
         arrows:false,
         autoplay:true,
+        slidesToShow: 1,
         dots:false,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+              }
+            },
+        ]
     });
 
     // section01 슬라이드 버튼
@@ -106,20 +136,12 @@ $(function(){
     })
 
 
-    // sec03 슬라이드
-    $('.pr_slider').slick({
-        arrows:false,
-        autoplay:true,
-        slidesToShow: 5,
-        dots:false,
-    });
-
     // section03 슬라이드 버튼
     $('.section03 .btn i.xi-angle-left-thin').on ('click',function(){
-        $('.pr_slider').slick('slickPrev');
+        $('.f_slider').slick('slickPrev');
     });
     $('.section03 .btn i.xi-angle-right-thin').on ('click',function(){
-        $('.pr_slider').slick('slickNext');
+        $('.f_slider').slick('slickNext');
     });
 
     

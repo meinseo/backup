@@ -62,7 +62,7 @@
 
 
 /* .main_visual */
-.main_visual {position:absolute;width:100%;top:13px;left:0;}
+.main_visual {position:absolute;width:100%;height:120vh;top:-100px;left:0;}
 
 
 
@@ -342,21 +342,22 @@
 
 
     /* .popup01 */
-    .popup01 {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);cursor: pointer;}
-    .popup01 img {width:300px;}
-    .popup01 span {position:absolute;bottom:15px;right:20px;font-size:15px;color:#fff;background:#000;padding:3px;vertical-align:middle;}
+    .popup01 {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100%;padding:0 20px;}
+    .popup01 img {width:100%;}
+    .popup01 span {position:absolute;bottom:10px;right:30px;font-size:12px;color:#fff;background:#000;padding:3px;vertical-align:middle;}
     .popup01 i {vertical-align:middle;}
 
 
 
+
     /* section01 top에서 938px까지가 동영상끝*/
-    .section01 {position:relative;padding:100px 0;background:#fff;margin-top:800px;position:relative;text-align:center;z-index:999;}
+    .section01 {position:relative;padding: 0;background:#fff;margin-top:800px;position:relative;text-align:center;z-index:999;}
 
     .section01 .title h2 {font-size:19px;font-family:"Montserrat";letter-spacing:0.05em;font-weight:400;}
     .section01 .title h2:after {content:"";display:block;width:1px;height:25px;background:#dbb1d2;margin:7px auto;}
     .section01 .title p {font-size:13px;margin-bottom:50px;font-family: 'Noto Serif KR', serif;}
 
-    .section01 .container {width:auto;margin:0 auto;}
+    .section01 .container {width:90%;margin:0 auto;}
     .section01 .container .case {padding:0 15px;}
     .section01 .container figure {position:relative;border:1px solid #ddd;}
     .section01 .container figure img {max-width:245px;margin:0 auto;border-bottom:1px solid #ddd;}
@@ -416,15 +417,15 @@
     .section03 .case li:nth-child(1):hover:before {content:"\ea10";font-family: xeicon!important;color:#000;background:#dbb1d2;border-radius:50%;padding:5px;margin: 0 5px;}
     .section03 .case li:nth-child(2):before {content:"\ea3a";font-family: xeicon!important;background:#dbb1d2;border-radius:50%;padding:5px;margin: 0 5px;}
     .section03 .case li:nth-child(2):hover:before {content:"\eb70";font-family: xeicon!important;background:#dbb1d2;border-radius:50%;padding:5px;margin: 0 5px;}
-    .section03 .btn i.xi-angle-left-thin {margin-left:-800px;}
-    .section03 .btn i.xi-angle-right-thin {margin-left:800px;}
+    .section03 .btn i.xi-angle-left-thin {display:none;margin-left:-100px;}
+    .section03 .btn i.xi-angle-right-thin {display:none;margin-left:100px;}
 
-    .section03 .container {position:relative;display:block;align-items:center;justify-content: space-between;}
-    .section03 .container .left {position:relative;width:49%;border-radius:63% 37% 49% 51% / 45% 40% 60% 55% ;overflow:hidden;}
+    .section03 .container {position:relative;display:flex;flex-direction:column;align-items:center;justify-content: space-between;}
+    .section03 .container .left {position:relative;width:85%;border-radius:63% 37% 49% 51% / 45% 40% 60% 55% ;overflow:hidden;margin-bottom:30px;}
     .section03 .container .movie_c {position:static;top:0;left:50%;transform:translateX(-50%);width:auto;padding-bottom:100% !important;}
-    .section03 .container .right {width:50%;}
-    .section03 .container .right .dp {display:flex;flex-wrap:wrap;}
-    .section03 .container .right .case {width:50%;padding:5px;}
+    .section03 .container .right {width:100%;}
+    .section03 .container .right .dp {display:block;flex-wrap:wrap;}
+    .section03 .container .right .case {width:100%;padding:5px 30px;}
     .section03 .container .right figure {position:relative;flex-wrap:wrap;width:100%;border:1px solid #ddd;}
     .section03 .container .right figure img {margin:0 auto;max-width:245px;}
     .section03 .dsc h3 {border-top:1px solid #ddd;}
@@ -471,7 +472,7 @@
 
 
     /* .scroll_banner */
-    .scroll_banner {display:none;position:absolute;top:300px;right:50px;cursor: pointer;}
+    .scroll_banner {display:none !important;position:absolute;top:300px;right:50px;cursor: pointer;}
     .scroll_banner li {display:none;padding:15px;background:#dbb1d2;color:#000;margin:5px 0;font-size:22px;}
 
     .scroll_banner li:first-child:before {display:none;content:"\ead8";font-family: xeicon!important;background:#dbb1d2;color:#000;}
@@ -481,7 +482,6 @@
     .scroll_banner li:last-child:hover:before {content:"\eb70";font-family: xeicon!important;}
 
 
-    /* *{outline:1px solid #369;} */
     /* .footer */
     .footer {position:relative;padding:50px 0;font-family: 'Noto Sans KR', serif;width:auto;background:#f2f2f2;}
     .footer .container {width:auto;margin:0 auto;}
@@ -489,11 +489,11 @@
     .footer .container .top {width:90%;margin:0 auto;display:block;text-align:center;justify-content:space-between;line-height:50px;}
     
     .footer .container .top ul {display:flex;position:relative;font-size:12px;}
-    .footer .container .top ul li a{display:inline-block;padding:0 3px;line-height:1;margin-bottom:0;}
+    .footer .container .top ul li a{display:inline-block;padding:0 3px;line-height:1;margin:0;}
     .footer .container .top ul li {position: relative;}
     .footer .container .top ul li~li:after {display:none;content:"I";position:absolute;top:0;left:0;font-weight:300;}
     .footer .container .top ul li:nth-child(3) {font-weight:500;}
-    .footer .container .top img {max-width:40%;margin-top:15px;}
+    .footer .container .top img {max-width:40%;margin-bottom: 0;}
 
     .footer .container .top .bottom {display:block;justify-content:space-between;}
     .footer .container .bottom {width:90%;margin:0 auto;}
@@ -505,8 +505,8 @@
     .footer .container .left .container dt:first-child {color:#000;}
     .footer .container .left .container address {display:block;font-size:13px;margin-top:15px;font-weight:300;}
 
-    .footer .container .right .sns {position:absolute;top:165px;right:380px;}
-    .footer .container .right .sns i {font-size:17px;background:#dbb1d2;border-radius:50%;padding:8px;color:#fff;cursor: pointer;}
+    .footer .container .right .sns {position:static;top:165px;right:380px;}
+    .footer .container .right .sns i {font-size:15px;background:#dbb1d2;border-radius:15px;padding:8px;color:#fff;cursor: pointer;}
 
 
 
