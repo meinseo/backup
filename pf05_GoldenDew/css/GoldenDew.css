@@ -115,6 +115,9 @@
 .section01 .container figure .icon {display:flex;position:absolute;bottom:35%;left:50%;transform:translateX(-50%);opacity:0;transition:0.5s;cursor: pointer;}
 .section01 .container figure:hover .icon {opacity:1;}
 .section01 .container figure .icon i {background:#dbb1d2;border-radius:50%;padding:5px;margin: 0 5px}
+/* 아이콘 호버 바꾸는거 */
+/* .section01 .container figure .icon:first-child:before {content:"\ea11";font-family: xeicon!important;}
+.section01 .container figure .icon:first-child:hover:before {content:"\ea10";font-family: xeicon!important;} */
 
 .section01 .container h3 {font-size:17px;font-weight:400;padding:23px 0 10px 0;}
 .section01 .container strong {font-size:16px;text-decoration:line-through solid 2px #dbb1d2;font-weight:400;margin-right:10px;color:#333;}
@@ -148,7 +151,6 @@
 .section02 ul li.on {flex:2;}
 
 
-*{outline:1px solid #f00--;}
 
 /* .section03*/
 .section03 {padding:120px 0;text-align:center;position:relative;width:1400px;margin:0 auto;}
@@ -185,6 +187,36 @@
 .section03 .container em {display:block;line-height:1;font-weight:500;padding:0 0 23px 0;font-size:17px;}
 
 
+
+/* section04 이메일구독하기*/
+.section04 {position:relative;padding:60px 0;text-align:center;background:#e3bfdb;}
+.section04 .container h2 {display:inline-block;font-size:19px;line-height:4rem;font-weight:500;margin-bottom:20px;letter-spacing:-0.04em;}
+.section04 .container p {font-size:15px;line-height:3rem;margin-top:90px;font-family: 'Noto Serif KR', serif;letter-spacing:-0.04em;}
+
+.section04 .email_bar {border:2px solid #fff;width:700px;height:90px;position:absolute;top:52%;left:50%;transform:translate(-50% , -50%);}
+.section04 .email_bar form {position:absolute;top:22px;left:70px;}
+.section04 .email_bar button {border:none;background:#fff;font-family:'Montserrat','Noto Sans KR', sans-serif;font-weight:500;cursor:pointer;font-size:18px;width:150px;height:40px;vertical-align:middle;letter-spacing:0.025em;}
+.section04 .email_bar button:hover {border:1px solid #fff;background:#be7fb0;color:#fff;font-weight:400;letter-spacing:0.025em;}
+/* .section04 .email_bar button:hover {border:2px solid #be7fb0;background:#fff;} */
+.section04 .email_bar input {background:none;border:none;border-bottom:1px solid #000;width:400px;outline:none;padding:0 10px;vertical-align:middle;font-size:24px;}
+.section04 .email_bar input::placeholder {font-size:18px;margin-bottom:50px;vertical-align:middle;color:#000;}
+
+
+
+/* section05 뉴스앤이벤트*/
+.section05 {padding:100px 0;width:1400px;margin:0 auto;}
+.section05 .title {text-align:center;}
+.section05 .title h2 {font-size:27px;font-family:"Montserrat";letter-spacing:0.05em;font-weight:400;}
+.section05 .title h2:after {content:"";display:block;width:1px;height:25px;background:#dbb1d2;margin:10px auto;}
+.section05 .title p {font-size:15px;margin-bottom:60px;font-family: 'Noto Serif KR', serif;}
+.section05 .container {display:flex;justify-content:space-between;}
+.section05 .container figure a {display:inline-block;overflow:hidden;height:325px;margin-bottom:25px;}
+.section05 .container img:hover {transform:scale(1.1);transition:0.3s;}
+.section05 .container h3 {font-size:17px;margin-bottom:5px;}
+.section05 .container em {font-size:13px;}
+
+
+
 /* .scroll_banner */
 .scroll_banner {display:none;position:absolute;top:300px;right:50px;cursor: pointer;}
 .scroll_banner li {padding:15px;background:#dbb1d2;color:#000;margin:5px 0;font-size:22px;}
@@ -196,11 +228,13 @@
 .scroll_banner li:last-child:hover:before {content:"\eb70";font-family: xeicon!important;}
 
 
-*{outline:1px solid #f00--;}
+
 /* .footer */
-.footer {position:relative;padding:50px 0;font-family: 'Noto Sans KR', serif;}
-.footer .container {width:1170px;margin:0 auto;}
-.footer .container .top {display:flex;justify-content:space-between;border-bottom:1px solid #ddd;border-top:1px solid #ddd;line-height:64px;}
+.footer {position:relative;padding:50px 0;font-family: 'Noto Sans KR', serif;width:1900px;}
+.footer .container {width:100%;margin:0 auto;}
+.footer .container .line {border-bottom:1px solid #ddd;border-top:1px solid #ddd;}
+.footer .container .top {width:1170px;margin:0 auto;display:flex;justify-content:space-between;line-height:64px;}
+ 
 .footer .container .top ul {display:flex;position: relative;font-size:14px;}
 .footer .container .top ul li a{display:block;padding:0 8px;line-height:64px;}
 .footer .container .top ul li {position: relative;}
@@ -209,7 +243,7 @@
 .footer .container .top img {max-width:20%;margin-bottom:1px 0 5px 0;}
 
 .footer .container .top .bottom {display:block;justify-content:space-between;}
-
+.footer .container .bottom {width:1170px;margin:0 auto;}
 .footer .container .left .container strong {display:block;font-size:20px;font-weight:500;line-height:2;margin-top:15px;}
 .footer .container .left .container span {display:block;font-size:14px;margin-bottom:30px;font-weight:500;}
 
