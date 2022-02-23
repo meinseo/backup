@@ -45,6 +45,18 @@ $(function(){
     });
 
 
+    //xi-bars 오픈
+    $('.mopen').on('click', function(){
+        $('.header').toggleClass('on')
+    });
+
+    $('.gnb>li>a').on('click', function(){
+        $(this).next().slideToggle();
+        $(this).parent().siblings().find('.depth02').slideUp();
+    })
+
+
+
     // xi-search 탭
     $('.header .first_nav>ul.right .xi-search').on('click', function () {
         $('.top_banner').slideDown();
