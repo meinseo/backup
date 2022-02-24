@@ -1,6 +1,3 @@
-/* 
-*{outline: 1px solid #f00;}            */
-
 
 html {font-size:10px;}
 body {font-size:1.6rem;}
@@ -49,7 +46,6 @@ body {font-size:1.6rem;}
 /* section01 */
 #section01 {padding:2rem 0;position:relative;}
 #section01 .container {width:1200px;margin:0 auto;overflow:hidden;padding:150px 0;}
-/* ------------------------------------------------------------------padding:150px 0; 다 만들고 이걸로 전체 970조절하기 */
 #section01 .container .slick-list {overflow:visible;}
 
 
@@ -71,7 +67,6 @@ body {font-size:1.6rem;}
 
 #section01 .container .con03 h2 {background:#8b8075;}
 #section01 .container .con03 h2:hover {background:#8b634b;opacity:1;}
-/* 버튼 호버는 좀 더 생각 해보기 */
 
 #section01 .btn i {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:50px;color:#a59d9d;cursor:pointer;}
 #section01 .btn i.xi-angle-left-thin {margin-left:-700px;}
@@ -190,8 +185,7 @@ body {font-size:1.6rem;}
 #section05 .tab_news:nth-child(1):before {transform:translateX(-100%) rotate(45deg);}
 #section05 .tab_news:nth-child(2):before {transform:translateX(410%) rotate(45deg);}
 
-/* 
-*{outline: 1px solid #f00;}            */
+
 
 /* footer  */
 #footer {background:#333;padding:40px 0;color:#fff;}
@@ -218,226 +212,7 @@ body {font-size:1.6rem;}
 .mopen {display:none;}
 
 
-/* ---------------------------------------------------------------------반응형---------------------------------------------------------------- */
 
-
-@media (max-width:768px) {
-
-    html {font-size:10px;}
-    body {font-size:1.6rem;}
-    #wrap {min-width:0;overflow:hidden;}
-
-
-
-    /* .mini_header */
-    .mini_header {display:none;background:#efeeee;font-size:22px;color:#333;line-height:2;}
-    .mini_header .container {display:flex;width:auto;padding:0 15px;margin:0 auto;justify-content:flex-end;}
-    .mini_header .container i {}
-    .mini_header .container form input {margin-right:15px;}
-    .mini_header .container a:nth-child(2) {margin-right:15px;}
-
-    .mini_header .container button {border:none;background:none;margin-right:5px;}
-    .mini_header .container input {width:150px;height:22px;background:#dcdcdc;border-radius:15px;border:none;padding:0 10px;transform:translateY(-2px)}
-  
-
-    /* header */
-    #header {background:#003057;color:#fff;position:static;top:0;left:0;width:100%;z-index:999;}
-    #header .conatainer {width:120rem;padding:0 1.5rem;margin:0 auto;display:flex;justify-content:space-between;}
-    #header .conatainer h1 img {max-width:70%;padding:2rem 0;}
-    *{outline: 1px solid #f00;} 
-    /* .gnb */
-    .gnb .depth01 {display:flex;}
-    .gnb .depth01>li>a {display:block;padding:0 3rem;font-size:2rem;font-weight:400;line-height:5;}
-    .gnb .depth01>li>a:hover {color:#85604c;font-size:2rem;font-weight:600;}
-    .gnb .depth01>li {position:relative;}
-
-    .gnb .depth02 {padding:10px 0 0 0;height:0;overflow:hidden;position:absolute;top:10rem;left:0;width:100%;transition:0.5s;z-index:999;}
-
-    .gnb:before {content:"";display:block;width:100%;height:0;background:#f5f5f5;opacity:88%;position:absolute;top:14rem;left:0;transition:0.5s;z-index:999;}
-    .gnb:hover:before {height:20rem;}
-    .gnb:hover .depth02 {height:18rem;font-size:1.6rem;}
-
-    .gnb .depth02>li>a {position:relative;display:block;line-height:3rem;text-align:center;color:#003057;padding:0.5rem 0;}
-    .gnb .depth02>li>a:hover {color:#85604c;font-size:1.7rem;transition:0.2s;}
-
-    .gnb .depth02>li>a:after {content:"";display:block;width:0;height:1px;margin:0 auto;background:#85604c;transition:0.5s;}
-    .gnb .depth02>li>a:hover:after {width:80%;}
-
-
-    /* main_visual */
-    #main_visual {position:relative;height:100vh;overflow:hidden;}
-
-
-    /* section01 */
-    #section01 {padding: 0;position:static;}
-    #section01 .container {width:auto;margin:0 auto;overflow:hidden;padding:150px 0;}
-    /* ------------------------------------------------------------------padding:150px 0; 다 만들고 이걸로 전체 970조절하기 */
-    #section01 .container .slick-list {overflow:visible;}
-
-
-    #section01 .container figure {background:#003057;border-radius:100px 0 100px 0;overflow:hidden;color:#fff;text-align:center;position:relative;transform:scale(1);filter: grayscale(7%);font-size:0;transition:0.5s;}
-    #section01 .container figure img {width:100%;}
-    /* #section01 .container figure.on img {transform: scale(1.2);} */
-    #section01 .container figure.on {transform:scale(1.15);transition:0.5s;filter: grayscale(0);box-shadow:0 0 10px rgba(0,0.7,0,0.7);z-index:999;}
-    #section01 .container figure h2 {font-size:25px;font-weight:300;width:170px;line-height:60px;background:#916e5c;border-radius:10px;position:absolute;top:270px;left:50%;transform:translateX(-50%);text-align:center;}
-    #section01 .container figure p {font-size:30px;padding:50px 0 25px 0;color:#fff;font-weight:500;}
-    #section01 .container figure .logo {padding:0 0 20px 0;text-align:center;}
-    #section01 .container figure .logo img {max-width:40%;margin:0 auto;}
-    #section01 .container figure span, #section01 .container figure strong {display:inline-block;font-size:17px;padding:0 0 60px 0;font-weight:300;} 
-    #section01 .container figure strong:before {content:"I";top:0;left:0;display:inline-block;margin:0 5px;}
-
-    #section01 .container figure strong i {vertical-align:middle;}
-
-    #section01 .container figure.con02, #section01 .container figure.con04 {background:#0f4978;}
-    #section01 .container .con02 h2, #section01 .container .con04 h2 {background:#bec0c1;opacity:90%;}
-
-    #section01 .container .con03 h2 {background:#8b8075;}
-    #section01 .container .con03 h2:hover {background:#8b634b;opacity:1;}
-    /* 버튼 호버는 좀 더 생각 해보기 */
-
-    #section01 .btn i {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:50px;color:#a59d9d;cursor:pointer;}
-    #section01 .btn i.xi-angle-left-thin {margin-left:-700px;}
-    #section01 .btn i.xi-angle-right-thin {margin-left:700px;}
-
-
-
-    /* section02 */
-    #section02 {padding:12rem 0;background:#efeeee;}
-    #section02 .container {width:static;margin:0 auto;padding:0 15px;}
-
-    #section02 .container .year {display:flex;justify-content:space-between;}
-    #section02 .container .year h2 {font-size:50px;color:#003057;font-weight:700;letter-spacing:-0.025em;margin-bottom:60px;}
-    #section02 .container .year p {font-size:35px;color:#5c5c5c;font-weight:600;letter-spacing:-0.025em;}
-    #section02 .container .year span {vertical-align:middle;}
-    #section02 .container .year i {vertical-align:middle;margin-top:4px;}
-
-
-    #section02 .container .title {display:flex;justify-content:center;font-size:20px;color:#fff;margin-bottom:40px;}
-    #section02 .container .title li {position:relative;z-index:1;}
-    #section02 .container .title li.left {line-height:60px;background:#133f63;width:200px;border-radius:35px 0 35px 0;opacity:100%;text-align:center;}
-    #section02 .container .title li.right {line-height:60px;background:#0f4978;width:200px;border-radius:35px 0 35px 0;opacity:100%;text-align:center;
-    }
-    #section02 .container .title li.on {position:relative;z-index:3;}
-
-    /* ------겹치는거 */
-    #section02 .container .title {cursor: pointer;}
-    #section02 .container .title .left {transform:translateX(20px)}
-    #section02 .container .title .right {transform:translateX(-20px)}
-
-
-    .table {border:1px solid #ddd;width:100%;border-collapse: collapse;}
-    .table td {border-top:1px solid #ddd;width:33.3333333%;padding:25px 35px;}
-    .table td~td {border-left:1px solid #ddd;}
-
-    #section02 .tab_calender .table h4 {font-size:18px;color:#8b634b;font-weight:500;margin-bottom:8px;} 
-    #section02 .tab_calender .table strong {font-size:32px;color:#5c5c5c;font-weight:600;margin-bottom:20px;display:block;} 
-    #section02 .tab_calender .table span {margin-right:6px;}
-
-    #section02 .tab_calender .con span {display:inline-block;font-size:16px;color:#fff;background:#8a8d8f;line-height:35px;width:105px;border-radius:15px;text-align:center;letter-spacing:0.025em;font-weight:300;opacity:80%;}
-    #section02 .tab_calender .con em {font-size:17px;}
-
-    #section02 .tab_calender .con02 span {display:inline-block;font-size:16px;color:#fff;background:#916e5c;line-height:35px;width:105px;border-radius:15px;text-align:center;letter-spacing:0.025em;font-weight:300;}
-    #section02 .tab_calender .con02 span:hover {background:#264f70;}
-    #section02 .tab_calender .con02 em {font-size:17px;}
-
-    #section02 .tab_calender .con03 span {display:inline-block;font-size:16px;color:#fff;background:#264e70;line-height:35px;width:105px;border-radius:15px;text-align:center;letter-spacing:0.025em;font-weight:300;opacity:90%;}
-    #section02 .tab_calender .con03 em {font-size:17px;}
-
-    #section02 .tab_content {}
-    #section02 .tab_content > div {display:none;}
-    #section02 .tab_content > div.on {display:block;}
-
-    #section02 .tab_calender {position:relative;}
-    #section02 .tab_calender .table {position:relative;background:#efeeee;}
-    #section02 .tab_calender:before {content:'';display:block;width:30px;height:30px;background:#133f63;position:absolute;top:-15px;left:45%;transform:translateX(-50%) rotate(45deg);}
-    #section02 .tab_calender:nth-child(1):before {transform:translateX(-100%) rotate(45deg);}
-    #section02 .tab_calender:nth-child(2):before {transform:translateX(410%) rotate(45deg);}
-
-
-    /* section03  */
-    #section03 {width:1200px;margin:0 auto;padding:12rem 0;text-align:center;}
-    #section03 h2 {font-size:43px;font-weight:700;letter-spacing:-0.025em;color:#003057;line-height:40px;margin-bottom:13px;}
-    #section03 p {font-size:20px;font-weight:500;letter-spacing:-0.025em;color:#003057;margin-bottom:25px;}
-
-    #section03 .container {display:flex;flex-wrap:wrap;}
-    #section03 .container figure {display:block;padding:15px 15px;}
-
-    #section03 figure a {border-radius:0 0 40px 40px;}
-    #section03 .case  {overflow:hidden;width:370px;border-radius:40px 40px 0 0;}
-    #section03 figure img {transition:0.4s;height:250px;}
-    #section03 figure:hover img {transform:scale(1.1);}
-
-    #section03 .container figure a {display:flex;justify-content:center;font-size:20px;font-weight:300;letter-spacing:-0.025em;line-height:75px;background:#003057;color:#fff;opacity:99%;}
-    #section03 .container figure a:hover {background:#0f4978;color:#fff;}
-
-
-    /* section04  */
-    #section04 {background:url(../img/section04_40.jpg) no-repeat center center/cover;background-attachment:fixed;padding:110px 0;text-align:center;}
-    #section04 h2 {color:#fff;font-size:50px;font-weight:600;margin-bottom:15px;letter-spacing:0.025em;}
-    #section04 p {color:#fff;font-size:25px;font-weight:400;margin-bottom:40px;}
-    #section04 span {color:#fff;font-size:17px;margin-bottom:20px;line-height:1.5;font-weight:300;}
-
-
-
-    /* section05  */
-    #section05 {padding:12rem 0;}
-
-    #section05 .title {display:flex;justify-content:center;font-size:20px;color:#fff;margin-bottom:40px;}
-    #section05 .title li.left {line-height:60px;background:#133f63;width:200px;border-radius:35px 0 35px 0;opacity:100%;text-align:center;}
-    #section05 .title li.right {line-height:60px;background:#0f4978;width:200px;border-radius:35px 0 35px 0;opacity:100%;text-align:center;}
-
-    #section05 .title li.on {position:relative;z-index:3;}
-
-    /* ------겹치는거 */
-    #section05 .title {cursor: pointer;}
-    #section05 .title .left {transform:translateX(20px)}
-    #section05 .title .right {transform:translateX(-20px)}
-
-    #section05 .tab_news {width:1000px;padding:0 15px;margin:0 auto;}
-    #section05 .tab_news>div {border:2px solid #8b8075;padding:30px 150px;margin:20px auto;position:relative;background:#fff;}
-    #section05 .tab_news>div h2 {font-size:18px;margin-bottom:5px;}
-    #section05 .tab_news>div p {font-size:15px;}
-    #section05 .tab_news>div i {position:absolute;top:38px;right:150px;border:1px solid #003057;padding:2px;background:#003057;color:#fff;cursor: pointer;}
-    /* #section05 .tab_news>div:hover i:before {display:block;transform:rotate(45deg);} */
-
-
-    #section05 .tab_content {}
-    #section05 .tab_content > div {display:none;}
-    #section05 .tab_content > div.on {display:block;}
-
-    /* -----탭메뉴 화살표부분 */
-    #section05 .tab_news {position:relative;}
-    #section05 .tab_calender .div {position:relative;}
-    #section05 .tab_news:before {content:'';display:block;width:30px;height:30px;background:#133f63;position:absolute;top:-15px;left:45%;transform:translateX(-50%) rotate(45deg);}
-    #section05 .tab_news:nth-child(1):before {transform:translateX(-100%) rotate(45deg);}
-    #section05 .tab_news:nth-child(2):before {transform:translateX(410%) rotate(45deg);}
-
-
-
-    /* footer  */
-    #footer {background:#333;padding:40px 0;color:#fff;}
-    #footer .container {display:flex;width:1200px;margin:0 auto;padding:10px 15px;justify-content:space-between;}
-    #footer .container>ul {display:flex;}
-    #footer .container>ul>li>a {padding: 0 10px;font-weight:100;line-height:32px;vertical-align:middle;}
-    #footer .container>ul>li:first-child>a {font-weight:300;}
-    #footer .container>ul>li~li:before {font-size:12px;content:"|";line-height:32px;vertical-align:middle;}
-    #footer .sns i {background:#fff;border-radius:50%;color:#333;padding:5px;font-size:20px;margin-left:5px;}
-
-    #footer hr {margin:15px auto 15px;border:none;border-top:1px solid #666;}
-
-    #footer .bottom {}
-    #footer .bottom .left {font-size:15px;line-height:1.5;font-weight:300;}
-    #footer .bottom .left p {margin-bottom:25px;}
-    #footer .bottom address {font-size:13px;}
-
-    #footer .bottom .right {display:block;font-size:16px;font-weight:300;}
-    #footer .bottom .right a {vertical-align:middle;}
-    #footer .bottom .right>ul {display:flex;}
-    #footer .bottom .right>ul>li~li:before {font-size:12px;content:"|";padding:0 5px;vertical-align:middle;}
-
-    .mopen {display:block;}
-
-}
 
 
 
