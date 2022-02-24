@@ -118,7 +118,7 @@ body {font-size:0.8rem;color:#000;}
 
 .section .mockup figure img {position:relative;transition:5s;cursor:pointer;}
 .section .mockup .case {overflow:hidden;border-radius:18px;height:400px;}
-.section .mockup figure:hover img {transform:translateY(calc(-100% + 380px));}
+.section .mockup figure:hover img {transform:translateY(calc(-100% + 400px));}
 
 .section .mockup .phone .case {height:380px;}
 
@@ -308,6 +308,10 @@ body {font-size:0.8rem;color:#000;}
 ------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------
 */
+
+
+
+
 @media (max-width:768px) {
 
     html {font-size:10px;}
@@ -593,6 +597,26 @@ body {font-size:0.8rem;color:#000;}
 
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
