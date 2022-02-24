@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Serif+KR:wght@300;400;500;600;700;900&display=swap');
 
 #wrap {min-width:1900px;}
-/* 
-*{outline:1px solid #f00;}                   */
 
 /* ----------------------------------------------------------------------------------------------------------------------------------탑배너 */
 .top_banner {background:#dcdcdc;position:relative;}
@@ -107,7 +105,6 @@
 #section01 .itm02 {background:url(../img/section01_right02.png);margin-bottom:55px;}
 
 #section01 figure h2 {font-size:24px;color:#333333;font-weight:500;line-height:1.8;padding:0 10px;}
-/* display:block;margin-bottom:18px; 마진이 먹어야 하는데 안먹노  */
 #section01 figure p {font-size:18px;color:#333333;padding:0 10px;}
 
 #section01 .ems {margin-top:55px;}
@@ -148,7 +145,7 @@
 
 
 #section03 .container {position: relative;width:1200px;margin:0 auto;display:flex;text-align:center;padding:0 15px;z-index:1;}
-/* z-index:1;를 줘서 아이스크림 배경을 맨위로 올렸고 z-index:1;가 먹으려면 position: relative;가 있어야 한다!!!! */
+
 #section03 .container figure img {width:100%;padding:0 15px;margin-bottom:20px;} 
 #section03 .container span {display:block;font-size:20px;font-weight:400;text-align:center;color:#600624;}
 
@@ -204,9 +201,6 @@
 #section06 .container .case {display:flex;flex-wrap:wrap;}
 #section06 .container .case figure {display:block;width:25%;}
 #section06 .container .case img {max-width:100%;}
-/* 질문>>> 왜 세로는 자연스럽게 간격이 띄고 가로엔 여유가 안생기는지 ..? ㄱ,ㄴ데 내가 주려고 준건 아님 이렇게 퍼센트로 .으로 맞춰도 되는지 ..?
-답변>>> a는 인라인태그라서 합치면? 자연스럽게 양옆으로 4px정도 공간이 생긴다.*/
-
 
 #section06 .container figure {position:relative;overflow:hidden;}
 
@@ -217,16 +211,11 @@
 
 
 
-
-
 /* --------------------------------------------------------------------------------------------------------------footer------------------ */
 
-*{outline:1px solid #369--;}
 
 #footer .toTop {display:none;position:fixed;bottom:4.5rem;right:5rem;z-index:999;cursor: pointer;}
 #footer .toTop i {font-size:1.3rem;padding:.5rem;background:#600624;color:#fff;}
-/* #footer .toTop {display:none;position:fixed;bottom:4.5rem;right:5rem;cursor:pointer;z-index:999;}
-#footer .toTop i {font-size:1.3rem;padding:.5rem;background:#600624;color:#fff;} */
 
 
 #footer {background:#f2f2f2;}
