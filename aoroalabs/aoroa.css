@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400&display=swap');
+
+* {margin:0;padding:0;}
+html {font-size:20px;}
+body {font-size:0.8rem;color:#fff;background:#000;}
+#Wrap {min-width:95rem;}
+
+:root {
+    --ac:#FFCF40;
+    --bc:#FEA726;
+}
+
+
+#header {position:fixed;width:100%;background:#f2f2f2;color:#000;line-height:80px;z-index:1;font-weight:300;font-size:15px;font-family:'Roboto', 'sans-serif' ;}
+#header .container {width:1170px;margin:0 auto;display:flex;justify-content:space-between;}
+#header h1 img {max-width:58%;}
+#header nav ul {display:flex;}
+#header nav ul li {padding-left:30px;}
+#header nav ul li a:hover {color:var(--bc);}
+
+
+
+.section01 {background:url(../lib/base/aoroa08.webp) no-repeat center center/cover;}
+.section .container {text-align:center;transform:translateY(-100px);}
+
+.section01 .container  h2 {opacity:0;transform:translateY(100px);font-size:47px;font-weight:500;letter-spacing:0.1em;line-height:1.2;}
+.section01.on .container h2 {transform:translateY(0);opacity:1;transition:0.5s;}
+
+.section01 .container h2:after {opacity:0;content:"";display:block;width:1px;height:30px;background:#fff;margin:25px auto 20px auto;}
+.section01.on .container h2:after {transform:translateY(0);opacity:1;transition:0.7s 0.7s;}
+
+.section01 .container  p {opacity:0;transform:translateY(100px);font-size:34px;font-weight:400;letter-spacing:0.025em;font-family: 'Montserrat', sans-serif;}
+.section01.on .container p {transform:translateY(0);opacity:1;transition:0.7s 0.7s;}
+
+
+.section02 .container {transform:translateY(10%);}
+/* .section02 .container h2 {font-size:37px;font-weight:400;font-family:'Montserrat', sans-serif;letter-spacing:0.025em;margin-bottom:20px;}
+.section02 .container h2:after {content:"";display:block;width:1px;height:27px;background:#fff;margin:20px auto;}
+.section02 .container strong {font-size:45px;color:var(--ac);line-height:2;letter-spacing:0.05em;}
+.section02 .container p {font-size:18px;font-weight:300;} */
+
+
+.section02 .container h2 {opacity:0;font-size:37px;font-weight:400;font-family:'Montserrat', sans-serif;letter-spacing:0.025em;line-height:2.5;}
+.section02.on .container h2 {opacity:1;transform:translateY(0);transition:0.5s;}
+.section02 .container h2:after {opacity:0;;content:"";display:block;width:1px;height:27px;background:#fff;margin:0 auto;}
+.section02.on .container h2:after {opacity:1;transform:translateY(0);transition:0.7s 0.7s;}
+.section02 .container strong {opacity:0;font-size:45px;font-weight:400;color:var(--ac);line-height:2.2;letter-spacing:0.05em;font-family:'Roboto', 'sans-serif';}
+.section02.on .container strong {opacity:1;transform:translateY(0);transition:0.7s 0.7s;}
+.section02 .container p {opacity:0;font-size:17px;font-weight:200;line-height:1.1;letter-spacing:0.05em;}
+.section02.on .container p {opacity:1;transform:translateY(0);transition:1s 1s;}
+.section02 span {font-weight:500;}
+
+
+
+.section03 {width:100%;}
+.section03 .container {width:1170px;margin:0 auto;transform:translateY(30px);}
+.section03 .container h2 {opacity:0;font-size:37px;font-weight:400;font-family:'Montserrat', sans-serif;letter-spacing:0.025em;line-height:2.5;}
+.section03.on .container h2 {opacity:1;transform:translateY(0);transition:0.5s;}
+.section03 .container h2:after {opacity:0;;content:"";display:block;width:1px;height:27px;background:#fff;margin:0 auto 20px auto;}
+.section03.on .container h2:after {opacity:1;transform:translateY(0);transition:0.7s 0.7s;}
+.section03 .container p {opacity:0;font-size:17px;font-weight:200;line-height:1.1;letter-spacing:0.05em;padding-bottom:30px;}
+.section03.on .container p {opacity:1;transform:translateY(0);transition:1s 1s;}
+
+.section03 .con03 {display:flex;}
+
+.section03 .con03 figure {padding:0 15px;flex:1;}
+.section03 .con03 figure span {display:block;font-size:21px;line-height:3;font-family:'Montserrat', sans-serif;}
+.section03 .con03 figure em {font-size:15px;line-height:1.1;font-family:'Montserrat', sans-serif;}
+.section03 .con03 figure img {max-width:100%;}
+
+
+
+.section04 {width:100%;}
+.section04 .container {width:1170px;margin:0 auto;transform:translateY(30px);}
+.section04 .container h2 {opacity:0;font-size:37px;font-weight:400;font-family:'Montserrat', sans-serif;letter-spacing:0.025em;line-height:2.5;}
+.section04.on .container h2 {opacity:1;transform:translateY(0);transition:0.5s;}
+.section04 .container h2:after {opacity:0;;content:"";display:block;width:1px;height:27px;background:#fff;margin:0 auto 20px auto;}
+.section04.on .container h2:after {opacity:1;transform:translateY(0);transition:0.7s 0.7s;}
+.section04 .container p {opacity:0;font-size:17px;font-weight:200;line-height:1.1;letter-spacing:0.05em;padding-bottom:50px;}
+.section04.on .container p {opacity:1;transform:translateY(0);transition:0.7s 0.7s;}
+
+.section04 .con04 {display:flex;}
+.section04 .con04 figure {padding:0 35px;flex:1;}
+.section04 .con04 figure a {display:block;}
+.section04 .con04 i {font-size:45px;background:var(--bc);border-radius:50%;padding:25px;}
+
+.section04 .con04 figure span {display:block;line-height:4.5rem;font-size:25px;font-weight:500;font-family:'Montserrat', sans-serif;} 
+.section04 .con04 figure em {font-size:15px;line-height:1.2;font-family:'Montserrat', sans-serif;}
+
+
+
+* {outline:1px solid #369--;}
+.section05 {width:100%;}
+.section05 .container {width:1170px;margin:0 auto;transform:translateY(30px);}
+.section05 .container h2 {opacity:0;font-size:37px;font-weight:400;font-family:'Montserrat', sans-serif;letter-spacing:0.025em;line-height:2.5;}
+.section05.on .container h2 {opacity:1;transform:translateY(0);transition:0.5s;}
+.section05 .container h2:after {opacity:0;;content:"";display:block;width:1px;height:27px;background:#fff;margin:0 auto 40px auto;}
+.section05.on .container h2:after {opacity:1;transform:translateY(0);transition:0.7s 0.7s;}
+
+.section05 .con05 {display:flex;flex-wrap:wrap;justify-content:space-between;}
+.section05 .con05 figure {width:33.333333%;padding:20px 0;}
+.section05 .con05 figure:hover {color:var(--bc);}
+.section05 .con05 figure a {display:block;}
+.section05 .con05 figure span {display:block;}
+
+.section05 i {font-size:47px;padding-bottom:10px;}
+.section05 span {font-size:23px;line-height:3rem;}
+.section05 em {font-size:15px;color:#fff;line-height:1.5;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
